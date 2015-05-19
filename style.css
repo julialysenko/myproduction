@@ -1,67 +1,63 @@
-body {
-    font-family: "Lato-Black";
-}
-
 @font-face {
     font-family: 'Lato-Black';
-    src: url('lato-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-black-webfont.woff') format('woff'),
-         url('lato-black-webfont.ttf') format('truetype'),
-         url('lato-black-webfont.svg#latoblack') format('svg');
+    src: url('font/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-black-webfont.woff') format('woff'),
+         url('font/lato-black-webfont.ttf') format('truetype'),
+         url('font/lato-black-webfont.svg#latoblack') format('svg');
 }
 
 
 @font-face {
     font-family: 'latobold';
-    src: url('lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-bold-webfont.woff') format('woff'),
-         url('lato-bold-webfont.ttf') format('truetype'),
-         url('lato-bold-webfont.svg#latobold') format('svg');
+    src: url('font/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-bold-webfont.woff') format('woff'),
+         url('font/lato-bold-webfont.ttf') format('truetype'),
+         url('font/lato-bold-webfont.svg#latobold') format('svg');
 }
 
 
 @font-face {
     font-family: 'latoregular';
-    src: url('lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-regular-webfont.woff') format('woff'),
-         url('lato-regular-webfont.ttf') format('truetype'),
-         url('lato-regular-webfont.svg#latoregular') format('svg');
+    src: url('font/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-regular-webfont.woff') format('woff'),
+         url('font/lato-regular-webfont.ttf') format('truetype'),
+         url('font/lato-regular-webfont.svg#latoregular') format('svg');
 }
 
 
 @font-face {
     font-family: 'latoheavy';
-    src: url('lato-heavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-heavy-webfont.woff') format('woff'),
-         url('lato-heavy-webfont.ttf') format('truetype'),
-         url('lato-heavy-webfont.svg#latoheavy') format('svg');
+    src: url('font/lato-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-heavy-webfont.woff') format('woff'),
+         url('font/lato-heavy-webfont.ttf') format('truetype'),
+         url('font/lato-heavy-webfont.svg#latoheavy') format('svg');
 }
 
 
 @font-face {
     font-family: 'latomedium';
-    src: url('lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-medium-webfont.woff') format('woff'),
-         url('lato-medium-webfont.ttf') format('truetype'),
-         url('lato-medium-webfont.svg#latomedium') format('svg');
+    src: url('font/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-medium-webfont.woff') format('woff'),
+         url('font/lato-medium-webfont.ttf') format('truetype'),
+         url('font/lato-medium-webfont.svg#latomedium') format('svg');
 }
 
 
 @font-face {
     font-family: 'latolight';
-    src: url('lato-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-light-webfont.woff') format('woff'),
-         url('lato-light-webfont.ttf') format('truetype'),
-         url('lato-light-webfont.svg#latolight') format('svg');
+    src: url('font/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-light-webfont.woff') format('woff'),
+         url('font/lato-light-webfont.ttf') format('truetype'),
+         url('font/lato-light-webfont.svg#latolight') format('svg');
 }
 
 
 @font-face {
     font-family: 'latothin';
-    src: url('lato-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('lato-thin-webfont.woff') format('woff'),
-         url('lato-thin-webfont.ttf') format('truetype'),
-         url('lato-thin-webfont.svg#latothin') format('svg');
+    src: url('font/lato-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lato-thin-webfont.woff') format('woff'),
+         url('font/lato-thin-webfont.ttf') format('truetype'),
+         url('font/lato-thin-webfont.svg#latothin') format('svg');
 }
 
 h1 {
@@ -109,4 +105,10 @@ p {
 ul {
     margin: 0;
     padding-left: 0;
+}
+
+.clearfix:after, {
+content: "";
+display: block;
+height: 0;
 }
