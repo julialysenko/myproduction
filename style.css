@@ -1,60 +1,9 @@
 body {
-background-color: #ffffff
-}
-
-
-h1 {
-	color: #000000;
-	font-size: 100pt;
-	font-family: 'latoblack', Arial, sans-serif;
-	text-align: left;
-  }
-
-h2 {
-	color: #000000;
-	font-size: 52pt;
-	font-family: 'latoblack', Arial, sans-serif;
-	text-align: left;
-  }
-
-h3 {
-	color: #000000;
-	font-size: 26pt;
-	font-family: 'latobold', Arial, sans-serif;
-	text-align: left;
-  }
-
-h4 {
-	color: #000000;
-	font-size: 16pt;
-	font-family: 'latoheavy', Arial, sans-serif;
-	text-align: left;
-  }
-
-p {
-	color: #000000;
-	font-size: 16pt;
-	font-family: 'latoregular', Arial, sans-serif;
-	text-align: left;
-  }
-
- li {
- 	color: #000000;
-	font-size: 16pt;
-	font-family: 'latoregular', Arial, sans-serif;
- }
-
- .list{
-        list-style-type: none;
-    }
-
-ul {
-    margin: 0;
-    padding-left: 0;
+    font-family: "Lato-Black";
 }
 
 @font-face {
-    font-family: 'latoblack';
+    font-family: 'Lato-Black';
     src: url('lato-black-webfont.eot?#iefix') format('embedded-opentype'),
          url('lato-black-webfont.woff') format('woff'),
          url('lato-black-webfont.ttf') format('truetype'),
@@ -113,4 +62,51 @@ ul {
          url('lato-thin-webfont.woff') format('woff'),
          url('lato-thin-webfont.ttf') format('truetype'),
          url('lato-thin-webfont.svg#latothin') format('svg');
+}
+
+h1 {
+	color: #000000;
+	font-size: 100pt;
+	font-family: "Lato-Black", Arial, sans-serif;
+	text-align: left;
+  }
+
+h2 {
+	color: #000000;
+	font-size: 52pt;
+	font-family: 'latoblack', Arial, sans-serif;
+	text-align: left;
+  }
+
+h3 {
+	color: #000000;
+	font-size: 26pt;
+	font-family: 'latobold', Arial, sans-serif;
+	text-align: left;
+  }
+
+h4 {
+	color: #000000;
+	font-size: 16pt;
+	font-family: 'latoheavy', Arial, sans-serif;
+	text-align: left;
+  }
+
+p {
+	color: #000000;
+	font-size: 16pt;
+	font-family: 'latoregular', Arial, sans-serif;
+	text-align: left;
+  }
+
+ li {
+    list-style-type: none;
+ 	color: #000000;
+	font-size: 16pt;
+	font-family: 'latoregular', Arial, sans-serif;
+ }
+
+ul {
+    margin: 0;
+    padding-left: 0;
 }
