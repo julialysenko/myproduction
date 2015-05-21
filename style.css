@@ -1,97 +1,109 @@
 @font-face {
-    font-family: 'Lato-Black';
+    font-family: 'Lato';
     src: url('font/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-black-webfont.woff') format('woff'),
          url('font/lato-black-webfont.ttf') format('truetype'),
          url('font/lato-black-webfont.svg#latoblack') format('svg');
+         font-weight: 900;
 }
 
 
 @font-face {
-    font-family: 'latobold';
+    font-family: 'Lato';
     src: url('font/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-bold-webfont.woff') format('woff'),
          url('font/lato-bold-webfont.ttf') format('truetype'),
          url('font/lato-bold-webfont.svg#latobold') format('svg');
+         font-weight: 700;
 }
 
 
 @font-face {
-    font-family: 'latoregular';
+    font-family: 'Lato';
     src: url('font/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-regular-webfont.woff') format('woff'),
          url('font/lato-regular-webfont.ttf') format('truetype'),
          url('font/lato-regular-webfont.svg#latoregular') format('svg');
+         font-weight: 400;
 }
 
 
 @font-face {
-    font-family: 'latoheavy';
+    font-family: 'Lato';
     src: url('font/lato-heavy-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-heavy-webfont.woff') format('woff'),
          url('font/lato-heavy-webfont.ttf') format('truetype'),
          url('font/lato-heavy-webfont.svg#latoheavy') format('svg');
+         font-weight: 800;
 }
 
 
 @font-face {
-    font-family: 'latomedium';
+    font-family: 'Lato';
     src: url('font/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-medium-webfont.woff') format('woff'),
          url('font/lato-medium-webfont.ttf') format('truetype'),
          url('font/lato-medium-webfont.svg#latomedium') format('svg');
+         font-weight: 500;
 }
 
 
 @font-face {
-    font-family: 'latolight';
+    font-family: 'Lato';
     src: url('font/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-light-webfont.woff') format('woff'),
          url('font/lato-light-webfont.ttf') format('truetype'),
          url('font/lato-light-webfont.svg#latolight') format('svg');
+         font-weight: 300;
 }
 
 
 @font-face {
-    font-family: 'latothin';
+    font-family: 'Lato';
     src: url('font/lato-thin-webfont.eot?#iefix') format('embedded-opentype'),
          url('font/lato-thin-webfont.woff') format('woff'),
          url('font/lato-thin-webfont.ttf') format('truetype'),
          url('font/lato-thin-webfont.svg#latothin') format('svg');
+         font-weight: 200;
 }
 
 h1 {
 	color: #000000;
 	font-size: 100pt;
-	font-family: "Lato-Black", Arial, sans-serif;
+    font-weight: 900;
+	font-family: "Lato", Arial, sans-serif;
 	text-align: left;
   }
 
 h2 {
 	color: #000000;
 	font-size: 52pt;
-	font-family: 'latoblack', Arial, sans-serif;
+    font-weight: 900;
+	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
 h3 {
 	color: #000000;
 	font-size: 26pt;
-	font-family: 'latobold', Arial, sans-serif;
+    font-weight: 700;
+	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
 h4 {
 	color: #000000;
 	font-size: 16pt;
-	font-family: 'latoheavy', Arial, sans-serif;
+    font-weight: 800;
+	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
 p {
 	color: #000000;
 	font-size: 16pt;
-	font-family: 'latoregular', Arial, sans-serif;
+    font-weight: 400;
+	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
@@ -99,7 +111,8 @@ p {
     list-style-type: none;
  	color: #000000;
 	font-size: 16pt;
-	font-family: 'latoregular', Arial, sans-serif;
+    font-weight: 400;
+	font-family: 'Lato', Arial, sans-serif;
  }
 
 ul {
@@ -107,8 +120,8 @@ ul {
     padding-left: 0;
 }
 
-.clearfix:after, {
-content: "";
-display: block;
-height: 0;
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
