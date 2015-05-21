@@ -120,7 +120,8 @@ ul {
     padding-left: 0;
 }
 
-.clearfix:after {
+.clearfix:after,
+.row:after {
     content: "";
     display: table;
     clear: both;
