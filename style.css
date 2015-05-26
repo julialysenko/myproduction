@@ -69,55 +69,78 @@
 
 h1 {
 	color: #000000;
-	font-size: 100pt;
+	font-size: 100px;
     font-weight: 900;
+    line-height: 96px;
+    letter-spacing: 6px;
 	font-family: "Lato", Arial, sans-serif;
 	text-align: left;
   }
 
 h2 {
 	color: #000000;
-	font-size: 52pt;
+	font-size: 52px;
     font-weight: 900;
+    line-height: 54px;
+    letter-spacing: 3,12px;
 	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
 h3 {
 	color: #000000;
-	font-size: 26pt;
+	font-size: 26px;
     font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1,56px;
 	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
 h4 {
 	color: #000000;
-	font-size: 16pt;
+	font-size: 16px;
     font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0,96px;
 	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
 p {
 	color: #000000;
-	font-size: 16pt;
+	font-size: 16px;
     font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
 	font-family: 'Lato', Arial, sans-serif;
 	text-align: left;
   }
 
- li {
-    list-style-type: none;
+img {
+
+}
+
+li {
  	color: #000000;
-	font-size: 16pt;
+	font-size: 16px;
     font-weight: 400;
 	font-family: 'Lato', Arial, sans-serif;
  }
 
 ul {
-    margin: 0;
+    margin-left: 0;
     padding-left: 0;
+}
+
+.line {
+    margin-left: 300px;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+.list{
+    list-style-type: none;
 }
 
 .clearfix:after,
@@ -125,4 +148,95 @@ ul {
     content: "";
     display: table;
     clear: both;
+}
+
+.header a {
+    display: inline;
+    float: left;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Lato', Arial, sans-serif;
+    text-decoration: none;
+    margin-left: 60px;
+    margin-bottom: 120px;
+}
+    
+.icon {
+    display: inline-block;
+    background-image:url(sprite/spritesheet.png); 
+    background-repeat:no-repeat;
+}
+
+.icon-correct {
+    width: 10px;
+    height: 10px;
+    background-position: -2px -2px;
+}
+
+.icon-error {
+    width: 10px;
+    height: 10px;
+    background-position: -16px -2px;
+}
+
+.icon-facebook {
+    width: 12px;
+    height: 12px;
+    background-position: -31px -2px;
+    margin-left: 10px;
+}
+
+button {
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Lato', Arial, sans-serif;
+    padding: 10px 12px;
+    background: #fff;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+}
+
+button:hover {
+    background: #000000;
+    color: #fff;
+}
+
+
+a.underlined {
+   text-decoration: none;
+   border-bottom: 2px solid;
+}
+
+a.dot {
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Lato', Arial, sans-serif;
+    text-decoration: none;
+    border-bottom: 1px dashed #000000;
+    margin-bottom: 20px;
+}
+
+a.simple {
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Lato', Arial, sans-serif;
+    text-decoration: none;
+    margin-left: 0px;
+    margin-bottom: 00px;
+}
+
+input {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid;
+
 }
