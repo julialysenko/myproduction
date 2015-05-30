@@ -11,20 +11,20 @@
   </head>
 
   <body>
+
     <div class="container"> 
       
       <div class="header">
         
-          <a href="#" class="simple"><img src="images/logo.png" width="58" height="56" alt="logo" align="left"></a>
+          <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
 
             <ul class="line clearfix">
-              <li class="list"><a href="#affiche" name="affiche">АФИША</a></li>
-              <li class="list"><a href="#about" name="about">О НАС</a></li>
-              <li class="list"><a href="#contacts" name="contacts">КОНТАКТЫ</a></li>
-              <li class="list"><a href="#facebook" name="facebook">FACEBOOK <span class="icon icon-facebook"></span></a></li> 
-              <li class="list"><a href="#language" name="language">РУС</a></li>
-            </ul>
-            
+              <li class="list"><a href="#affiche">афиша</a></li>
+              <li class="list"><a href="#about">о нас</a></li>
+              <li class="list"><a href="#contacts">контакты</a></li>
+              <li class="list"><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li> 
+              <li class="list"><a href="#language">рус</a></li>
+            </ul>        
 
       </div>
       
@@ -35,19 +35,17 @@
 
           <div class="col-6">
 
-            <h3>26, 28. МАРТА / 19:00</h3>
+            <h3>26, 28. марта / 19:00</h3>
 
             <h2>афиша</h2>
 
           </div>
 
-         <div>
-            <form>
-              <button>
-                КУПИТЬ БИЛЕТ
-             </button>
-            </form>
-         </div>
+          <div class="col-6">
+
+            <button>КУПИТЬ БИЛЕТ</button>
+
+          </div>
 
       </div>
       
@@ -59,17 +57,17 @@
           <h4>где</h4>
           <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
 
-          <a href="#" class="dot">СМОТРЕТЬ НА КАРТЕ</a>
+          <a href="#" class="dot">СМОТРЕТЬ НА КАРТЕ</a><br><br><br>
 
-          <div><a href="#" class="simple">АКТЕРЫ</a>
+          <div><a href="#" class="read-more">актеры</a>
            <ul>
-            <li class="list"><a href="#" class="underlined">Игорь Рубашкин</a></li>
-            <li class="list"><a href="#" class="underlined">Руслан Сокольник</a></li>
-            <li class="list"><a href="#" class="underlined">Юрий Якуша</a></li>
-            <li class="list"><a href="#" class="underlined">Валерий Чигляев</a></li>
-            <li class="list"><a href="#" class="underlined">Екатерина Варченко</a></li>
+            <li class="list"><a href="#" class="nav">Игорь Рубашкин</a></li>
+            <li class="list"><a href="#" class="nav">Руслан Сокольник</a></li>
+            <li class="list"><a href="#" class="nav">Юрий Якуша</a></li>
+            <li class="list"><a href="#" class="nav">Валерий Чигляев</a></li>
+            <li class="list"><a href="#" class="nav">Екатерина Варченко</a></li>
            </ul>
-          </div>
+          </div><br><br><br>
 
           <h4>награды</h4>
           <p>Премия «Артхауз Спектакль Года»</p>
@@ -84,37 +82,62 @@
               В процессе работы Игорь Владимирович говорил нам о том, что Достоевский — это океан, и невозможно выпить его целиком, но можно выпить один стакан.
               Мы стали исследовать одну из сцен романа — встречу Настасьи с Аглаей.</p>
 
-              <form>
-          
-                 <input type="text">
 
-                 </input>
-           
-               </form>
+              <label>спектакль</label><br>
+
+              <select class="droplist">
+                <option>страсти по идиоту</option>
+                <option>кораблю не придет</option>
+                <option>другой спектакль</option>  
+              </select><br><br>
+
+
+              <label>дата и время</label><br>
+              
+              <select class="droplist">
+                <option>28.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</option>
+                <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
+                <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>  
+              </select><br><br>
+
+
+               <form>
+                       <label>имя</label><br>
+                       <input type="text" value="ТОМ ДЖОНС"><br><br>
+
+                       <label>электронный адрес</label><br>
+                       <input type="email" value="MY@MAILBOX.COM"><span class="icon icon-correct"></span><br><br>
+                       
+                       <label>электронный адрес</label><br>
+                       <input class="validation-failed" type="text" value="YOUR@MAILBOX,COM"><span class="icon icon-error"></span><br>
+                       <label class="email-error">* ВВЕДИТЕ АДРЕС В ФОРМАТЕ: YOUR@MAILBOX.COM</label><br>
+               </form><br><br>
+
+
 
 
                <div class="checkbox">
 
-                  <input type="checkbox" name="a">
+                  <input type="checkbox"  id="check0">
 
-                    <label>Mr. Empty Checkbox is having a great time</label>
+                    <label class="radio-check-label" for="check0">Mr. Empty Checkbox is having a great time</label>
 
                </div>
 
 
                <div class="checkbox">
 
-                  <input type="checkbox" checked>
+                  <input type="checkbox" id="check1" checked>
 
-                    <label>Mr Selected Checkbox</label>
+                    <label class="radio-check-label" for="check1">Mr Selected Checkbox</label>
 
                </div>
 
 
                <div class="radio">
 
-                  <input type="radio">
-                    <label>Mrs. Empty Radiobutton</label>
+                  <input type="radio" id="check2">
+                    <label class="radio-check-label" for="check2">Mrs. Empty Radiobutton</label>
 
                </div>
 
@@ -123,16 +146,17 @@
 
                   <input type="radio" checked>
 
-                     <label>Mrs. Selected Radiobutton</label>
+                     <label class="radio-check-label">Mrs. Selected Radiobutton</label>
 
-               </div>
+               </div><br><br>
+
+
 
          </div>
 
 
        </div>
-   
-        
+       
 
       <div class="row">
 
@@ -153,7 +177,7 @@
           <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
 
          </div>
-        </div>
+        </div><br><br>
 
 
         <div class="row">
@@ -162,12 +186,16 @@
         
          <img src="images/actor1.jpg" width="240" height="265" alt="actor1">
 
+         <h4 class="actors">валерий<br> чигляев</h4>
+
        </div>
 
 
        <div class="col-4">
           
           <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
+
+          <h4 class="actors">владимир<br> заяц</h4>
 
        </div>
 
@@ -176,43 +204,110 @@
           
            <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
 
-        </div>
+           <h4 class="actors">александр<br> крыжановский</h4>
 
         </div>
+
+        </div><br><br><br><br><br><br><br>
 
 
         <div class="row">
 
+          <div class="col-12">
 
-          <div class="col-2">
+              <h4 class="month">март<br> апрель</h4>
 
-            <h2>04</h2>
-            <p>/СУББОТА</p>
+            <div class="col-2">
+             <h2 class="date">04</h2>
+             <p class="day">/суббота</p>
+            </div>
 
-            <h2>10</h2>
-            <p>/ПЯТНИЦА</p>
+            <div class="col-4">
+             <img src="images/strasti.jpg" width="240" height="265" alt="strasti">
+            </div>
+
+            <div class="col-5">
+              <h3>страсти по идиоту</h3>
+               <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
+            </div>
 
           </div>
+        
+        </div><br><br>
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <div class="col-2">
+             <h2 class="date">10</h2>
+             <p class="day">/пятница</p>
+            </div>
+
+            <div class="col-4">
+
+             <img src="images/korabl.jpg" width="240" height="265" alt="korabl">
+            </div>
+
+            <div class="col-5">
+             <h3>корабль не придет</h3>
+              <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
+
+              <div>
+
+                   <button>КУПИТЬ БИЛЕТ</button>
+
+                   <a href="#" class="read-more">подробнее</a>
+
+              </div>
 
 
-          <div class="col-4">
+            </div>
 
-           <img src="images/strasti.jpg" width="240" height="265" alt="strasti">
-
-           <img src="images/korabl.jpg" width="240" height="265" alt="korabl">
-
-          </div>
-
-         <div class="col-6">
-
-          <h3>страсти по идиоту</h3>
-           <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
-
-          <h3>корабль не придет</h3>
-           <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
           </div>
 
         </div>
 
+           <div class="row">
+
+              <a href="#" class="read-more">наверх</a>
+
+           </div>
+
+
+         <div class="footer">
+
+           <div class="row">
+
+           <div class="col-4">
+
+             <h4>2015 ©  my production</h4>
+
+           </div>
+
+           <div class="col-3">
+
+             <h4>разработка</h4>
+
+           </div>
+
+
+           <div class="col-5">
+
+             <a href="#" class="footer_logo"><img src="images/svc_logo.png" width="110" height="45" alt="svc_logo"></a>
+
+             <img class="s4w" src="images/s4w_logo.png" width="140" height="15" alt="svc_logo">
+
+           </div> 
+
+           </div>
+
+
+         </div>
+
 
     </div>
+
+  <body>
+
+</html>
