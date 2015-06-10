@@ -68,6 +68,11 @@
 }
 
 
+@-ms-viewport {
+    width: device-width;
+}
+
+
 html {
     box-sizing: border-box;
 }
@@ -189,7 +194,7 @@ img {
 
 .header ul {
     margin-top: 30px;
-    margin-left: 300px;
+    margin-left: 480px;
     margin-right: 0;
     padding-left: 0;
 }
@@ -315,7 +320,7 @@ input {
 
 .icon {
     display: inline-block;
-    background-image: url(../sprite/spritesheet.png);
+    background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
 }
 
@@ -508,7 +513,7 @@ a.up {
     -webkit-transform: rotate(45deg);
     border: 2px solid #000;
     margin-top: 10px;
-    margin-left: 960px;
+    margin-left: 1120px;
     clip: rect(0, 9px, 9px, 0);
 }
 
