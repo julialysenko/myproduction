@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    width: 940px;
+    width: 1100px;
 }
 
 .row {
@@ -20,7 +20,9 @@
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12,
+.col-13,
+.col-14 {
 	position: relative;
 	float: left;
 	padding-left: 10px;
@@ -63,3 +65,9 @@
 
 .col-12 { 
 	width: 940px; }
+
+.col-13 { 
+	width: 1020px; }
+
+.col-14 { 
+	width: 1100px; }
