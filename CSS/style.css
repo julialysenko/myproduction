@@ -94,6 +94,7 @@ h1 {
     font-family: "Lato", Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 
@@ -119,7 +120,7 @@ h3 {
     font-family: 'Lato', Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 75px;
 }
 
 
@@ -145,6 +146,7 @@ p {
     font-family: 'Lato', Arial, sans-serif;
     text-align: left;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -500,7 +502,7 @@ a.up {
     float: right;
     border-bottom: none;
     margin-bottom: 10px;
-    margin-right: 5px;
+    margin-right: 25px;
 }
 
 
@@ -513,19 +515,18 @@ a.up {
     -webkit-transform: rotate(45deg);
     border: 2px solid #000;
     margin-top: 10px;
-    margin-left: 1120px;
-    clip: rect(0, 9px, 9px, 0);
+    margin-left: 1100px;
+    clip: rect(0, 8px, 8px, 0);
 }
 
 
 .footer {
-    height: 100px;
-    background-color: #000;
+border-top: 2px solid #000;
 }
 
 
 .footer h4 {
-    color: #fff;
+    color: #000;
     padding-top: 40px;
 }
 
