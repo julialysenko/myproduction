@@ -94,7 +94,17 @@ h1 {
     font-family: "Lato", Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
+    margin-top: 30px;
     margin-bottom: 30px;
+}
+
+h1.play-name {
+    color: #fff;
+}
+
+
+h3.play-name {
+    color: #fff;
 }
 
 
@@ -120,7 +130,8 @@ h3 {
     font-family: 'Lato', Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 75px;
+    margin-top: 90px;
+    margin-bottom: 20px;
 }
 
 
@@ -363,6 +374,7 @@ a.button {
     outline: none;
     border: 2px solid #000;
     border-radius: 1px;
+    margin-bottom: 120px;
 }
 
 
@@ -526,15 +538,18 @@ border-top: 2px solid #000;
 
 
 .footer h4 {
-    color: #000;
     padding-top: 40px;
+}
+
+h4.lowercase {
+    text-transform: lowercase;
 }
 
 
 .footer_logo {
     float: left;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 
@@ -547,7 +562,10 @@ a.footer_logo:active  {
 
 
 img.s4w {
-    margin-top: 70px;
-    margin-left: 60px;
+    margin-top: 25px;
+}
+
+.play {
+    background-image: url(../images/salida_background.jpg);
 }
 
