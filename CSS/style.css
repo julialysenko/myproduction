@@ -94,8 +94,8 @@ h1 {
     font-family: "Lato", Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 
@@ -122,7 +122,6 @@ h3 {
     font-family: 'Lato', Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 90px;
     margin-bottom: 20px;
 }
 
@@ -138,6 +137,7 @@ h4 {
     text-align: left;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -164,7 +164,6 @@ p {
     text-transform: uppercase;
 }
 
-
 h4.actors {
     font-weight: 500;
 }
@@ -172,6 +171,22 @@ h4.actors {
 h4.month{
     margin-bottom: 0;
 }
+
+
+.events h3 {
+    margin-top: 90px;
+}
+
+.events h1 {
+    margin-top: 30px;
+}
+
+
+.contacts h4 {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
 
 
 .inversion h4 {
@@ -187,12 +202,6 @@ h4.month{
     margin-top: 90px;;
 }
 
-.mainpage h3 {
-    color: #fff;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 200px;
-}
 
 .inversion h1 {
     color: #fff;
@@ -227,6 +236,13 @@ img {
     margin-bottom: 10px;
 }
 
+.mainpage h3 {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 200px;
+}
+
 
 .header img {
     margin-bottom: 0;
@@ -235,7 +251,7 @@ img {
 
 .header ul {
     margin-top: 30px;
-    margin-left: 480px;
+    margin-left: 470px;
     margin-right: 0;
     padding-left: 0;
 }
@@ -345,6 +361,7 @@ a.read-more:active {
 
 
 a.dot {
+    font-size: 16px;
     border-bottom: 1px dotted #000;
     margin-bottom: 20px;
 }
@@ -413,6 +430,13 @@ input {
     margin-left: 10px;
 }
 
+.icon-underground {
+    width: 17px;
+    height: 17px;
+    background-position: -78px 1px;
+    margin-left: -115px;
+}
+
 
 
 a.button {
@@ -427,7 +451,6 @@ a.button {
     outline: none;
     border: 2px solid #000;
     border-radius: 1px;
-    margin-top: 30px;
     margin-bottom: 120px;
 }
 
@@ -461,22 +484,6 @@ a.button-sound:hover {
 
 .inversion a.button:hover {
     border: 2px solid #000;
-}
-
-select.droplist {
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-bottom: 2px solid #000;
-    text-transform: uppercase;
-}
-
-
-select.droplist:active {
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #000;
-    text-transform: uppercase;
 }
 
 
@@ -628,6 +635,17 @@ a.up {
 }
 
 
+.corner-select {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    border: 2px solid #000;
+    clip: rect(2px, 11px, 11px, 2px);
+    margin-left: 288px;
+    margin-top: -18px;
+
+
 .inversion div.corner-left,
 .inversion div.corner-right {
     background-color: transparent;
@@ -676,8 +694,15 @@ img.logo-white {
     background-image: url(../images/salida_background.jpg);
 }
 
+.map {
+    min-height: 600px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-image: url(../images/map.jpg);
+}
 
-video{
+
+video {
    position:fixed;
    top: 0;
    left: 0;
@@ -702,5 +727,4 @@ a.month {
 
 .gratitude h4 {
     margin-bottom: 10px;
-
 }

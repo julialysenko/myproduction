@@ -7,6 +7,7 @@
       <title> my production </title>
       <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
       <link rel="stylesheet" type="text/css" href="CSS/grid.css">
+      <link rel="stylesheet" type="text/css" href="CSS/selectordie.css">
       <link rel="stylesheet" type="text/css" href="CSS/style.css">
    </head>
    
@@ -35,20 +36,27 @@
 
                <h4>1.выбор спектакля</h4>
 
+               <div> 
                <label>спектакль</label><br>
-               <select class="droplist">
+               <select class="basic">
                   <option>страсти по идиоту</option>
-                  <option>кораблю не придет</option>
+                  <option>корабль не придет</option>
                   <option>другой спектакль</option>
                </select>
+               <div class="corner-select">
+               </div>
                <br><br>
 
+               <div>
                <label>дата и время</label><br>
-               <select class="droplist">
+
+               <select class="basic">
                   <option>28.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</option>
                   <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
                   <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>
                </select>
+               <div class="corner-select">
+               </div>
                <br><br>
 
                <label>количество билетов</label>
@@ -120,5 +128,11 @@
       </div>
 
       </div>
+
+
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/selectordie.min.js"></script>
+    <script src="scripts/main.js"></script>
+
    </body>
 </html>
