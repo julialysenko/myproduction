@@ -1,138 +1,109 @@
 <!doctype html>
 <html lang="ru">
-
    <head>
       <meta charset="utf-8">
       <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
       <title> my production </title>
       <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
       <link rel="stylesheet" type="text/css" href="CSS/grid.css">
-      <link rel="stylesheet" type="text/css" href="CSS/selectordie.css">
+      <link rel="stylesheet" type="text/css" href="CSS/selectize.css">
       <link rel="stylesheet" type="text/css" href="CSS/style.css">
    </head>
-   
    <body>
-
-      <div class="container">
-
-         <div class="header">
-            <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
-
-            <ul class="line clearfix">
-               <li><a href="#affiche">афиша</a></li>
-               <li><a href="#about">о нас</a><div class="corner-left"></div></li>
-               <li><a href="#contacts">контакты</a></li>
-               <li><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li>
-               <li><a href="#language">рус</a><div class="corner-right"></li>
-            </ul>
-
+      <div class="container by_tickets">
+      <div class="header">
+         <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
+         <ul class="line clearfix">
+            <li><a href="#affiche">афиша</a></li>
+            <li>
+               <a href="#about">о нас</a>
+               <div class="corner-left"></div>
+            </li>
+            <li><a href="#contacts">контакты</a></li>
+            <li><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li>
+            <li>
+               <a href="#language">рус</a>
+               <div class="corner-right">
+            </li>
+         </ul>
          </div>
-
          <h1>купить билет</h1>
-
          <div class="row">
-
             <div class="col-5">
-
                <h4>1.выбор спектакля</h4>
-
-               <div> 
-               <label>спектакль</label><br>
-               <select class="basic">
-                  <option>страсти по идиоту</option>
-                  <option>корабль не придет</option>
-                  <option>другой спектакль</option>
-               </select>
-               <div class="corner-select">
-               </div>
-               <br><br>
-
                <div>
-               <label>дата и время</label><br>
-
-               <select class="basic">
-                  <option>28.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</option>
-                  <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
-                  <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>
-               </select>
-               <div class="corner-select">
+                  <label>спектакль</label><br>
+                  <select class="demo-default selectize-input my-select">
+                     <option>страсти по идиоту</option>
+                     <option>корабль не придет</option>
+                     <option>другой спектакль</option>
+                  </select>
+                  <div class="corner-select"></div>
                </div>
-               <br><br>
-
-               <label>количество билетов</label>
-
-               <label>стоимость билетов</label>
-
+               <br>
+               <div>
+                  <label>дата и время</label><br>
+                  <select class="selectize-input my-select">
+                     <option>28.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</option>
+                     <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
+                     <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>
+                  </select>
+                  <div class="corner-select"></div>
+               </div>
+               <br>
+               <div class="col-2">
+                  <label>количество билетов</label>
+                  <div class="minuse"></div>
+                  <form><input class="tickets" value="12">
+                  <form>
+                     <br>
+               </div>
+               <div class="col-2">
+               <label>стоимость билетов</label><br>
+               <form><input class="money" value="1200"><form>
+               </div>
                <div><a href="#" class="button">продолжить</a></div>
-
             </div>
-
             <div class="col-5">
-
-               <h4>2.данные покупателя</h4>
-
-               <form>
-
-                  <label>имя фамилия</label><br>
-                  <input type="text" value="ТОМ ДЖОНС"><br><br>
-
-                  <label>электронный адрес</label><br>
-                  <div><input type="email" value="TOM.JONES@GMAIL.COM"><span class="icon icon-correct"></span></div><br>
-
-                  <label>номер телефона</label><br>
-                  <div><input type="mobile-number" value="+380 XX XXX XX XX"></div>
-
-               </form>
-
-               <div><a href="#" class="button">купить билет</a></div>
-
+            <h4>2.данные покупателя</h4>
+            <form>
+            <label>имя фамилия</label><br>
+            <input type="text" value="ТОМ ДЖОНС"><br><br>
+            <label>электронный адрес</label><br>
+            <div><input type="email" value="TOM.JONES@GMAIL.COM"><span class="icon icon-correct"></span></div><br>
+            <label>номер телефона</label><br>
+            <div><input type="mobile-number" value="+380 XX XXX XX XX"></div>
+            </form>
+            <div><a href="#" class="button">купить билет</a></div>
             </div>
-
             <div class="col-4">
-
                <h4>3.подтверждение</h4>
-
-               <div class="gratitude"><h4>спасибо за поддержку!</h4>
-
-               <p>Билет мы отправили на Ваш электронный адрес </p>
-
-               <h4>TOM.JONES@GMAIL.COM</h4></div>
-
+               <div class="gratitude">
+                  <h4>спасибо за поддержку!</h4>
+                  <p>Билет мы отправили на Ваш электронный адрес </p>
+                  <h4>TOM.JONES@GMAIL.COM</h4>
+               </div>
             </div>
-
          </div>
-
-
-
-      <div class="footer">
-
+         <div class="footer">
             <div class="row">
-
                <div class="col-8">
                   <h4>2015 ©  my production</h4>
                </div>
-
                <div class="col-3">
                   <h4 class="lowercase">дизайн и разработка</h4>
                </div>
-
                <div class="col-2">
                   <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
                </div>
-
                <div class="col-1">
                   <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
                </div>
-
             </div>
+         </div>
       </div>
-
-      </div>
-
-
-    <script src="scripts/jquery-1.8.0.min.js"></script>
-    <script src="scripts/selectordie.min.js"></script>
-    <script src="scripts/main.js"></script>
-
+      <script src="scripts/jquery-1.8.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+      <script src="scripts/main.js"></script>
    </body>
 </html>

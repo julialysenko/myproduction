@@ -73,6 +73,32 @@
 }
 
 
+
+@media (min-aspect-ratio: 16/9) {
+    #video_background {
+        height: 300%;
+        top: -100%; 
+    }
+}
+ 
+@media (max-aspect-ratio: 16/9) {
+    #video_background {
+        width: 300%;
+        left: -100%;
+    }
+}
+ 
+@supports (object-fit: cover) {
+    #video_background {
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 html {
     box-sizing: border-box;
 }
@@ -268,6 +294,16 @@ img {
     margin-top: 20px;
 }
 
+.by_tickets h4{
+    margin-bottom: 55px;
+}
+
+
+.by_tickets a.button{
+    margin-top: 30px;
+    margin-bottom: 160px;
+}
+
 
 a.logo {
     float: left;
@@ -461,7 +497,6 @@ a.button:hover {
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 0s, 1s;
-    cubic-bezier: (0.1, 0.8, 0.5, 2), linear;
 }
 
 a.button-sound {
@@ -503,6 +538,17 @@ input {
 
 input.validation-failed {
     border-bottom: 2px solid red;
+}
+
+input.tickets {
+    width: 30px;
+    height: 25px;
+}
+
+input.money {
+    width: 60px;
+    height: 25px;
+    border-bottom: none;
 }
 
 label {
@@ -644,6 +690,18 @@ a.up {
     clip: rect(2px, 11px, 11px, 2px);
     margin-left: 288px;
     margin-top: -18px;
+}
+
+.minuse {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    border: 2px solid #000;
+    clip: rect(9px, 11px, 11px, 2px);
+    margin-left: -12px;
+    margin-top: 3px;
+}
 
 
 .inversion div.corner-left,
@@ -702,17 +760,6 @@ img.logo-white {
 }
 
 
-video {
-   position:fixed;
-   top: 0;
-   left: 0;
-   z-index:-1000;
-   min-width:100%;
-   min-height:100%;
-   width: auto; 
-   height: auto;
-   overflow:hidden
-}
 
 a.month {
     display: block;
@@ -728,3 +775,17 @@ a.month {
 .gratitude h4 {
     margin-bottom: 10px;
 }
+
+
+video {
+   position:fixed;
+   top: 0;
+   left: 0;
+   z-index:-1000;
+   min-width:100%;
+   min-height:100%;
+   width: auto; 
+   height: auto;
+   overflow:hidden
+}
+
