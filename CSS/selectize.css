@@ -130,7 +130,6 @@
 .selectize-input {
   border: none;
   display: inline-block;
-  overflow: hidden;
   position: relative;
   width: 300px;
   height: 30px;
