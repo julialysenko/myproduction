@@ -4,30 +4,43 @@
       <meta charset="utf-8">
       <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
       <title> my production </title>
-      <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-      <link rel="stylesheet" type="text/css" href="CSS/grid.css">
-      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/grid.css">
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
    </head>
    <body>
       
       <div class="container inversion mainpage">
+      <header>
       <div class="header">
          <a href="#" class="logo"><img class="logo-white" src="images/logo-main.png" width="58" height="56" alt="logo"></a>
-         <a href="#" class="button-sound"><span class="icon icon-sound-off" style ="position: absolute"></span><span class="icon icon-sound-on" style ="position: relative"></a>
+         <div id="nav" class="menu">
          <ul class="line clearfix">
             <li><a href="#affiche">афиша</a></li>
             <li>
-               <a href="#about">о нас</a>
-               <div class="corner-left"></div>
+               <span class="corner-left"></span>
+               <a href="#about" class="menu-nav">о нас</a>
+               <ul>
+                   <li class="nav"><a class="nav" href="#history">история</a></li>
+                   <li class="nav"><a class="nav" href="#commad">команда</a></li>
+                   <li class="nav"><a class="nav" href="#media">медиатека</a></li>
+               </ul>
             </li>
             <li><a href="#contacts">контакты</a></li>
             <li><a href="#facebook">facebook<span class="icon icon-facebook-mainpage"></span></a></li>
             <li>
-               <a href="#language">рус</a>
-               <div class="corner-right">
+               <a href="#language" class="menu-nav">рус</a>
+                 <ul>
+                   <li class="nav"><a class="nav" href="ru">рус</a></li>
+                   <li class="nav"><a class="nav" href="eng">eng</a></li>
+                 </ul>
+               <span class="corner-right">span
             </li>
          </ul>
-         </div>
+      </div>
+      </div>
+      </header>
+      
          <div class="row">
             <div class="col-2">
             </div>
@@ -65,9 +78,9 @@
          </div>
       </div>
       <video id="video_background" preload="auto" autoplay="autoplay" loop="loop"poster="images/main.jpg" style="background: #0E0D12;opacity: 0.9;">
-         <source src="video/1.mp4" type='video/mp4'>
-         <source src="video/1.webm" type='video/webm'>
-         <source src="video/1.ogg" type='video/ogg'>
+         <source src="videos/Passion-for-Idiot.mp4" type='video/mp4'>
+         <source src="videos/Passion-for-Idiot.webm" type='video/webm'>
+         <source src="videos/Passion-for-Idiot.ogg" type='video/ogg'>
       </video>
    </body>
 </html>

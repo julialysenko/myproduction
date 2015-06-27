@@ -4,29 +4,44 @@
       <meta charset="utf-8">
       <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
       <title> my production </title>
-      <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-      <link rel="stylesheet" type="text/css" href="CSS/grid.css">
-      <link rel="stylesheet" type="text/css" href="CSS/selectize.css">
-      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/grid.css">
+      <link rel="stylesheet" type="text/css" href="styles/selectize.css">
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+
    </head>
    <body>
       <div class="container">
+      <header>
       <div class="header">
          <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
+         <div id="nav" class="menu">
          <ul class="line clearfix">
             <li><a href="#affiche">афиша</a></li>
             <li>
-               <a href="#about">о нас</a>
-               <div class="corner-left"></div>
+               <span class="corner-left"></span>
+               <a href="#about" class="menu-nav">о нас</a>
+               <ul>
+                   <li class="nav"><a class="nav" href="#history">история</a></li>
+                   <li class="nav"><a class="nav" href="#commad">команда</a></li>
+                   <li class="nav"><a class="nav" href="#media">медиатека</a></li>
+               </ul>
             </li>
             <li><a href="#contacts">контакты</a></li>
             <li><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li>
             <li>
-               <a href="#language">рус</a>
-               <div class="corner-right">
+               <a href="#language" class="menu-nav">рус</a>
+                 <ul>
+                   <li class="nav"><a class="nav" href="ru">рус</a></li>
+                   <li class="nav"><a class="nav" href="eng">eng</a></li>
+                 </ul>
+               <span class="corner-right">span
             </li>
          </ul>
-         </div>
+      </div>
+      </div>
+      </header>
+
          <h1>страсти по&nbsp;идиоту</h1>
          <div class="row">
             <div class="col-6">
@@ -42,14 +57,14 @@
                <h4>где</h4>
                <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
                <a href="#" class="dot">СМОТРЕТЬ НА КАРТЕ</a><br><br><br>
-               <div>
+               <div class="list">
                   <a href="#" class="simple">актеры</a>
                   <ul>
-                     <li><a href="#" class="nav">Игорь Рубашкин</a></li>
-                     <li><a href="#" class="nav">Руслан Сокольник</a></li>
-                     <li><a href="#" class="nav">Юрий Якуша</a></li>
-                     <li><a href="#" class="nav">Валерий Чигляев</a></li>
-                     <li><a href="#" class="nav">Екатерина Варченко</a></li>
+                     <li><a href="#">Игорь Рубашкин</a></li>
+                     <li><a href="#">Руслан Сокольник</a></li>
+                     <li><a href="#">Юрий Якуша</a></li>
+                     <li><a href="#">Валерий Чигляев</a></li>
+                     <li><a href="#">Екатерина Варченко</a></li>
                   </ul>
                </div>
                <br><br><br>
@@ -62,37 +77,47 @@
                   В процессе работы Игорь Владимирович говорил нам о том, что Достоевский — это океан, и невозможно выпить его целиком, но можно выпить один стакан.
                   Мы стали исследовать одну из сцен романа — встречу Настасьи с Аглаей.
                </p>
+
+
                <div>
                   <label>спектакль</label><br>
-                  <select class="basic">
+
+                  <select class="my-select">
                      <option>страсти по идиоту</option>
                      <option>корабль не придет</option>
                      <option>другой спектакль</option>
                   </select>
-                  <div class="corner-select"></div>
                </div>
-               <br><br>
+               <br>
+
                <div>
                   <label>дата и время</label><br>
-                  <select class="basic">
-                     <option>28.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</option>
-                     <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
-                     <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>
+
+                  <select class="my-select">
+                     <option>28.марта<span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</span></option>
+                     <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
+                     <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>
                   </select>
-                  <div class="corner-select"></div>
                </div>
-               <br><br>
+               <br>
+
                <form>
-                  <label>имя</label><br>
-                  <input type="text" value="ТОМ ДЖОНС"><br><br>
+                  <label>имя фамилия</label><br>
+               
+                  <input type="text" class="customize" value="ТОМ ДЖОНС"><br><br>
+               
                   <label>электронный адрес</label><br>
-                  <div><input type="email" value="MY@MAILBOX.COM"><span class="icon icon-correct"></span></div>
-                  <br><br>
+               
+                   <div><input type="email" class="customize" value="TOM.JONES@GMAIL.COM"><span class="icon icon-correct"></span></div><br>
+
                   <label>электронный адрес</label><br>
-                  <div><input class="validation-failed" type="text" value="YOUR@MAILBOX,COM"><span class="icon icon-error"></span></div>
-                  <label class="email-error">* ВВЕДИТЕ АДРЕС В ФОРМАТЕ: YOUR@MAILBOX.COM</label><br>
+
+                  <div><input class="validation-failed customize" type="text" value="YOUR@MAILBOX,COM"><span class="icon icon-error"></span></div>
+
+                  <label class="email-error customize">* ВВЕДИТЕ АДРЕС В ФОРМАТЕ: YOUR@MAILBOX.COM</label><br>
                </form>
                <br><br>
+
                <div class="checkbox">
                   <input type="checkbox"  id="check0">
                   <label class="radio-check-label" for="check0">Mr. Empty Checkbox is having a great time</label>
@@ -130,15 +155,21 @@
          <div class="row">
             <div class="col-4">
                <img src="images/actor1.jpg" width="240" height="265" alt="actor1">
+               <div class="col-3 no-padding">
                <h4 class="actors">валерий <br>чигляев</h4>
             </div>
-            <div class="col-4">
-               <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
-               <h4 class="actors">владимир <br>заяц</h4>
             </div>
             <div class="col-4">
                <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
+               <div class="col-3 no-padding">
+               <h4 class="actors">владимир <br>заяц</h4>
+            </div>
+            </div>
+            <div class="col-4">
+               <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
+               <div class="col-3 no-padding">
                <h4 class="actors">александр <br>крыжановский</h4>
+            </div>
             </div>
          </div>
          <br><br><br><br><br><br><br>
@@ -205,6 +236,7 @@
       </div>
       <script src="scripts/jquery-1.8.0.min.js"></script>
       <script src="scripts/selectize.js"></script>
+      <script src="scripts/menu.js"></script>
       <script src="scripts/main.js"></script>
    </body>
 </html>
