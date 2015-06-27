@@ -1,316 +1,242 @@
-
 <!doctype html>
 <html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title> my production </title>
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles/grid.css">
+      <link rel="stylesheet" type="text/css" href="styles/selectize.css">
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
 
-  <head>
- 	  <meta charset="utf-8">
- 	    <title> my production </title>
-        <link rel="stylesheet" type="text/css" href="normalize.css">
-        <link rel="stylesheet" type="text/css" href="grid.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <body>
-
-    <div class="container"> 
-      
+   </head>
+   <body>
+      <div class="container">
+      <header>
       <div class="header">
-        
-          <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
-
-            <ul class="line clearfix">
-              <li class="list"><a href="#affiche">афиша</a></li>
-              <li class="list"><a href="#about">о нас</a></li>
-              <li class="list"><a href="#contacts">контакты</a></li>
-              <li class="list"><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li> 
-              <li class="list"><a href="#language">рус</a></li>
-            </ul>        
-
+         <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
+         <div id="nav" class="menu">
+         <ul class="line clearfix">
+            <li><a href="#affiche">афиша</a></li>
+            <li>
+               <span class="corner-left"></span>
+               <a href="#about" class="menu-nav">о нас</a>
+               <ul>
+                   <li class="nav"><a class="nav" href="#history">история</a></li>
+                   <li class="nav"><a class="nav" href="#commad">команда</a></li>
+                   <li class="nav"><a class="nav" href="#media">медиатека</a></li>
+               </ul>
+            </li>
+            <li><a href="#contacts">контакты</a></li>
+            <li><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li>
+            <li>
+               <a href="#language" class="menu-nav">рус</a>
+                 <ul>
+                   <li class="nav"><a class="nav" href="ru">рус</a></li>
+                   <li class="nav"><a class="nav" href="eng">eng</a></li>
+                 </ul>
+               <span class="corner-right">span
+            </li>
+         </ul>
       </div>
-      
-
-      <h1>страсти по&nbsp;идиоту</h1>
-
-      <div class="row">
-
-          <div class="col-6">
-
-            <h3>26, 28. марта / 19:00</h3>
-
-            <h2>афиша</h2>
-
-          </div>
-
-          <div class="col-6">
-
-            <button>КУПИТЬ БИЛЕТ</button>
-
-          </div>
-
       </div>
-      
+      </header>
 
-      <div class="row">
-
-        <div class="col-4">
-
-          <h4>где</h4>
-          <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
-
-          <a href="#" class="dot">СМОТРЕТЬ НА КАРТЕ</a><br><br><br>
-
-          <div><a href="#" class="read-more">актеры</a>
-           <ul>
-            <li class="list"><a href="#" class="nav">Игорь Рубашкин</a></li>
-            <li class="list"><a href="#" class="nav">Руслан Сокольник</a></li>
-            <li class="list"><a href="#" class="nav">Юрий Якуша</a></li>
-            <li class="list"><a href="#" class="nav">Валерий Чигляев</a></li>
-            <li class="list"><a href="#" class="nav">Екатерина Варченко</a></li>
-           </ul>
-          </div><br><br><br>
-
-          <h4>награды</h4>
-          <p>Премия «Артхауз Спектакль Года»</p>
-
-        </div>
-  
-         <div class="col-8">
-
-             <h4>о спектакле</h4>
-              <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет.
-
-              В процессе работы Игорь Владимирович говорил нам о том, что Достоевский — это океан, и невозможно выпить его целиком, но можно выпить один стакан.
-              Мы стали исследовать одну из сцен романа — встречу Настасьи с Аглаей.</p>
-
-
-              <label>спектакль</label><br>
-
-              <select class="droplist">
-                <option>страсти по идиоту</option>
-                <option>кораблю не придет</option>
-                <option>другой спектакль</option>  
-              </select><br><br>
+         <h1>страсти по&nbsp;идиоту</h1>
+         <div class="row">
+            <div class="col-6">
+               <h3>26,28.марта/19:00</h3>
+               <h2>афиша</h2>
+            </div>
+            <div class="col-6">
+               <div><a href="#" class="button">купить билет</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-4">
+               <h4>где</h4>
+               <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
+               <a href="#" class="dot">СМОТРЕТЬ НА КАРТЕ</a><br><br><br>
+               <div class="list">
+                  <a href="#" class="simple">актеры</a>
+                  <ul>
+                     <li><a href="#">Игорь Рубашкин</a></li>
+                     <li><a href="#">Руслан Сокольник</a></li>
+                     <li><a href="#">Юрий Якуша</a></li>
+                     <li><a href="#">Валерий Чигляев</a></li>
+                     <li><a href="#">Екатерина Варченко</a></li>
+                  </ul>
+               </div>
+               <br><br><br>
+               <h4>награды</h4>
+               <p>Премия «Артхауз Спектакль Года»</p>
+            </div>
+            <div class="col-8">
+               <h4>о спектакле</h4>
+               <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет.
+                  В процессе работы Игорь Владимирович говорил нам о том, что Достоевский — это океан, и невозможно выпить его целиком, но можно выпить один стакан.
+                  Мы стали исследовать одну из сцен романа — встречу Настасьи с Аглаей.
+               </p>
 
 
-              <label>дата и время</label><br>
-              
-              <select class="droplist">
-                <option>28.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</option>
-                <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
-                <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>  
-              </select><br><br>
+               <div>
+                  <label>спектакль</label><br>
 
+                  <select class="my-select">
+                     <option>страсти по идиоту</option>
+                     <option>корабль не придет</option>
+                     <option>другой спектакль</option>
+                  </select>
+               </div>
+               <br>
+
+               <div>
+                  <label>дата и время</label><br>
+
+                  <select class="my-select">
+                     <option>28.марта<span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.00</span></option>
+                     <option>29.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20.00</option>
+                     <option>30.марта&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;19.30</option>
+                  </select>
+               </div>
+               <br>
 
                <form>
-                       <label>имя</label><br>
-                       <input type="text" value="ТОМ ДЖОНС"><br><br>
+                  <label>имя фамилия</label><br>
+               
+                  <input type="text" class="customize" value="ТОМ ДЖОНС"><br><br>
+               
+                  <label>электронный адрес</label><br>
+               
+                   <div><input type="email" class="customize" value="TOM.JONES@GMAIL.COM"><span class="icon icon-correct"></span></div><br>
 
-                       <label>электронный адрес</label><br>
-                       <input type="email" value="MY@MAILBOX.COM"><span class="icon icon-correct"></span><br><br>
-                       
-                       <label>электронный адрес</label><br>
-                       <input class="validation-failed" type="text" value="YOUR@MAILBOX,COM"><span class="icon icon-error"></span><br>
-                       <label class="email-error">* ВВЕДИТЕ АДРЕС В ФОРМАТЕ: YOUR@MAILBOX.COM</label><br>
-               </form><br><br>
+                  <label>электронный адрес</label><br>
 
+                  <div><input class="validation-failed customize" type="text" value="YOUR@MAILBOX,COM"><span class="icon icon-error"></span></div>
 
-
+                  <label class="email-error customize">* ВВЕДИТЕ АДРЕС В ФОРМАТЕ: YOUR@MAILBOX.COM</label><br>
+               </form>
+               <br><br>
 
                <div class="checkbox">
-
                   <input type="checkbox"  id="check0">
-
-                    <label class="radio-check-label" for="check0">Mr. Empty Checkbox is having a great time</label>
-
+                  <label class="radio-check-label" for="check0">Mr. Empty Checkbox is having a great time</label>
                </div>
-
-
                <div class="checkbox">
-
                   <input type="checkbox" id="check1" checked>
-
-                    <label class="radio-check-label" for="check1">Mr Selected Checkbox</label>
-
+                  <label class="radio-check-label" for="check1">Mr Selected Checkbox</label>
                </div>
-
-
                <div class="radio">
-
                   <input type="radio" id="check2">
-                    <label class="radio-check-label" for="check2">Mrs. Empty Radiobutton</label>
-
+                  <label class="radio-check-label" for="check2">Mrs. Empty Radiobutton</label>
                </div>
-
-
                <div class="radio">
-
                   <input type="radio" checked>
-
-                     <label class="radio-check-label">Mrs. Selected Radiobutton</label>
-
-               </div><br><br>
-
-
-
-         </div>
-
-
-       </div>
-       
-
-      <div class="row">
-
-       <div class="col-4">
-         <h4>о спектакле</h4>
-         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет.</p>
-
-       </div>
-
-        <div class="col-4">
-          <h4>о спектакле</h4>
-          <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне.</p>
-
-         </div> 
-
-         <div class="col-4">
-          <h4>о спектакле</h4>
-          <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
-
-         </div>
-        </div><br><br>
-
-
-        <div class="row">
-
-       <div class="col-4">
-        
-         <img src="images/actor1.jpg" width="240" height="265" alt="actor1">
-
-         <h4 class="actors">валерий<br> чигляев</h4>
-
-       </div>
-
-
-       <div class="col-4">
-          
-          <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
-
-          <h4 class="actors">владимир<br> заяц</h4>
-
-       </div>
-
-
-        <div class="col-4">
-          
-           <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
-
-           <h4 class="actors">александр<br> крыжановский</h4>
-
-        </div>
-
-        </div><br><br><br><br><br><br><br>
-
-
-        <div class="row">
-
-          <div class="col-12">
-
-              <h4 class="month">март<br> апрель</h4>
-
-           <div class="row">
-
-            <div class="col-2">
-             <h2 class="date">04</h2>
-             <p class="day">/суббота</p>
+                  <label class="radio-check-label">Mrs. Selected Radiobutton</label>
+               </div>
+               <br><br>
             </div>
-
+         </div>
+         <div class="row">
             <div class="col-4">
-             <img src="images/strasti.jpg" width="240" height="265" alt="strasti">
+               <h4>о спектакле</h4>
+               <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет.</p>
             </div>
-
-            <div class="col-6">
-              <h3>страсти по идиоту</h3>
+            <div class="col-4">
+               <h4>о спектакле</h4>
+               <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне.</p>
+            </div>
+            <div class="col-4">
+               <h4>о спектакле</h4>
                <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
             </div>
-
-          </div>
-
-          </div>
-        
-        </div><br><br>
-
-        <div class="row">
-
-          <div class="col-12">
-
-           <div class="row">
-
-            <div class="col-2">
-             <h2 class="date">10</h2>
-             <p class="day">/пятница</p>
-            </div>
-
-            <div class="col-4">
-
-             <img src="images/korabl.jpg" width="240" height="265" alt="korabl">
-            </div>
-
-            <div class="col-6">
-             <h3>корабль не придет</h3>
-              <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
-
-              <div>
-
-                   <button>КУПИТЬ БИЛЕТ</button>
-
-                   <a href="#" class="read-more">подробнее</a>
-
-              </div>
-
-
-             </div>
-
-          <div> 
-
-          </div>
-
-        </div>
-
-
-
-         <div class="footer">
-
-           <div class="row">
-
-           <div class="col-4">
-
-             <h4>2015 ©  my production</h4>
-
-           </div>
-
-           <div class="col-3">
-
-             <h4>разработка</h4>
-
-           </div>
-
-
-           <div class="col-5">
-
-             <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
-
-             <img class="s4w" src="images/s4w_logo.png" width="140" height="15" alt="s4w_logo">
-
-           </div> 
-
-           </div>
-
-
          </div>
-
-
-    </div>
-
-  <body>
-
+         <br><br>
+         <div class="row">
+            <div class="col-4">
+               <img src="images/actor1.jpg" width="240" height="265" alt="actor1">
+               <div class="col-3 no-padding">
+               <h4 class="actors">валерий <br>чигляев</h4>
+            </div>
+            </div>
+            <div class="col-4">
+               <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
+               <div class="col-3 no-padding">
+               <h4 class="actors">владимир <br>заяц</h4>
+            </div>
+            </div>
+            <div class="col-4">
+               <img src="images/actor2.jpg" width="240" height="265" alt="actor2">
+               <div class="col-3 no-padding">
+               <h4 class="actors">александр <br>крыжановский</h4>
+            </div>
+            </div>
+         </div>
+         <br><br><br><br><br><br><br>
+         <div class="row">
+            <div class="col-12">
+               <div>
+                  <span class="month">
+                     <h4 class="month">март <br>апрель</h4>
+                  </span>
+               </div>
+               <div class="col-2">
+                  <h2 class="date">04</h2>
+                  <p class="day">/суббота</p>
+               </div>
+               <div class="col-4">
+                  <img src="images/strasti.jpg" width="240" height="265" alt="strasti">
+               </div>
+               <div class="col-5">
+                  <h3>страсти по идиоту</h3>
+                  <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
+               </div>
+            </div>
+         </div>
+         <br><br>
+         <div class="row">
+            <div class="col-12">
+               <div class="col-2">
+                  <h2 class="date">10</h2>
+                  <p class="day">/пятница</p>
+               </div>
+               <div class="col-4">
+                  <img src="images/korabl.jpg" width="240" height="265" alt="korabl">
+               </div>
+               <div class="col-5">
+                  <h3>корабль не придет</h3>
+                  <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства.</p>
+                  <div>
+                     <a href="#" class="button">купить билет</a>
+                     <a href="#" class="read-more">подробнее</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="arrow-top"></div>
+            <a href="#" class="up">наверх</a>
+         </div>
+         <div class="footer">
+            <div class="row">
+               <div class="col-8">
+                  <h4>2015 ©  my production</h4>
+               </div>
+               <div class="col-3">
+                  <h4 class="lowercase">дизайн и разработка</h4>
+               </div>
+               <div class="col-2">
+                  <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
+               </div>
+               <div class="col-1">
+                  <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="scripts/jquery-1.8.0.min.js"></script>
+      <script src="scripts/selectize.js"></script>
+      <script src="scripts/menu.js"></script>
+      <script src="scripts/main.js"></script>
+   </body>
 </html>

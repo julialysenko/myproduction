@@ -1,0 +1,2 @@
+//Selectize
+$('.my-select').selectize();
