@@ -305,7 +305,7 @@ header {
     margin-left: 430px;
 }
 
-.header li {
+li.bar {
     float: left;
     color: #000;
     font-family: 'Lato', Arial, sans-serif;
@@ -314,23 +314,15 @@ header {
     margin-top: 20px;
 }
 
-li.nav {
-    display: none;
-    float: none;
-    margin-left: 0;
-    margin-top: 0;
-}
 
 
 a.nav {
+    padding: 0;
     font-size: 14px;
     font-weight: 400;
 }
 
-a.menu-nav:hover,
-a.menu-nav:focus{
-    border-bottom: none;
-}
+
 
 .by_tickets h4{
     margin-bottom: 55px;
@@ -392,13 +384,13 @@ a {
 
 a:hover,
 a:focus {
+    color: #000;
+    text-decoration: none;
     transition-property: color;
     opacity: 0.8;
     transition-timing-function: ease;
     transition-duration: 2s;
     border-bottom: 2px solid #000;
-    text-decoration: none;
-    color: none;
 }
 
 
@@ -457,6 +449,27 @@ input {
     outline: none;
 }
 
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 0px;
+  clear: both;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.open > .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  min-width: 0px;
+  padding: 5px 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 
 .icon {
     display: inline-block;
