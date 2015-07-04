@@ -305,7 +305,7 @@ header {
     margin-left: 430px;
 }
 
-.header > li {
+.header li {
     float: left;
     color: #000;
     font-family: 'Lato', Arial, sans-serif;
