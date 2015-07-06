@@ -120,7 +120,7 @@ h1 {
     font-family: "Lato", Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 200px;
     margin-bottom: 70px;
 }
 
@@ -198,8 +198,12 @@ h4.month{
     margin-bottom: 0;
 }
 
+.event h1 {
+    margin-top: 0px;
+}
+
 .event h4 {
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 .events h3 {
@@ -269,11 +273,21 @@ img {
     margin-bottom: 10px;
 }
 
+.mainpage h1 {
+    margin-bottom: 35px;
+}
+
+
 .mainpage h3 {
     color: #fff;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 200px;
+}
+
+.main-play {
+   margin-left: 15%; 
+   margin-top: 20%;
+   margin-bottom: 25%;
 }
 
 header + * {
@@ -281,7 +295,7 @@ header + * {
 }
 
 header {
-    background-color: #fff;
+    background-image: linear-gradient(rgba(255,255,255, 1) 70px, rgba(255,255,255,0.05) 90%);
     opacity: 0.98;
     position: fixed;
     width: 100%;
@@ -290,9 +304,6 @@ header {
     top: 0;
 }
 
-.inversion header {
-    background: none;
-}
 
 .header img {
     margin-top: 10px;
@@ -545,7 +556,7 @@ a.button-sound {
     float: left;
     background: none;
     outline: none;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
 }
 
@@ -769,9 +780,6 @@ img.s4w {
     margin-top: 25px;
 }
 
-img.logo-white {
-    margin-bottom: 200px;
-}
 
 .play {
     background-image: url(../images/salida_background.jpg);
@@ -813,6 +821,12 @@ video {
    height: auto;
    overflow:hidden
 }
+
+.play-carousel {
+margin-top: 200px;
+
+}
+
 
 .no-padding {
     padding: 0;
