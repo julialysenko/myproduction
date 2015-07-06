@@ -449,8 +449,8 @@ a.read-more:active {
 
 a.dot {
     font-size: 16px;
+    line-height: 24px;
     border-bottom: 1px dotted #000;
-    margin-bottom: 20px;
 }
 
 
@@ -792,8 +792,6 @@ img.s4w {
     background-image: url(../images/map.jpg);
 }
 
-
-
 a.month {
     display: block;
     margin-top: 100px;
@@ -808,7 +806,6 @@ a.month {
 .gratitude h4 {
     margin-bottom: 10px;
 }
-
 
 video {
    position:fixed;
@@ -827,7 +824,11 @@ margin-top: 200px;
 
 }
 
-
 .no-padding {
     padding: 0;
+}
+
+.where,
+.list {
+    padding-bottom: 70px;
 }
