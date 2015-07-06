@@ -205,10 +205,12 @@
   display: block;
   position: absolute;
   background: #fff;
-  height: 1px;
-  bottom: 0;
-  left: 0;
+  height: 14px;
+  width: 14px;
+  top: 60%;
   right: 0;
+  border-right: 2px solid black;
+  z-index: 5;
 }
 .selectize-dropdown {
   position: absolute;
