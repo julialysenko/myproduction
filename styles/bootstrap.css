@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-html {
+/*html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -49,7 +49,7 @@ a:active,
 a:hover {
   outline: 0;
 }*/
-abbr[title] {
+/*abbr[title] {
   border-bottom: 1px dotted;
 }
 b,
@@ -188,7 +188,7 @@ th {
   padding: 0;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
+/*@media print {
   *,
   *:before,
   *:after {
@@ -992,11 +992,11 @@ th {
 }
 .glyphicon-menu-hamburger:before {
   content: "\e236";
-}
+}*/
 .glyphicon-modal-window:before {
   content: "\e237";
 }
-.glyphicon-oil:before {
+/*.glyphicon-oil:before {
   content: "\e238";
 }
 .glyphicon-grain:before {
@@ -1110,7 +1110,7 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }*/
-figure {
+/*figure {
   margin: 0;
 }
 img {
@@ -1637,7 +1637,7 @@ pre code {
 .col-xs-8 {
   width: 66.66666667%;
 }
-.col-xs-7 {
+/*.col-xs-7 {
   width: 58.33333333%;
 }
 .col-xs-6 {
@@ -5883,7 +5883,7 @@ button.list-group-item-danger.active:focus {
 .well-sm {
   padding: 9px;
   border-radius: 3px;
-}
+}*/
 .close {
   float: right;
   font-size: 21px;
