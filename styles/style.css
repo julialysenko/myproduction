@@ -296,8 +296,7 @@ header + * {
 }
 
 header {
-    background-image: linear-gradient(rgba(255,255,255, 1) 70px, rgba(255,255,255,0.05) 90%);
-    opacity: 0.98;
+    background-image: linear-gradient(rgba(255,255,255, 1) 80px, rgba(255,255,255,0.05) 100%);
     position: fixed;
     width: 100%;
     min-width: 1100px;
@@ -308,13 +307,13 @@ header {
 
 .header img {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
 
 .menu {
     margin-top: 10px;
-    margin-left: 430px;
+    margin-left: 480px;
 }
 
 .header li {
@@ -697,7 +696,7 @@ input[type=radio]:checked + .radio-check-label:after {
     left: 10px;
 }
 
-a.up {
+a.scrollup {
     float: right;
     border-bottom: none;
     margin-bottom: 10px;
