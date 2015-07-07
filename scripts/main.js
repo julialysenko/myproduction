@@ -2,7 +2,7 @@
 $('.my-select').selectize();
 //Google maps
 var map;
-var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+var theatre = new google.maps.LatLng(50.429992, 30.537558);
 
 var MY_MAPTYPE_ID = 'custom_style';
 
@@ -42,7 +42,7 @@ function initialize() {
 
   var mapOptions = {
     zoom: 12,
-    center: brooklyn,
+    center: theatre,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
     },
