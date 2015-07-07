@@ -1,5 +1,6 @@
 //Google maps
 var map;
+var marker;
 var theatre = new google.maps.LatLng(50.429992, 30.537558);
 
 var MY_MAPTYPE_ID = 'custom_style';
@@ -59,14 +60,13 @@ function initialize() {
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 }
 
-//пробую добавить маркер-----
-  var marker = new google.maps.marker({
-    position: theatre,
-    title: "Новий Театр На Печерську"
-  });
+//че-то не хочет отображаться...
+ marker = new google.maps.Marker({
+ position: theatre,
+ title: "Новий Театр На Печерську"
+ });
 
-marker.setMap(map);
-//-------пробую добавить маркер.
+ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
