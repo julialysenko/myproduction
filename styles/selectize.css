@@ -109,7 +109,7 @@
 .selectize-input,
 .selectize-input input {
   color: #303030;
-  font-family: inherit;
+  font-family: 'Lato';
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -131,7 +131,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Lato';
 }
 .selectize-control.multi .selectize-input.has-items {
 
