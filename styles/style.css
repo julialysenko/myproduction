@@ -850,6 +850,6 @@ margin-top: 200px;
 #map-canvas {
     height: 534px;
     width: 1280px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
