@@ -538,9 +538,6 @@ a.button {
     background-image: none; 
     outline: none;
     border: 2px solid #000;
-    border-radius: 1px;
-    margin-bottom: 120px;
-    margin-top: 30px;
 }
 
 a.button:hover {
@@ -679,8 +676,8 @@ input[type=checkbox]:checked + .radio-check-label:after {
     width: 13px;
     height: 13px;
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 4px;
+    top: 3px;
     border-radius: 13px;
 }
 
@@ -693,8 +690,8 @@ input[type=radio]:checked + .radio-check-label:after {
     height: 7px;
     border-radius: 7px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 9px;
 }
 
 a.up {
@@ -840,4 +837,11 @@ margin-top: 200px;
 
 .about-spectacle {
     padding-bottom: 60px;
+}
+
+.move-button-right {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 30px;
 }
