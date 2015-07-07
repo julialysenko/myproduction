@@ -522,10 +522,8 @@ input {
     width: 17px;
     height: 17px;
     background-position: -78px 1px;
-    margin-left: -115px;
+    margin-bottom: -3px;
 }
-
-
 
 a.button {
     display: inline-block;
@@ -785,7 +783,6 @@ img.s4w {
 
 .map {
     min-height: 600px;
-    margin-top: 60px;
     margin-bottom: 10px;
     background-image: url(../images/map.jpg);
 }
@@ -844,4 +841,8 @@ margin-top: 200px;
     position: absolute;
     right: 10px;
     top: 30px;
+}
+
+.no-margin {
+    margin: 0;
 }
