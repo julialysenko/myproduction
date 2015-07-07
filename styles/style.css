@@ -852,3 +852,8 @@ margin-top: 200px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
+.modal-content #map-canvas {
+    height: 500px;
+    width: 100%;
+}
