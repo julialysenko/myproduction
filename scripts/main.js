@@ -18,6 +18,36 @@ $(document).ready(function() {
    });
 
 
+$(document).ready(function() {
+      $('.myMenu > li').bind('mouseover', showLine);
+      $('.myMenu > li').bind('mouseout', showLine);
+      
+      function showLine() {
+         $( "span" ).removeClass( "corner-left" ).addClass( "line-left" ); 
+      };
+      
+      function hideLine() {
+         $( "span" ).removeClass( "line-left" ).addClass( "corner-left" ); 
+      };
+               
+   });
+
+$(document).ready(function() {
+      $('.myMenu > li').bind('mouseover', showLine);
+      $('.myMenu > li').bind('mouseout', showLine);
+      
+      function showLine() {
+         $( "span" ).removeClass( "corner-rigth" ).addClass( "line-rigth" ); 
+      };
+      
+      function hideLine() {
+         $( "span" ).removeClass( "line-rigth" ).addClass( "corner-rigth" ); 
+      };
+               
+   });
+
+
+
 // Scroll up
 $(document).ready(function(){
  

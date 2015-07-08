@@ -332,8 +332,6 @@ li.nav {
     margin-top: 0;
 }
 
-
-
 a.nav {
     font-size: 14px;
     font-weight: 400;
@@ -696,15 +694,23 @@ input[type=radio]:checked + .radio-check-label:after {
     left: 9px;
 }
 
-a.scrollup {
-    float: right;
-    border-bottom: none;
-    margin-bottom: 10px;
-    margin-right: 25px;
+
+div.scrollup {
+    position: fixed;
+    bottom: 102px;
+    right: 420px;
+    display: inline;
 }
 
 
-.arrow-top {
+
+.scrollup a:hover {
+    border-bottom: none;
+    opacity: 1;
+}
+
+
+.arrow {
     position: absolute;
     width: 11px;
     height: 11px;
@@ -713,7 +719,7 @@ a.scrollup {
     -webkit-transform: rotate(45deg);
     border: 2px solid #000;
     margin-top: 10px;
-    margin-left: 1148px;
+    margin-left: 60px;
     clip: rect(0, 8px, 8px, 0);
 }
 
@@ -728,6 +734,17 @@ a.scrollup {
     margin-top: 6px;
 }
 
+.line-left {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    clip: rect(2px, 16px, 16px, 14px);
+    margin-left: -29px;
+    margin-top: 6px;
+}
+
 .corner-right {
     position: absolute;
     width: 11px;
@@ -735,8 +752,19 @@ a.scrollup {
     background-color: #fff;
     border: 2px solid #000;
     clip: rect(2px, 11px, 11px, 2px);
-    margin-left: 32px;
-    margin-top: -15px;
+    margin-left: 4px;
+    margin-top: 6px;
+}
+
+.line-right {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    clip: rect(2px, 16px, 16px, 14px);
+    margin-left: -1px;
+    margin-top: 6px;
 }
 
 
