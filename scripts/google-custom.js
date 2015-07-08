@@ -70,3 +70,9 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+//google.maps.event.addListenerOnce(map, 'tilesloaded', function() {          
+//     google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
+//          google.maps.event.trigger(map, 'resize');
+//
+//     });
+//});

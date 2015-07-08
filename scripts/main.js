@@ -65,3 +65,12 @@ $(document).ready(function(){
     });
  
 });
+
+// ----modal----
+//   $('#map-canvas').on('shown', function () {
+//   google.maps.event.trigger(map, 'resize');
+//   map.setCenter(theatre);
+//   });
+
+ 
+
