@@ -697,9 +697,10 @@ input[type=radio]:checked + .radio-check-label:after {
 
 div.scrollup {
     position: fixed;
-    bottom: 102px;
-    right: 420px;
-    display: inline;
+    bottom: 110px;
+    right: 60px;
+    display: block;
+    min-width: 80px;
 }
 
 
@@ -711,16 +712,16 @@ div.scrollup {
 
 
 .arrow {
+    display: block;
     position: absolute;
-    width: 11px;
-    height: 11px;
-    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    left: 62px;
+    top: 9px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    border: 2px solid #000;
-    margin-top: 10px;
-    margin-left: 60px;
-    clip: rect(0, 8px, 8px, 0);
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
 }
 
 .corner-left {
