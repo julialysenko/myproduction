@@ -342,6 +342,11 @@ a.menu-nav:focus{
     border-bottom: none;
 }
 
+a.menu-lang:hover,
+a.menu-nav:focus{
+    border-bottom: none;
+}
+
 .by_tickets h4{
     margin-bottom: 55px;
 }
@@ -707,7 +712,7 @@ div.scrollup {
 
 
 
-.scrollup a:hover {
+.scrollup a:hover, a:focus {
     border-bottom: none;
     opacity: 1;
 }
