@@ -36,11 +36,9 @@ $(document).ready(function(){
  
 });
 
-// ----modal----
-//   $('#map-canvas').on('shown', function () {
-//   google.maps.event.trigger(map, 'resize');
-//   map.setCenter(theatre);
-//   });
+// google maps initialize
+$('.bs-example-modal-lg').on('shown.bs.modal', initialize);
+
 
  
 

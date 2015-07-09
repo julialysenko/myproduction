@@ -11,33 +11,31 @@
    <body>
       <div class="container contacts">
       <header>
-      <div class="header">
+     <div class="header">
          <a href="#" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
          <div id="nav" class="menu">
-         <ul class="line clearfix">
+         <ul class="myMenu clearfix">
             <li><a href="#affiche">афиша</a></li>
             <li>
-               <span class="corner-left"></span>
-               <a href="#about" class="menu-nav">о нас</a>
+               <a href="#about" class="menu-nav"><span class="corner-left"></span><span class="line-left"></span>о нас&emsp;&emsp;&emsp;&emsp;</a>
                <ul>
                    <li class="nav"><a class="nav" href="#history">история</a></li>
                    <li class="nav"><a class="nav" href="#commad">команда</a></li>
                    <li class="nav"><a class="nav" href="#media">медиатека</a></li>
                </ul>
             </li>
-            <li><a href="#contacts">контакты</a></li>
+            <li style="margin-left:0;"><a href="#contacts">контакты</a></li>
             <li><a href="#facebook">facebook<span class="icon icon-facebook"></span></a></li>
             <li>
-               <a href="#language" class="menu-nav">рус</a>
+               <a href="#language" class="menu-nav">рус<span class="corner-right"></span><span class="line-right"></span></a>
                  <ul>
                    <li class="nav"><a class="nav" href="ru">рус</a></li>
                    <li class="nav"><a class="nav" href="eng">eng</a></li>
                  </ul>
-               <span class="corner-right">span
             </li>
          </ul>
       </div>
-      </div>
+    </div>
       </header>
 
          <h1>контакты</h1>
@@ -75,7 +73,9 @@
             </div>
          </div>
       </div>
-      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-      <script src="scripts/google-custom.js"></script>
+       <script src="scripts/jquery-2.1.4.js"></script>
+       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+       <script src="scripts/google-custom.js"></script>
+       <script src="scripts/main.js"></script>
    </body>
 </html>

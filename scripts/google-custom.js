@@ -66,13 +66,6 @@ function initialize() {
  title: "Новий Театр На Печерську"
  });
 
- marker.setMap(map);
+ marker.setMap(map);    //
 
-google.maps.event.addDomListener(window, 'load', initialize);
-
-//google.maps.event.addListenerOnce(map, 'tilesloaded', function() {          
-//     google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
-//          google.maps.event.trigger(map, 'resize');
-//
-//     });
-//});
+// google.maps.event.addDomListener(window, 'load', initialize);
