@@ -2,52 +2,24 @@
 $('.my-select').selectize();
 
 
-//Menu
-$(document).ready(function() {
-      $('.myMenu > li').bind('mouseover', openSubMenu);
-      $('.myMenu > li').bind('mouseout', closeSubMenu);
-      
-      function openSubMenu() {
-         $(this).find('li').css('display', 'block');   
-      };
-      
-      function closeSubMenu() {
-         $(this).find('li').css('display', 'none'); 
-      };
-               
-   });
+//Menu alternative
 
+ $('.myMenu > li').on('mouseover', openSubMenu);
+ $('.myMenu > li').on('mouseout', closeSubMenu);
+ 
+ function openSubMenu() {
+    $(this).find('li').css('display', 'block');
+    $(this).find(".line-left").css('opacity','1');
+    $(this).find(".line-right").css('opacity','1');
+ };
+ 
+ function closeSubMenu() {
+    $(this).find('li').css('display', 'none'); 
+    $(this).find(".line-left").css('opacity','0');
+    $(this).find(".line-right").css('opacity','0');
+ };
 
-$(document).ready(function() {
-      $('.myMenu > li').bind('mouseover', showLine);
-      $('.myMenu > li').bind('mouseout', showLine);
-      
-      function showLine() {
-         $( ".myMenu > li span" ).removeClass( "corner-left" ).addClass( "line-left" ); 
-      };
-      
-      function hideLine() {
-         $( ".myMenu > li span" ).removeClass( "line-left" ).addClass( "corner-left" ); 
-      };
-               
-   });
-
-$(document).ready(function() {
-      $('.myMenu > li').bind('mouseover', showLine);
-      $('.myMenu > li').bind('mouseout', showLine);
-      
-      function showLine() {
-         $( ".myMenu > li span" ).removeClass( "corner-rigth" ).addClass( "line-rigth" ); 
-      };
-      
-      function hideLine() {
-         $( ".myMenu > li span" ).removeClass( "line-rigth" ).addClass( "corner-rigth" ); 
-      };
-               
-   });
-
-
-
+    
 // Scroll up
 $(document).ready(function(){
  
