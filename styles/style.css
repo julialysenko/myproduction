@@ -699,8 +699,10 @@ div.scrollup {
     position: fixed;
     bottom: 110px;
     right: 60px;
-    display: block;
     min-width: 80px;
+    padding: 3px;
+    background: rgba(256,256,256,0.8);
+    z-index: 100;
 }
 
 
@@ -716,8 +718,8 @@ div.scrollup {
     position: absolute;
     width: 10px;
     height: 10px;
-    left: 62px;
-    top: 9px;
+    left: 64px;
+    top: 12px;;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     border-left: 2px solid #000;

@@ -23,11 +23,11 @@ $(document).ready(function() {
       $('.myMenu > li').bind('mouseout', showLine);
       
       function showLine() {
-         $( "span" ).removeClass( "corner-left" ).addClass( "line-left" ); 
+         $( ".myMenu > li span" ).removeClass( "corner-left" ).addClass( "line-left" ); 
       };
       
       function hideLine() {
-         $( "span" ).removeClass( "line-left" ).addClass( "corner-left" ); 
+         $( ".myMenu > li span" ).removeClass( "line-left" ).addClass( "corner-left" ); 
       };
                
    });
@@ -37,11 +37,11 @@ $(document).ready(function() {
       $('.myMenu > li').bind('mouseout', showLine);
       
       function showLine() {
-         $( "span" ).removeClass( "corner-rigth" ).addClass( "line-rigth" ); 
+         $( ".myMenu > li span" ).removeClass( "corner-rigth" ).addClass( "line-rigth" ); 
       };
       
       function hideLine() {
-         $( "span" ).removeClass( "line-rigth" ).addClass( "corner-rigth" ); 
+         $( ".myMenu > li span" ).removeClass( "line-rigth" ).addClass( "corner-rigth" ); 
       };
                
    });
