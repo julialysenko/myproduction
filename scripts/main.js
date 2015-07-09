@@ -19,29 +19,29 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-      $('.myMenu > li').bind('mouseover', showLine);
-      $('.myMenu > li').bind('mouseout', showLine);
+      $('a.menu-nav').bind('mouseover', showLine);
+      $('a.menu-nav').bind('mouseout', hideLine);
       
       function showLine() {
-         $( "span" ).removeClass( "corner-left" ).addClass( "line-left" ); 
+         $( "span.corner-left" ).removeClass( "corner-left" ).addClass( "line-left" ); 
       };
       
       function hideLine() {
-         $( "span" ).removeClass( "line-left" ).addClass( "corner-left" ); 
+         $( "span.line-left" ).removeClass( "line-left" ).addClass( "corner-left" ); 
       };
                
    });
 
 $(document).ready(function() {
-      $('.myMenu > li').bind('mouseover', showLine);
-      $('.myMenu > li').bind('mouseout', showLine);
+      $('a.menu-lang').bind('mouseover', showLine);
+      $('a.menu-lang').bind('mouseout', hideLine);
       
       function showLine() {
-         $( "span" ).removeClass( "corner-rigth" ).addClass( "line-rigth" ); 
+         $( "span.corner-right" ).removeClass( "corner-right" ).addClass( "line-right" ); 
       };
       
       function hideLine() {
-         $( "span" ).removeClass( "line-rigth" ).addClass( "corner-rigth" ); 
+         $( "span.line-right" ).removeClass( "line-right" ).addClass( "corner-right" ); 
       };
                
    });
