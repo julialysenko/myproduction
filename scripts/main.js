@@ -22,7 +22,7 @@ $('.my-select').selectize();
 $(document).ready(function(){
  
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() >= 100) {
         $('.scrollup').fadeIn();
     } else {
         $('.scrollup').fadeOut();
@@ -37,8 +37,13 @@ $(document).ready(function(){
 });
 
 // google maps initialize
-$('.bs-example-modal-lg').on('shown.bs.modal', initialize);
+// $('.bs-example-modal-lg').on('shown.bs.modal', initialize);
 
-
+if ($('div').hasClass('in-contacts')) {
+      initialize()
+} else {
+      $('.bs-example-modal-lg').on('shown.bs.modal', initialize);
+}
+ 
  
 
