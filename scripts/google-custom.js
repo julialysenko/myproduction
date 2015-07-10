@@ -58,14 +58,12 @@ function initialize() {
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-}
-
-//че-то не хочет отображаться...
+    
  marker = new google.maps.Marker({
  position: theatre,
  title: "Новий Театр На Печерську"
  });
 
- marker.setMap(map);    //
+ marker.setMap(map);
+}
 
-// google.maps.event.addDomListener(window, 'load', initialize);
