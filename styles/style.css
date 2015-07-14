@@ -73,31 +73,31 @@
 }
 
 
-
+/*
 @media (min-aspect-ratio: 16/9) {
-    #video_background {
+    .video_background {
         height: 300%;
-        top: -100%; 
+        top: -100%;
     }
 }
- 
+
 @media (max-aspect-ratio: 16/9) {
-    #video_background {
+    .video_background {
         width: 300%;
         left: -100%;
     }
 }
- 
+
 @supports (object-fit: cover) {
-    #video_background {
-        top: 0; 
+    .video_background {
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 }
-
+*/
 
 html {
     box-sizing: border-box;
@@ -237,7 +237,6 @@ h4.month{
 .inversion h3 {
     color: #fff;
     font-weight: 400;
-    margin-top: 90px;;
 }
 
 
@@ -286,7 +285,7 @@ img {
 }
 
 .main-play {
-   margin-left: 15%; 
+   margin-left: 15%;
    margin-top: 20%;
    margin-bottom: 25%;
 }
@@ -306,8 +305,7 @@ header {
 
 
 .header img {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin: 10px 0 30px 10px;
 }
 
 
@@ -317,6 +315,7 @@ header {
 }
 
 .header li {
+    position: relative;
     float: left;
     color: #000;
     font-family: 'Lato', Arial, sans-serif;
@@ -480,12 +479,18 @@ input {
 }
 
 .icon-sound-on {
+    position: relative;
+    opacity: 1;
     width: 17px;
     height: 17px;
     background-position: -45px -1px;
 }
+.sound-off {
+    opacity: 0;
+}
 
 .icon-sound-off {
+    position: absolute;
     width: 10px;
     height: 17px;
     background-position: -45px -1px;
@@ -536,7 +541,7 @@ a.button {
     font-family: 'Lato', Arial, sans-serif;
     line-height: 16px;
     padding: 10px 15px;
-    background-image: none; 
+    background-image: none;
     outline: none;
     border: 2px solid #000;
 }
@@ -849,7 +854,7 @@ video {
    z-index:-1000;
    min-width:100%;
    min-height:100%;
-   width: auto; 
+   width: auto;
    height: auto;
    overflow:hidden
 }
@@ -906,4 +911,44 @@ margin-top: 200px;
 
 a.menu-nav {
     position: relative;
+}
+
+#my-carousel {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.my-carousel-indicators {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 5px;
+    z-index: 15;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.my-carousel-indicators li {
+    display: inline-block;
+    width: 190px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.my-carousel-indicators .active {
+    border-bottom: 2px solid white;
+}
+.my-carousel-caption {
+    position: fixed;
+    min-width: 800px;
+    top: 50px;
+    left: 15%;
+    z-index: 10;
+}
+
+.trans-header {                         /*мистика*/
+    position: fixed;                    /*мистика*/
+    background-color: transparent;
+    z-index: 2;
 }
