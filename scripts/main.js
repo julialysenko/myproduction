@@ -1,21 +1,33 @@
 //Selectize
 $('.my-select').selectize();
 
+
 //menu
- $('.myMenu > li').on('mouseover', openSubMenu);
- $('.myMenu > li').on('mouseout', closeSubMenu);
- 
- function openSubMenu() {
-    $(this).find('li').css('display', 'block');
-    $(this).find(".line-left").css('opacity','1');
-    $(this).find(".line-right").css('opacity','1');
- };
- 
- function closeSubMenu() {
-    $(this).find('li').css('display', 'none'); 
-    $(this).find(".line-left").css('opacity','0');
-    $(this).find(".line-right").css('opacity','0');
- };
+
+$(document).on('mouseenter mouseleave', 'li', function (e) {
+    var $child = $(this).find('.nav');
+    var $cornerleft = $(this).find(".line-left");
+    var $cornerright = $(this).find(".line-right");
+    if (e.type == 'mouseenter') {
+        $child.css('display', 'block');
+        $cornerleft.css('display', 'block');
+        $cornerright.css('display', 'block');
+    } else {
+      
+        $child.one($.support.transition.end, function () {
+            $(this).css('display', 'none');
+        });
+
+        $cornerleft.css('display', 'none');
+
+        $cornerright.css('display', 'none');
+
+    }
+    $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('hover');
+});
+
+
+
 
     
 // Scroll up
@@ -23,13 +35,13 @@ $(document).ready(function(){
  
   $(window).scroll(function(){
     if ($(this).scrollTop() >= 100) {
-        $('.scrollup').fadeIn();
+        $('.up').fadeIn();
     } else {
-        $('.scrollup').fadeOut();
+        $('.up').fadeOut();
     }
 });
  
-   $('.scrollup').click(function(){
+   $('.up').click(function(){
       $("html, body").animate({ scrollTop: 0 }, 600);
       return false;
     });

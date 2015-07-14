@@ -291,11 +291,11 @@ img {
    margin-bottom: 25%;
 }
 
-header + * {
+.header + * {
     margin-top: 120px;
 }
 
-header {
+.header {
     background-image: linear-gradient(rgba(255,255,255, 1) 80px, rgba(255,255,255,0.05) 100%);
     position: fixed;
     width: 100%;
@@ -306,7 +306,7 @@ header {
 
 
 .header img {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -327,12 +327,18 @@ header {
 
 li.nav {
     display: none;
+    opacity: 0;
+    transition: opacity .15s linear;
     float: none;
     margin-left: 0;
     margin-top: 0;
 }
 
-a.nav {
+li:hover .nav {
+    opacity: 1;
+}
+
+.nav a {
     font-size: 14px;
     font-weight: 400;
 }
@@ -343,7 +349,7 @@ a.menu-nav:focus{
 }
 
 a.menu-lang:hover,
-a.menu-nav:focus{
+a.menu-lang:focus{
     border-bottom: none;
 }
 
@@ -550,6 +556,7 @@ a.button:hover {
     transition-delay: 0s, 1s;
 }
 
+
 a.button-sound {
     display: inline-block;
     float: left;
@@ -712,7 +719,7 @@ div.scrollup {
 
 
 
-.scrollup a:hover, a:focus {
+a.up:hover, a.up:focus {
     border-bottom: none;
     opacity: 1;
 }
@@ -744,14 +751,16 @@ div.scrollup {
 
 .line-left {
     position: absolute;
+    display: none;
+    transition: opacity .15s linear;
     top: 6px;
     left: -16px;
     width: 16px;
     height: 16px;
     background-color: #fff;
-    border-left: 2px solid #000;;
-    opacity: 0;
+    border-left: 2px solid #000;
 }
+
 
 .corner-right {
     position: absolute;
@@ -766,13 +775,14 @@ div.scrollup {
 
 .line-right {
     position: absolute;
+    display: none;
+    transition: opacity .15s linear;
     top: 6px;
     right: -16px;
     width: 16px;
     height: 16px;
     background-color: #fff;
     border-right: 2px solid #000;
-    opacity: 0;;
 }
 
 
