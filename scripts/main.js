@@ -5,22 +5,28 @@ $('.my-select').selectize();
 //menu
 
 $(document).on('mouseenter mouseleave', 'li', function (e) {
-    var $child = $(this).find('.nav');
+    var $child = $(this).find('> .nav');
+    if ($child.length === 0) return true;
     var $cornerleft = $(this).find(".line-left");
     var $cornerright = $(this).find(".line-right");
     if (e.type == 'mouseenter') {
         $child.css('display', 'block');
         $cornerleft.css('display', 'block');
         $cornerright.css('display', 'block');
+        $child[0].offsetWidth;
     } else {
       
         $child.one($.support.transition.end, function () {
             $(this).css('display', 'none');
         });
 
-        $cornerleft.css('display', 'none');
+        $cornerleft.one($.support.transition.end, function () {
+            $(this).css('display', 'none');
+        });
 
-        $cornerright.css('display', 'none');
+        $cornerright.one($.support.transition.end, function () {
+            $(this).css('display', 'none');
+        });
 
     }
     $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('hover');

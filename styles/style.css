@@ -325,16 +325,19 @@ img {
     margin-top: 20px;
 }
 
-li.nav {
-    display: none;
-    opacity: 0;
-    transition: opacity .15s linear;
+.nav li {
     float: none;
     margin-left: 0;
     margin-top: 0;
 }
 
-li:hover .nav {
+.nav {
+    display: none;
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+li.hover .nav {
     opacity: 1;
 }
 
@@ -749,10 +752,17 @@ a.up:hover, a.up:focus {
     border-bottom: 2px solid #000;
 }
 
+li.hover .line-left,
+li.hover .line-right  {
+          opacity: 1;
+}
+
+
 .line-left {
     position: absolute;
     display: none;
     transition: opacity .15s linear;
+    opacity: 0;
     top: 6px;
     left: -16px;
     width: 16px;
@@ -777,6 +787,7 @@ a.up:hover, a.up:focus {
     position: absolute;
     display: none;
     transition: opacity .15s linear;
+    opacity: 0;
     top: 6px;
     right: -16px;
     width: 16px;
