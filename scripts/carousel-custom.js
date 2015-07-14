@@ -1,6 +1,6 @@
 // carousel
 $('.carousel').carousel({
-  interval: 10000
+  interval: 0
 });
 
 // sound-on-off
