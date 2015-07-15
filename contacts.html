@@ -6,6 +6,7 @@
       <title> my production </title>
       <link rel="stylesheet" type="text/css" href="styles/normalize.css">
       <link rel="stylesheet" type="text/css" href="styles/grid.css">
+      <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="styles/style.css">
    </head>
    <body>
@@ -49,7 +50,42 @@
             </div>
             <div class="col-3">
                <p class="no-margin">Остались вопросы?</p>
-               <a href="mailto:#" class="dot">Напишите нам</a>
+
+               <a href="#" id="mailto" class="dot" data-toggle="modal" data-target=".bs-example-modal-lg">напишите нам</a>
+               <!--modal-->
+               <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                  <div class="modal-dialog modal-lg">
+
+                    <div class="modal-content">
+
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                      <div class="modal-body">
+                         
+                         <h2 class="modal-title">напишите <br>нам</h2>
+
+                         <form>
+                           <label>электронный адрес</label><br>
+
+                           <div><input type="email" class="customize" placeholder="НАПРИМЕР: YOUR@MAILBOX.COM"></div><br>
+
+                           <label>тема письма</label><br>
+
+                           <input type="text" class="input-long"><br><br><br>
+
+                           <input type="text" class="input-long" placeholder="Ваше сообщение...">
+
+                         </form>
+
+                     
+                         <a href="#" class="button">отправить</a>
+                     
+                     </div>
+
+                    </div>
+                  </div>
+              </div>
+
             </div>
          </div>
       </div>
@@ -64,7 +100,7 @@
                   <h4 class="lowercase">дизайн и разработка</h4>
                </div>
                <div class="col-2">
-                  <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
+                  <a href="http://svc.com.ua" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
                </div>
                <div class="col-1">
                   <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
@@ -74,6 +110,7 @@
       </div>
        <script src="scripts/jquery-1.8.0.min.js"></script>
        <script src="scripts/bootstrap/transition.js"></script>
+       <script src="scripts/bootstrap/modal.js"></script>
        <script src="scripts/selectize.js"></script>
        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
        <script src="scripts/google-custom.js"></script>

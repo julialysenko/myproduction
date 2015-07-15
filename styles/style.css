@@ -219,20 +219,67 @@ h4.month{
     margin-top: 0;
 }
 
+.contacts h1 {
+    margin-bottom: 60px;
+}
+
+.contacts h2 {
+    margin-bottom: 20px;
+}
 
 .contacts h4 {
     font-weight: 700;
     text-transform: capitalize;
+    margin-bottom: 6px;
 }
 
+.contacts a.button {
+    margin-top: 15px;
+    padding: 10px 30px;
+}
 
+.contacts .modal-title {
+    line-height: 1;
+}
+
+.contacts .modal-body {
+    margin: 65px 25px 50px 80px;
+    padding: 0;
+}
+
+.modal-lg {
+    width: 620px;
+}
+
+.modal-dialog {
+  margin: 100px auto;
+}
+
+input.input-long {
+  width: 460px;
+  border: none;
+  border-bottom: 2px solid #000;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.close {
+   float: right;
+   font-size: 30px;
+   font-weight: 400;
+   margin: 25px 25px 0 0;
+   opacity: 1;
+}
 
 .inversion h4 {
     color: #fff;
     margin-bottom: 0;
 
 }
-
 
 .inversion h3 {
     color: #fff;
@@ -305,7 +352,7 @@ img {
 
 
 .header img {
-    margin: 10px 0 30px 10px;
+    margin: 10px 0 30px 0px;
 }
 
 
