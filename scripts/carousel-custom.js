@@ -11,9 +11,10 @@ $(".icon-sound-on").on("click",function() {
 //video play
 $(document).on('slide.bs.carousel', function() {
     if ($('.item').hasClass('active')) {
-      /*  $('.active video').play();    */
-    } else {
-      /*  $('.item video').pause();   */
+        $('.active video').load();
+        /*  $('.active video').prop('paused','false');    -- не пашет*/
+        /*  $('.active video').play();                    -- не узнает функцию*/
+        /*console.log('работаю');                       --  проверка связи*/
     }
 });
 
