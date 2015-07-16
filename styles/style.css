@@ -1008,8 +1008,8 @@ a.menu-nav {
     text-indent: 0;
     border-bottom: 2px solid transparent;
     border-radius: 0;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px 0 10px;
+    padding-bottom: 3px;
 }
 .frontpage .carousel-indicators .active {
     border-bottom: 2px solid white;
