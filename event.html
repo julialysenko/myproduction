@@ -6,6 +6,8 @@
       <title> my production </title>
       <link rel="stylesheet" type="text/css" href="styles/normalize.css">
       <link rel="stylesheet" type="text/css" href="styles/grid.css">
+      <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="styles/selectize.css">
       <link rel="stylesheet" type="text/css" href="styles/style.css">
    </head>
    <body>
@@ -42,7 +44,7 @@
             </div>
             <div class="col-12">
                <h1>salida cruzada — 8&nbsp;шагов танго</h1>
-               <a href="#" class="button">купить билет</a>
+               <a href="./buy_tickets.html" class="button">купить билет</a>
             </div>
          </div>
          <div class="row">
@@ -62,8 +64,18 @@
             <div class="col-3">
                <h3>где</h3>
                <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
-               <a href="#" class="dot">СМОТРЕТЬ НА КАРТЕ</a>
+               <a href="#" id="load-map" class="dot" data-toggle="modal" data-target=".bs-example-modal-lg">СМОТРЕТЬ НА КАРТЕ</a>
             </div>
+
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+
+                   <div class="modal-dialog modal-lg">
+                     <div class="modal-content">
+                        <div id="map-canvas"></div>
+                     </div>
+                   </div>
+
+                </div>
          </div>
          <div class="row">
             <div class="col-14">
@@ -146,6 +158,8 @@
       <script src="scripts/bootstrap/transition.js"></script>
       <script src="scripts/bootstrap/modal.js"></script>
       <script src="scripts/selectize.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+      <script src="scripts/google-custom.js"></script>
       <script src="scripts/main.js"></script>
    </body>
 </html>
