@@ -15,7 +15,7 @@ $(document).on('mouseenter mouseleave', 'li', function (e) {
         $cornerright.css('display', 'block');
         $child[0].offsetWidth;
     } else {
-      
+
         $child.one($.support.transition.end, function () {
             $(this).css('display', 'none');
         });
@@ -43,7 +43,7 @@ $(document).ready(function(){
         $('.up').fadeOut();
     }
 });
- 
+
    $('.up').click(function(){
       $("html, body").animate({ scrollTop: 0 }, 600);
       return false;
@@ -56,6 +56,6 @@ $(document).ready(function(){
 
 if ($('div').hasClass('in-contacts')) {
       initialize()
-} else {
+} else if ($('div').hasClass('bs-example-modal-lg')) {
       $('.bs-example-modal-lg').on('shown.bs.modal', initialize);
 }

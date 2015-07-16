@@ -1018,10 +1018,12 @@ a.menu-nav {
 .frontpage .carousel-caption {
     position: fixed;
     min-width: 800px;
-    top: 50px;
+    top: 0;
     left: 15%;
-    right: 0;
     z-index: 10;
+    text-shadow: none;
+    padding-top: 0;
+    bottom: 0;
 }
 
 .trans-header {
@@ -1030,4 +1032,7 @@ a.menu-nav {
 .frontpage {
     background-color: black;
     min-width: 980px;
+}
+.frontpage h1 {
+    margin-top: 150px;
 }
