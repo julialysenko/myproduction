@@ -55,3 +55,6 @@ if ($('div').hasClass('in-contacts')) {
 } else if ($('div').hasClass('bs-example-modal-lg')) {
       $('.bs-example-modal-lg').on('shown.bs.modal', initialize);
 }
+
+// textarea
+autosize(document.querySelectorAll('textarea'));
