@@ -12,9 +12,7 @@ $(".icon-sound-on").on("click",function() {
 $(document).on('slide.bs.carousel', function() {
     if ($('.item').hasClass('active')) {
         var activeVideo = $('.active video');
-        /*  $('.active video').prop('paused','false');    -- не пашет*/
-         activeVideo[0].play();
-        /*console.log('работаю');                       --  проверка связи*/
-    }
+        activeVideo[0].play();
+
 });
 
