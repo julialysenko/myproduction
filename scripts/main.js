@@ -20,15 +20,11 @@ $(document).on('mouseenter mouseleave', 'li', function (e) {
             $(this).css('display', 'none');
         });
 
-        $cornerleft.one($.support.transition.end, function () {
-            $(this).css('display', 'none');
-        });
+        $cornerleft.css('display', 'none');
 
-        $cornerright.one($.support.transition.end, function () {
-            $(this).css('display', 'none');
-        });
-
+        $cornerright.css('display', 'none');
     }
+    
     $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('hover');
 });
 

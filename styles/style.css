@@ -142,7 +142,7 @@ h2 {
 h3 {
     color: #000;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 30px;
     letter-spacing: 1.56px;
     font-family: 'Lato', Arial, sans-serif;
@@ -176,7 +176,7 @@ p {
     font-family: 'Lato', Arial, sans-serif;
     text-align: left;
     margin-top: 0;
-    margin-bottom: 34px;
+    margin-bottom: 0;
 }
 
 
@@ -199,30 +199,65 @@ h4.month{
     margin-bottom: 0;
 }
 
+#team-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.person {
+    display: block;
+    float: left;
+    width: 400px;
+}
+
+
+.person-open h3 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    margin-left: 610px;
+}
+
+.person-open p {
+    margin-left: 610px;
+    width: 40%;
+}
+
+.person-open img {
+    float: left;
+    margin-top: -35px;
+}
+
+.person-open button {
+    margin: -35px 25px 0 0;
+}
+
 .team h1 {
-    margin: 0;
+    margin-top: 120px;
+    margin-bottom: 140px;
 }
 
 .team h3 {
-    margin-top: 140px;
+    font-weight: 900;
+    margin-top: 80px;
     margin-bottom: 60px;
 }
 
 .team h4 {
-    margin-top: 40px;
     margin-bottom: 60px;
 }
 
 .team img {
-  margin: 0px;
+    margin-bottom: 40px;
 }
+
 
 .event h1 {
     margin-top: 0px;
 }
 
-.event h4 {
-    margin-bottom: 60px;
+.event h3 {
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .events h3 {
@@ -265,11 +300,11 @@ h4.month{
     padding: 0;
 }
 
-.modal-lg {
+.contacts .modal-lg {
     width: 620px;
 }
 
-.modal-dialog {
+.contacts. .modal-dialog {
   margin: 100px auto;
 }
 
@@ -304,7 +339,6 @@ input.input-long {
     font-weight: 400;
 }
 
-
 .inversion h1 {
     color: #fff;
 }
@@ -318,7 +352,6 @@ a:focus {
     border-bottom: 2px solid #fff;
 }
 
-
 span.month {
     display: inline-block;
     font-weight: 800;
@@ -326,13 +359,11 @@ span.month {
     margin-bottom: 40px;
 }
 
-
 h4.actors:hover {
     font-weight: 800;
     border-bottom: 2px solid #000;
     cursor: pointer;
 }
-
 
 img {
     margin-bottom: 10px;
@@ -368,11 +399,9 @@ img {
     top: 0;
 }
 
-
 .header img {
     margin: 10px 0 30px 0px;
 }
-
 
 .menu {
     margin-top: 10px;
@@ -424,24 +453,20 @@ a.menu-lang:focus{
     margin-bottom: 55px;
 }
 
-
 .by_tickets a.button{
     margin-top: 30px;
     margin-bottom: 160px;
 }
 
-
 a.logo {
     float: left;
 }
-
 
 a.logo:hover,
 a.logo:focus {
     border-bottom: none;
     opacity: 1;
 }
-
 
 li {
     color: #000;
@@ -450,13 +475,11 @@ li {
     font-family: 'Lato', Arial, sans-serif;
 }
 
-
 ul {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
-
 
 .clearfix:after,
 .row:after,
@@ -465,7 +488,6 @@ ul {
     display: table;
     clear: both;
 }
-
 
 a {
     color: #000;
@@ -477,7 +499,6 @@ a {
     text-transform: uppercase;
 }
 
-
 a:hover,
 a:focus {
     transition-property: color;
@@ -488,7 +509,6 @@ a:focus {
     text-decoration: none;
     color: none;
 }
-
 
 a.mainpage {
     color: #fff;
@@ -510,19 +530,16 @@ a.mainpage:focus {
     border-bottom: 2px solid #DCDCDC;
 }
 
-
 a.read-more {
     display: inline-block;
     margin-left: 20px;
 }
-
 
 a.read-more:hover,
 a.read-more:focus,
 a.read-more:active {
     border-bottom: none;
 }
-
 
 a.dot {
     font-size: 16px;
@@ -538,13 +555,11 @@ a.simple {
     margin-bottom: 0px;
 }
 
-
 a:active,
 a:focus,
 input {
     outline: none;
 }
-
 
 .icon {
     display: inline-block;
@@ -559,6 +574,7 @@ input {
     height: 17px;
     background-position: -45px -1px;
 }
+
 .sound-off {
     opacity: 0;
 }
@@ -576,7 +592,6 @@ input {
     background-position: -2px -2px;
     margin-left: -10px;
 }
-
 
 .icon-error {
     width: 10px;
@@ -628,7 +643,6 @@ a.button:hover {
     transition-duration: 0.5s;
     transition-delay: 0s, 1s;
 }
-
 
 a.button-sound {
     display: inline-block;
@@ -698,7 +712,6 @@ label {
     text-transform: uppercase;
 }
 
-
 .email-error {
     color: red;
     font-size: 10px;
@@ -724,12 +737,10 @@ label {
     text-transform: capitalize;
 }
 
-
 input[type=radio],
 [type=checkbox] {
     display: none;
 }
-
 
 .radio-check-label:before {
     content: "";
@@ -743,7 +754,6 @@ input[type=radio],
     border: 2px solid #000;
 }
 
-
 input[type=checkbox]:checked + .radio-check-label:after {
     content: "";
     display: block;
@@ -755,7 +765,6 @@ input[type=checkbox]:checked + .radio-check-label:after {
     left: 10px;
 }
 
-
 .radio .radio-check-label:before {
     box-sizing: content-box;
     width: 13px;
@@ -765,7 +774,6 @@ input[type=checkbox]:checked + .radio-check-label:after {
     top: 3px;
     border-radius: 13px;
 }
-
 
 input[type=radio]:checked + .radio-check-label:after {
     content: "";
@@ -779,7 +787,6 @@ input[type=radio]:checked + .radio-check-label:after {
     left: 9px;
 }
 
-
 div.scrollup {
     position: fixed;
     bottom: 110px;
@@ -790,13 +797,10 @@ div.scrollup {
     z-index: 100;
 }
 
-
-
 a.up:hover, a.up:focus {
     border-bottom: none;
     opacity: 1;
 }
-
 
 .arrow {
     display: block;
@@ -827,7 +831,6 @@ li.hover .line-right  {
           opacity: 1;
 }
 
-
 .line-left {
     position: absolute;
     display: none;
@@ -840,7 +843,6 @@ li.hover .line-right  {
     background-color: #fff;
     border-left: 2px solid #000;
 }
-
 
 .corner-right {
     position: absolute;
@@ -875,7 +877,7 @@ li.hover .line-right  {
 
 
 .footer {
-border-top: 2px solid #000;
+    border-top: 2px solid #000;
 }
 
 
@@ -944,11 +946,6 @@ video {
    /*overflow:hidden*/
 }
 
-.play-carousel {
-margin-top: 200px;
-
-}
-
 .no-padding {
     padding: 0;
 }
@@ -979,8 +976,7 @@ margin-top: 200px;
 
 #map-canvas {
     height: 534px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    margin: 60px auto 10px auto;
 }
 
 .modal-content #map-canvas {
@@ -1016,6 +1012,7 @@ a.menu-nav {
     list-style: none;
     padding: 0;
 }
+
 .frontpage .carousel-indicators li {
     display: inline-block;
     width: 190px;
@@ -1029,10 +1026,12 @@ a.menu-nav {
     margin: 0 10px 0 10px;
     padding-bottom: 3px;
 }
+
 .frontpage .carousel-indicators .active {
     border-bottom: 2px solid white;
     background-color: transparent;
 }
+
 .frontpage .carousel-caption {
     position: fixed;
     min-width: 800px;
@@ -1047,10 +1046,12 @@ a.menu-nav {
 .trans-header {
     background: transparent;
 }
+
 .frontpage {
     background-color: black;
     min-width: 980px;
 }
+
 .frontpage h1 {
     margin-top: 150px;
 }
