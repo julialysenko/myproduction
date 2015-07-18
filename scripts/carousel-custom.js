@@ -13,6 +13,6 @@ $(document).on('slide.bs.carousel', function() {
     if ($('.item').hasClass('active')) {
         var activeVideo = $('.active video');
         activeVideo[0].play();
-
+    }
 });
 
