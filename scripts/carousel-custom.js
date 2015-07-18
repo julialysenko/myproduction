@@ -22,3 +22,6 @@ $(document).on('slid.bs.carousel', function() {
         activeVideo[0].play();
     }
 });
+
+//audio play on-off
+var video = $('.item video')

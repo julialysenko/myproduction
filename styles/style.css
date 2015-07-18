@@ -876,9 +876,13 @@ li.hover .line-right  {
 .inversion span.corner-left,
 .inversion span.corner-right {
     background-color: transparent;
-    border: 2px solid #fff
+    border-color: #fff;
 }
-
+.inversion span.line-left,
+.inversion span.line-right {
+    background-color: #000;
+    border-color: #fff;
+}
 
 .footer {
     border-top: 2px solid #000;
