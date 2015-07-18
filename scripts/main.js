@@ -24,7 +24,7 @@ $(document).on('mouseenter mouseleave', 'li', function (e) {
 
         $cornerright.css('display', 'none');
     }
-    
+
     $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('hover');
 });
 
@@ -57,4 +57,4 @@ if ($('div').hasClass('in-contacts')) {
 }
 
 // textarea
-autosize(document.querySelectorAll('textarea'));
+window.autosize && autosize(document.querySelectorAll('textarea'));
