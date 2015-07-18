@@ -199,17 +199,22 @@ h4.month{
     margin-bottom: 0;
 }
 
-#team-container {
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
 .person {
     display: block;
     float: left;
     width: 400px;
+    margin-bottom: 60px;
 }
 
+.person:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.row-persons {
+    margin-left: -50px;
+    margin-right: -50px;
+}
 
 .person-open h3 {
     margin-top: 35px;
@@ -231,8 +236,12 @@ h4.month{
     margin: -35px 25px 0 0;
 }
 
+.team {
+    min-width: 1100px;
+}
+
 .team h1 {
-    margin-top: 120px;
+    margin-top: 0;
     margin-bottom: 140px;
 }
 
@@ -243,7 +252,7 @@ h4.month{
 }
 
 .team h4 {
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
 .team img {
@@ -304,8 +313,8 @@ h4.month{
     width: 620px;
 }
 
-.contacts. .modal-dialog {
-  margin: 100px auto;
+.contacts .modal-dialog {
+  margin: 110px auto;
 }
 
 input.input-long {
@@ -980,7 +989,7 @@ video {
 
 #map-canvas {
     height: 534px;
-    margin: 60px auto 10px auto;
+    margin: 0 auto 10px auto;
 }
 
 .modal-content #map-canvas {
@@ -1064,6 +1073,7 @@ textarea {
   width: 460px;
   height: 30px;
   margin-top: 25px;
+  resize: none;
   border: none;
   border-bottom: 2px solid #000;
   color: #000;
@@ -1076,4 +1086,8 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+.addmargin {
+    margin-bottom: 60px;
 }
