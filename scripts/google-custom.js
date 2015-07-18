@@ -133,37 +133,7 @@ function initialize() {
     }
 ]
 
- /*[
-    { "featureType": "road.local",
-    "elementType": "geometry.fill",
-    "stylers": [ { "color": "#ffffff"} ]},
-    
-    { "featureType": "road.highway",
-    "stylers": [ { "color": "#b3b3b3" } ] },
-    
-    { "featureType": "landscape",
-    "elementType": "geometry.fill",
-    "stylers": [ { "color": "#e2e2e2" } ] },
-    
-    { "featureType": "road",
-    "elementType": "geometry.stroke",
-    "stylers": [ { "color": "#d9d9d9" },
-    { "weight": 2.5 } ] },
-    
-    { "featureType": "poi.business",
-    "elementType": "labels.icon",
-    "stylers": [ { "visibility": "off" } ] },
-    
-    { "featureType": "transit.station.bus",
-    "elementType": "labels.icon",
-    "stylers": [ { "saturation": -100 },
-    { "lightness": 11 } ] },
-    
-    { "featureType": "landscape",
-    "elementType": "geometry.stroke",
-    "stylers": [ { "visibility": "off" } ] },
-    { } 
-    ]*/
+
 
   var mapOptions = {
     zoom: 17,
