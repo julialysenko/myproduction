@@ -328,6 +328,10 @@ input.input-long {
    opacity: 1;
 }
 
+button.close:active {
+    outline: none;
+}
+
 .inversion h4 {
     color: #fff;
     margin-bottom: 0;
@@ -1068,4 +1072,8 @@ textarea {
   line-height: 24px;
   letter-spacing: 0px;
   font-family: 'Lato', Arial, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
 }
