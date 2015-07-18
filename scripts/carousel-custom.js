@@ -12,7 +12,13 @@ $(".icon-sound-on").on("click",function() {
 $(document).on('slide.bs.carousel', function() {
     if ($('.item').hasClass('active')) {
         var activeVideo = $('.active video');
-        activeVideo[0].play();
+        activeVideo[0].pause();
     }
 });
 
+$(document).on('slid.bs.carousel', function() {
+    if ($('.item').hasClass('active')) {
+        var activeVideo = $('.active video');
+        activeVideo[0].play();
+    }
+});

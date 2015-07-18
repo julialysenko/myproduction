@@ -133,8 +133,6 @@ function initialize() {
     }
 ]
 
-
-
   var mapOptions = {
     zoom: 17,
     center: theatre,
@@ -154,12 +152,25 @@ function initialize() {
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-    
+
+ var image = 'images/marker.png'
  marker = new google.maps.Marker({
  position: theatre,
- title: "Новий Театр На Печерську"
+ title: "Новий Театр На Печерську",
+ animation: google.maps.Animation.DROP,
+ icon: image
  });
+ google.maps.event.addListener(marker, 'click', toggleBounce);
 
  marker.setMap(map);
+}
+
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
 
