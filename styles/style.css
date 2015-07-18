@@ -1066,11 +1066,18 @@ a.menu-nav {
 
 .frontpage {
     background-color: black;
-    min-width: 980px;
+    min-width: 1100px;
 }
 
 .frontpage h1 {
     margin-top: 150px;
+}
+.frontpage .container,
+.frontpage,
+.carousel,
+.carousel-inner,
+.item {
+    width: 100%;
 }
 
 textarea {
