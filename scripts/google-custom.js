@@ -137,32 +137,32 @@ function initialize() {
     { "featureType": "road.local",
     "elementType": "geometry.fill",
     "stylers": [ { "color": "#ffffff"} ]},
-    
+
     { "featureType": "road.highway",
     "stylers": [ { "color": "#b3b3b3" } ] },
-    
+
     { "featureType": "landscape",
     "elementType": "geometry.fill",
     "stylers": [ { "color": "#e2e2e2" } ] },
-    
+
     { "featureType": "road",
     "elementType": "geometry.stroke",
     "stylers": [ { "color": "#d9d9d9" },
     { "weight": 2.5 } ] },
-    
+
     { "featureType": "poi.business",
     "elementType": "labels.icon",
     "stylers": [ { "visibility": "off" } ] },
-    
+
     { "featureType": "transit.station.bus",
     "elementType": "labels.icon",
     "stylers": [ { "saturation": -100 },
     { "lightness": 11 } ] },
-    
+
     { "featureType": "landscape",
     "elementType": "geometry.stroke",
     "stylers": [ { "visibility": "off" } ] },
-    { } 
+    { }
     ]*/
 
   var mapOptions = {
@@ -184,12 +184,25 @@ function initialize() {
   var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
   map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-    
+
+ var image = 'images/marker.png'
  marker = new google.maps.Marker({
  position: theatre,
- title: "Новий Театр На Печерську"
+ title: "Новий Театр На Печерську",
+ animation: google.maps.Animation.DROP,
+ icon: image
  });
+ google.maps.event.addListener(marker, 'click', toggleBounce);
 
  marker.setMap(map);
+}
+
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
 
