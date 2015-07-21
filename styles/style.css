@@ -395,11 +395,11 @@ img {
    margin-top: 20%;
    margin-bottom: 25%;
 }
-/*
+
 .header + * {
     margin-top: 120px;
 }
-*/
+
 .header {
     background-image: linear-gradient(rgba(255,255,255, 1) 80px, rgba(255,255,255,0.05) 100%);
     position: fixed;
@@ -511,17 +511,15 @@ a {
     text-decoration: none;
     opacity: 1;
     text-transform: uppercase;
+    transition: opacity .4s ease;
 }
 
 a:hover,
 a:focus {
-    transition-property: color;
-    opacity: 0.8;
-    transition-timing-function: ease;
-    transition-duration: 2s;
+    opacity: 0.6;
     border-bottom: 2px solid #000;
     text-decoration: none;
-    color: none;
+    transition: opacity .4s ease;
 }
 
 .list a {
@@ -537,7 +535,7 @@ a:focus {
 
 a.read-more {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 20px
 }
 
 a.read-more:hover,
@@ -629,24 +627,17 @@ input {
 
 a.button {
     display: inline-block;
-    color: #000;
-    font-size: 14px;
-    font-weight: 800;
-    font-family: 'Lato', Arial, sans-serif;
     line-height: 16px;
     padding: 10px 15px;
-    background-image: none;
     outline: none;
     border: 2px solid #000;
+    transition: background .4s ease;
 }
 
 a.button:hover {
     background: #000;
     color: #fff;
-    border: 2px solid #000;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-delay: 0s, 1s;
+    transition: background .4s ease;
 }
 
 a.button-sound {
@@ -760,7 +751,7 @@ input[type=radio],
     border: 2px solid #000;
 }
 
-input[type=checkbox]:checked + .radio-check-label:after {
+input[type=checkbox] + .radio-check-label:after {
     content: "";
     display: block;
     background-color: #000;
@@ -769,6 +760,14 @@ input[type=checkbox]:checked + .radio-check-label:after {
     position: absolute;
     top: 10px;
     left: 10px;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+input[type=checkbox]:checked + .radio-check-label:after,
+input[type=radio]:checked + .radio-check-label:after {
+    opacity: 1;
+    transition: opacity .4s ease;
 }
 
 .radio .radio-check-label:before {
@@ -781,7 +780,7 @@ input[type=checkbox]:checked + .radio-check-label:after {
     border-radius: 13px;
 }
 
-input[type=radio]:checked + .radio-check-label:after {
+input[type=radio] + .radio-check-label:after {
     content: "";
     display: block;
     background-color: #000;
@@ -791,6 +790,8 @@ input[type=radio]:checked + .radio-check-label:after {
     position: absolute;
     top: 8px;
     left: 9px;
+    opacity: 0;
+    transition: opacity .4s ease;
 }
 
 div.scrollup {
@@ -805,7 +806,6 @@ div.scrollup {
 
 a.up:hover, a.up:focus {
     border-bottom: none;
-    opacity: 1;
 }
 
 .arrow {
@@ -1048,6 +1048,7 @@ a.menu-nav {
 .frontpage .carousel-indicators .active {
     border-bottom: 2px solid white;
     background-color: transparent;
+    transition: border-color .4s ease;
 }
 
 .frontpage .carousel-caption {
@@ -1077,7 +1078,7 @@ a.menu-nav {
 .frontpage,
 .carousel,
 .carousel-inner,
-.item {
+.frontpage .item {
     width: 100%;
 }
 
@@ -1102,4 +1103,15 @@ textarea:focus {
 
 .addmargin {
     margin-bottom: 60px;
+}
+
+.close-out-modal {
+    color: #fff;
+    text-shadow: 0 1px 0 black;
+    margin: -25px -25px 0 0;
+}
+
+.close-out-modal:hover,
+.close-out-modal:focus {
+    color: #fff;
 }

@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="ru">
-   <head>
+  <head>
       <meta charset="utf-8">
       <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title> my production </title>
+      <title>my production-event</title>
       <link rel="stylesheet" type="text/css" href="styles/normalize.css">
       <link rel="stylesheet" type="text/css" href="styles/grid.css">
       <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="styles/selectize.css">
       <link rel="stylesheet" type="text/css" href="styles/style.css">
-   </head>
-   <body>
+  </head>
+  <body>
     <div class="header">
         <div class="container">
           <a href="./main.html" class="logo"><img src="images/logo.png" width="58" height="56" alt="logo"></a>
@@ -39,83 +39,76 @@
             </ul>
           </div>
         </div>
+    </div>
+    <div class="container event">
+      <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-12">
+          <h1>salida cruzada — 8&nbsp;шагов танго</h1>
+          <a href="./buy_tickets.html" class="button">купить билет</a>
+        </div>
       </div>
-      <div class="container event">
+      <div class="row">
+        <div class="col-4">
+          <h3>когда</h3>
+          <p class="day">09,16.мая/18:00 <br>15,22.мая/19.00</p>
+        </div>
+        <div class="col-6">
+          <h3>о спектакле</h3>
+          <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет.
+          В процессе работы Игорь Владимирович говорил нам о том, что Достоевский — это океан, и невозможно выпить его целиком, но можно выпить один стакан.
+          Мы стали исследовать одну из сцен романа — встречу Настасьи с Аглаей.
+          </p>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+           <h3>где</h3>
+           <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
+           <a href="#" id="load-map" class="dot" data-toggle="modal" data-target=".bs-example-modal-lg">СМОТРИ НА КАРТЕ</a>
+        </div>
+        <div class="col-14">
+          <h3>актёры</h3>
+        </div>
+      </div>
 
-
-
-         <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-12">
-               <h1>salida cruzada — 8&nbsp;шагов танго</h1>
-               <a href="./buy_tickets.html" class="button">купить билет</a>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-4">
-               <h3>когда</h3>
-               <p class="day">09,16.мая/18:00 <br>15,22.мая/19.00</p>
-            </div>
-            <div class="col-6">
-               <h3>о спектакле</h3>
-               <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет.
-                  В процессе работы Игорь Владимирович говорил нам о том, что Достоевский — это океан, и невозможно выпить его целиком, но можно выпить один стакан.
-                  Мы стали исследовать одну из сцен романа — встречу Настасьи с Аглаей.
-               </p>
-            </div>
-            <div class="col-1">
-            </div>
-            <div class="col-3">
-               <h3>где</h3>
-               <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
-               <a href="#" id="load-map" class="dot" data-toggle="modal" data-target=".bs-example-modal-lg">СМОТРЕТЬ НА КАРТЕ</a>
-            </div>
-
-                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-
-                   <div class="modal-dialog modal-lg">
-                     <div class="modal-content">
-                        <button type="button" class="close map-modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <div id="map-canvas"></div>
-                     </div>
-                   </div>
-
-                </div>
-         </div>
-
-         <div class="col-14">
-            <h3>актёры</h3>
+      <!-- modal -->
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div id="map-canvas"></div>
           </div>
+        </div>
+      </div>
 
-         <div class="row team">
-
-            <div class="col-3">
-               <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
-               <h4>анна сергеева</h4>
-               <img src="images/ruslan_sokolnik.jpg" width="400" height="265" alt="ruslan_sokolnik">
-               <h4>руслан сокольник</h4>
-            </div>
-            <div class="col-2">
-            </div>
-            <div class="col-3">
-               <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
-               <h4>ольга ларина</h4>
-               <img src="images/maria_homutova.jpg" width="400" height="265" alt="maria_homutova">
-               <h4>марина хомутова</h4>
-            </div>
-            <div class="col-2">
-            </div>
-            <div class="col-3">
-               <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
-               <h4>денис мартынов</h4>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-14">
-               <h3>другие спектакли</h3>
-            </div>
-         </div>
+      <div class="row team">
+        <div class="col-3">
+          <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
+          <h4>анна сергеева</h4>
+          <img src="images/ruslan_sokolnik.jpg" width="400" height="265" alt="ruslan_sokolnik">
+          <h4>руслан сокольник</h4>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-3">
+          <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
+          <h4>ольга ларина</h4>
+          <img src="images/maria_homutova.jpg" width="400" height="265" alt="maria_homutova">
+          <h4>марина хомутова</h4>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-3">
+          <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
+          <h4>денис мартынов</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-14">
+          <h3>другие спектакли</h3>
+        </div>
+      </div>
+      
          <div class="row">
             <div>
                <div class="col-3 other-play">
@@ -143,30 +136,30 @@
                </div>
             </div>
          </div>
-         <div class="footer">
-            <div class="row">
-               <div class="col-8">
-                  <h4>2015 ©  my production</h4>
-               </div>
-               <div class="col-3">
-                  <h4 class="lowercase">дизайн и разработка</h4>
-               </div>
-               <div class="col-2">
-                  <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
-               </div>
-               <div class="col-1">
-                  <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
-               </div>
-            </div>
-         </div>
-      </div>
 
-      <script src="scripts/jquery-1.8.0.min.js"></script>
-      <script src="scripts/bootstrap/transition.js"></script>
-      <script src="scripts/bootstrap/modal.js"></script>
-      <script src="scripts/selectize.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-      <script src="scripts/google-custom.js"></script>
-      <script src="scripts/main.js"></script>
-   </body>
+      <div class="footer">
+        <div class="row">
+          <div class="col-8">
+            <h4>2015 ©  my production</h4>
+          </div>
+          <div class="col-3">
+            <h4 class="lowercase">дизайн и разработка</h4>
+          </div>
+          <div class="col-2">
+            <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
+          </div>
+          <div class="col-1">
+            <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/bootstrap/transition.js"></script>
+    <script src="scripts/bootstrap/modal.js"></script>
+    <script src="scripts/selectize.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script src="scripts/google-custom.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
