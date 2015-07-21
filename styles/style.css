@@ -337,6 +337,7 @@ input.input-long {
    opacity: 1;
 }
 
+button.close:focus,
 button.close:active {
     outline: none;
 }
@@ -918,7 +919,10 @@ a.footer_logo:hover,
 a.footer_logo:focus,
 a.footer_logo:active  {
     border-bottom: none;
+    transition-property: color;
     opacity: 0.7;
+    transition-timing-function: ease;
+    transition-duration: 2s;
 }
 
 
