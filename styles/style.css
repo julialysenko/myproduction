@@ -1028,6 +1028,7 @@ a.menu-nav {
 .frontpage .carousel-indicators .active {
     border-bottom: 2px solid white;
     background-color: transparent;
+    transition: border-color .4s ease;
 }
 
 .frontpage .carousel-caption {
@@ -1082,4 +1083,15 @@ textarea:focus {
 
 .addmargin {
     margin-bottom: 60px;
+}
+
+.close-out-modal {
+    color: #fff;
+    text-shadow: 0 1px 0 black;
+    margin: -25px -25px 0 0;
+}
+
+.close-out-modal:hover,
+.close-out-modal:focus {
+    color: #fff;
 }
