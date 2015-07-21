@@ -135,6 +135,7 @@ function initialize() {
 
   var mapOptions = {
     zoom: 17,
+    scrollwheel: false,
     center: theatre,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
