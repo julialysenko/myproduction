@@ -382,27 +382,16 @@ img {
     margin-bottom: 10px;
 }
 
-.mainpage h1 {
-    margin-bottom: 35px;
-}
-
-
-.mainpage h3 {
-    color: #fff;
-    font-weight: 400;
-    margin-top: 0;
-}
-
 .main-play {
    margin-left: 15%;
    margin-top: 20%;
    margin-bottom: 25%;
 }
-
+/*
 .header + * {
     margin-top: 120px;
 }
-
+*/
 .header {
     background-image: linear-gradient(rgba(255,255,255, 1) 80px, rgba(255,255,255,0.05) 100%);
     position: fixed;
@@ -521,15 +510,6 @@ a:focus {
     border-bottom: 2px solid #000;
     text-decoration: none;
     color: none;
-}
-
-a.mainpage {
-    color: #fff;
-}
-
-a.mainpage:hover,
-a.mainpage:focus {
-    border-bottom: 2px solid #fff;
 }
 
 .list a {
@@ -664,6 +644,7 @@ a.button-sound {
     outline: none;
     margin-top: 30px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 a.button-sound:hover {
@@ -1060,7 +1041,7 @@ a.menu-nav {
     bottom: 0;
 }
 
-.trans-header {
+.frontpage .header {
     background: transparent;
 }
 
@@ -1072,7 +1053,7 @@ a.menu-nav {
 .frontpage h1 {
     margin-top: 150px;
 }
-.frontpage .container,
+
 .frontpage,
 .carousel,
 .carousel-inner,
