@@ -195,9 +195,6 @@ h4.actors {
     border-bottom: 2px solid transparent;
 }
 
-h4.month{
-    margin-bottom: 0;
-}
 
 .person {
     display: block;
@@ -241,7 +238,7 @@ h4.month{
 }
 
 .team h1 {
-    margin-top: 0;
+    margin-top: 120px;
     margin-bottom: 140px;
 }
 
@@ -259,14 +256,23 @@ h4.month{
     margin-bottom: 40px;
 }
 
+.other-play {
+    margin-bottom: 90px;
+    border-bottom: 2px solid transparent;
+}
+
+.other-play:hover,
+.other-play:focus {
+       border-bottom: 2px solid #000;
+}
 
 .event h1 {
-    margin-top: 0px;
+    margin-top: 110px;
 }
 
 .event h3 {
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 90px;
+    margin-bottom: 80px;
 }
 
 .events h3 {
@@ -282,6 +288,7 @@ h4.month{
 }
 
 .contacts h1 {
+    margin-top: 120px;
     margin-bottom: 60px;
 }
 
@@ -337,6 +344,7 @@ input.input-long {
    opacity: 1;
 }
 
+button.close:focus,
 button.close:active {
     outline: none;
 }
@@ -451,11 +459,15 @@ a.menu-lang:focus{
     border-bottom: none;
 }
 
-.by_tickets h4{
+.by-tickets h1{
+    margin-top: 120px;
+}
+
+.by-tickets h4{
     margin-bottom: 55px;
 }
 
-.by_tickets a.button{
+.by-tickets a.button{
     margin-top: 30px;
     margin-bottom: 160px;
 }
@@ -899,7 +911,10 @@ a.footer_logo:hover,
 a.footer_logo:focus,
 a.footer_logo:active  {
     border-bottom: none;
+    transition-property: color;
     opacity: 0.7;
+    transition-timing-function: ease;
+    transition-duration: 2s;
 }
 
 
@@ -916,6 +931,11 @@ img.s4w {
     min-height: 600px;
     margin-bottom: 10px;
     background-image: url(../images/map.jpg);
+}
+
+.map-modal {
+    margin: -25px -20px 0 0;
+    text-shadow: none;
 }
 
 a.month {
