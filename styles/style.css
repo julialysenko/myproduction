@@ -387,11 +387,11 @@ img {
    margin-top: 20%;
    margin-bottom: 25%;
 }
-/*
+
 .header + * {
     margin-top: 120px;
 }
-*/
+
 .header {
     background-image: linear-gradient(rgba(255,255,255, 1) 80px, rgba(255,255,255,0.05) 100%);
     position: fixed;
