@@ -499,17 +499,15 @@ a {
     text-decoration: none;
     opacity: 1;
     text-transform: uppercase;
+    transition: opacity .5s ease;
 }
 
 a:hover,
 a:focus {
-    transition-property: color;
-    opacity: 0.8;
-    transition-timing-function: ease;
-    transition-duration: 2s;
+    opacity: 0.6;
     border-bottom: 2px solid #000;
     text-decoration: none;
-    color: none;
+    transition: opacity .5s ease;
 }
 
 .list a {
@@ -525,7 +523,7 @@ a:focus {
 
 a.read-more {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 20px
 }
 
 a.read-more:hover,
@@ -748,7 +746,7 @@ input[type=radio],
     border: 2px solid #000;
 }
 
-input[type=checkbox]:checked + .radio-check-label:after {
+input[type=checkbox] + .radio-check-label:after {
     content: "";
     display: block;
     background-color: #000;
@@ -757,6 +755,14 @@ input[type=checkbox]:checked + .radio-check-label:after {
     position: absolute;
     top: 10px;
     left: 10px;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+input[type=checkbox]:checked + .radio-check-label:after,
+input[type=radio]:checked + .radio-check-label:after {
+    opacity: 1;
+    transition: opacity .5s ease;
 }
 
 .radio .radio-check-label:before {
@@ -769,7 +775,7 @@ input[type=checkbox]:checked + .radio-check-label:after {
     border-radius: 13px;
 }
 
-input[type=radio]:checked + .radio-check-label:after {
+input[type=radio] + .radio-check-label:after {
     content: "";
     display: block;
     background-color: #000;
@@ -779,6 +785,8 @@ input[type=radio]:checked + .radio-check-label:after {
     position: absolute;
     top: 8px;
     left: 9px;
+    opacity: 0;
+    transition: opacity .5s ease;
 }
 
 div.scrollup {
@@ -793,7 +801,6 @@ div.scrollup {
 
 a.up:hover, a.up:focus {
     border-bottom: none;
-    opacity: 1;
 }
 
 .arrow {
