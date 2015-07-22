@@ -200,7 +200,7 @@ h4.actors {
     display: block;
     float: left;
     width: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .person:hover {
@@ -212,8 +212,8 @@ h4.actors {
     margin-right: -50px;
 }
 
-.person-open h3 {
-    margin-top: 35px;
+.panel-body .person-open h3 {
+    margin-top: 0px;
     margin-bottom: 40px;
     margin-left: 610px;
 }
@@ -229,7 +229,7 @@ h4.actors {
 }
 
 .person-open button {
-    margin: -5px -75px 0 0;
+    margin: -40px -75px 0 0;
 }
 
 .panel-default > .panel-heading {
@@ -271,11 +271,32 @@ h4.actors {
     padding: 0;
 }
 
+#collapseTwo {
+  margin-left: -400px;
+}
+
 #collapseThree {
   margin-left: -800px;
 }
 
-#collapseTwo {
+
+#collapseFive {
+  margin-left: -400px;
+}
+
+#collapseSix {
+  margin-left: -800px;
+}
+
+#collapseEight {
+  margin-left: -400px;
+}
+
+#collapseNine {
+  margin-left: -400px;
+}
+
+#collapseEleven {
   margin-left: -400px;
 }
 
@@ -447,7 +468,7 @@ img {
 }
 
 .header {
-    background-image: linear-gradient(rgba(255,255,255, 1) 80px, rgba(255,255,255,0.05) 100%);
+    background-color: #fff;
     position: fixed;
     width: 100%;
     min-width: 1100px;
