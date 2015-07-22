@@ -65,7 +65,7 @@
         <div class="col-3">
            <h3>где</h3>
            <p>Новый Театр на Печерске ул. Немировича-Данченко, 5</p>
-           <a href="#" id="load-map" class="dot" data-toggle="modal" data-target=".bs-example-modal-lg">СМОТРИ НА КАРТЕ</a>
+           <a href="#" id="load-map" class="dot" data-toggle="modal" data-target=".bs-example-modal-lg">СМОТРЕТЬ НА КАРТЕ</a>
         </div>
         <div class="col-14">
           <h3>актёры</h3>
@@ -84,28 +84,127 @@
         </div>
       </div>
 
-      <div class="row team">
-        <div class="col-3">
-          <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
-          <h4>анна сергеева</h4>
-          <img src="images/ruslan_sokolnik.jpg" width="400" height="265" alt="ruslan_sokolnik">
-          <h4>руслан сокольник</h4>
-        </div>
-        <div class="col-2">
-        </div>
-        <div class="col-3">
-          <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
-          <h4>ольга ларина</h4>
-          <img src="images/maria_homutova.jpg" width="400" height="265" alt="maria_homutova">
-          <h4>марина хомутова</h4>
-        </div>
-        <div class="col-2">
-        </div>
-        <div class="col-3">
-          <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
-          <h4>денис мартынов</h4>
-        </div>
+      <div class="row-persons clearfix">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="col-5 no-padding panel panel-default">
+               <div class="panel-heading" role="tab" id="headingOne">
+
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     <div class="person">
+                        <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
+                        <h4>анна сергеева</h4>
+                     </div>
+                  </a>
+
+               </div>
+               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">
+                     <div class="person-open no-padding col-14 clearfix">
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        
+                        <img src="images/anna_sergeeva.jpg" width="565" height="375" alt="anna_sergeeva"> 
+                        <h3>анна сергеева</h3>
+                        <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
+                     
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-5 no-padding panel panel-default">
+               <div class="panel-heading" role="tab" id="headingTwo">
+
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="person">
+                           <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
+                           <h4>ольга ларина</h4>
+                        </div>
+                     </a>
+
+               </div>
+               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                     <div class="person-open col-14 no-padding clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="images/olga_larina.jpg" width="565" height="375" alt="olga_larina"> 
+                        <h3>ольга ларина</h3>
+                        <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-5 no-padding panel panel-default">
+               <div class="panel-heading" role="tab" id="headingThree">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="person">
+                           <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
+                           <h4>денис мартынов</h4>
+                        </div>
+                     </a>
+               </div>
+               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">
+                     <div class="person-open col-14 no-padding clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="images/denia_martynov.jpg" width="565" height="375" alt="denia_martynov"> 
+                        <h3>денис мартынов</h3>
+                        <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-5 no-padding panel panel-default">
+               <div class="panel-heading" role="tab" id="headingFour">
+
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="person">
+                           <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
+                           <h4>ольга ларина</h4>
+                        </div>
+                     </a>
+
+               </div>
+               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="panel-body">
+                     <div class="person-open col-14 no-padding clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="images/olga_larina.jpg" width="565" height="375" alt="olga_larina"> 
+                        <h3>ольга ларина</h3>
+                        <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-5 no-padding panel panel-default">
+               <div class="panel-heading" role="tab" id="headingFive">
+                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <div class="person">
+                           <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
+                           <h4>денис мартынов</h4>
+                        </div>
+                     </a>
+               </div>
+               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                  <div class="panel-body">
+                     <div class="person-open col-14 no-padding clearfix">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="images/denia_martynov.jpg" width="565" height="375" alt="denia_martynov"> 
+                        <h3>денис мартынов</h3>
+                        <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
       </div>
+
       <div class="row">
         <div class="col-14">
           <h3>другие спектакли</h3>
@@ -160,6 +259,7 @@
     <script src="scripts/jquery-1.8.0.min.js"></script>
     <script src="scripts/bootstrap/transition.js"></script>
     <script src="scripts/bootstrap/modal.js"></script>
+    <script src="scripts/bootstrap/collapse.js"></script>
     <script src="scripts/selectize.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script src="scripts/google-custom.js"></script>
