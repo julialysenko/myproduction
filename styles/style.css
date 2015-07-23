@@ -232,7 +232,7 @@ h4.actors {
 }
 
 .panel-default > .panel-heading {
-    color: none; 
+    color: none;
     background-color: none;
     border-color: none;
 }
@@ -253,12 +253,12 @@ h4.actors {
   background-color: none;
   border: none;
   border-radius: none;
-  -webkit-box-shadow: none; 
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .panel-heading {
-    padding: 0; 
+    padding: 0;
     border-bottom:  none;
     border-top-left-radius:  none;
     border-top-right-radius:  none;
@@ -1061,6 +1061,7 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: -999;
 }
 
 .no-padding {

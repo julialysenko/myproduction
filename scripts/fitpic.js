@@ -35,7 +35,7 @@ var FitImage = new Class({
 		// In case browser does not support load event for images
 		this.attach();
 	},
-	
+
 	attach: function(){
 		window.addEvents({
 			'load': this.inject,
@@ -43,7 +43,7 @@ var FitImage = new Class({
 			'resize': this.resize
 		});
 	},
-	
+
 	detach: function(){
 		window.removeEvents({
 			'load': this.inject,
@@ -116,5 +116,5 @@ var FitImage = new Class({
 	toElement: function(){
 		return this.image;
 	}
-	
+
 });

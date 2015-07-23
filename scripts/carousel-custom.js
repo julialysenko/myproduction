@@ -4,7 +4,7 @@ $('.carousel').carousel({
 });
 
 // sound-on-off
-var $allVideo = $('.item video');
+var $allVideo = $('video');
 $(".icon-sound-on").on("click",function() {
     $(this).toggleClass("sound-off");
     if ($(".icon-sound-on").hasClass('sound-off')) {
@@ -17,6 +17,7 @@ $(".icon-sound-on").on("click",function() {
 });
 
 //video play
+/*
 $(document).on('slide.bs.carousel', function() {
     if ($('.item').hasClass('active')) {
         var videoPause = $('.active video');
@@ -30,3 +31,4 @@ $(document).on('slid.bs.carousel', function() {
         videoPlay[0].play();
     }
 });
+*/
