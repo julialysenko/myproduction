@@ -1069,7 +1069,6 @@ a.month {
 }
 
 video {
-    visibility: visible;
     margin: auto;
     width: 1368px;
     height: auto;
@@ -1078,6 +1077,7 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -999;
+    opacity: 0;
 }
 
 .no-padding {
@@ -1254,3 +1254,7 @@ textarea:focus {
   -webkit-background-size: cover;
   background-size: cover;
 }*/
+
+.up {
+    display: none;
+}
