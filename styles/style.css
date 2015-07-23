@@ -120,6 +120,7 @@ h1 {
     font-family: "Lato", Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
+    margin-top: 0;
     margin-bottom: 70px;
 }
 
@@ -296,6 +297,21 @@ h4.actors {
 
 #collapseEleven {
   margin-left: -400px;
+}
+
+.history h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.history h3 {
+    margin-top: 60px;
+}
+
+.history img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .team {
@@ -1221,6 +1237,11 @@ textarea:focus {
 .close-out-modal:hover,
 .close-out-modal:focus {
     color: #fff;
+}
+
+.logos {
+    margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 /*.frontpage .item {
