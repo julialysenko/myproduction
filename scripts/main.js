@@ -30,8 +30,6 @@ $(document).on('mouseenter mouseleave', 'li', function (e) {
 
 
 // Scroll up
-$(document).ready(function(){
-
   $(window).scroll(function(){
     if ($(this).scrollTop() >= 100) {
         $('.up').fadeIn();
@@ -45,7 +43,6 @@ $(document).ready(function(){
       return false;
     });
 
-});
 
 // google maps initialize
 // $('.bs-example-modal-lg').on('shown.bs.modal', initialize);
@@ -58,3 +55,36 @@ if ($('div').hasClass('in-contacts')) {
 
 // textarea
 window.autosize && autosize(document.querySelectorAll('textarea'));
+
+
+// counter
+var input = $('#inp');
+
+ var a;
+
+      $('.plus').click(function(){
+          a = input.val();
+          a++;
+          input.val(a);
+      });
+
+      $('.minus').click(function(){ 
+          a = input.val();
+          a = (a<1)?0:a-1;
+          input.val(a);
+      });
+
+$('.minus').click(function(){
+   $("#money").val(parseInt($("#money").val())-100);
+});
+$('.plus').click(function(){
+   $("#money").val(parseInt($("#money").val())+100);
+}); 
+
+
+//$('.button').click(function(){
+  //var $buy = $(this).find('#buy-ticketsTwo');
+
+        //$buy.css('display', 'block');
+    //});
+

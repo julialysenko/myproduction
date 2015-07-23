@@ -525,7 +525,7 @@ a.menu-lang:focus{
 }
 
 .by-tickets h1{
-    margin-top: 120px;
+    margin-top: 0px;
 }
 
 .by-tickets h4{
@@ -535,6 +535,14 @@ a.menu-lang:focus{
 .by-tickets a.button{
     margin-top: 30px;
     margin-bottom: 160px;
+}
+
+#buy-ticketsTwo {
+    display: none;
+}
+
+#buy-ticketsThree {
+    display: none;
 }
 
 a.logo {
@@ -759,6 +767,8 @@ a.button-counter {
 
 input.customize {
     width: 300px;
+    margin-top: 3px;
+    margin-bottom: 7px;
     border: none;
     border-bottom: 2px solid #000;
     color: #000;
@@ -769,7 +779,6 @@ input.customize {
     font-family: 'Lato', Arial, sans-serif;
 }
 
-
 input.validation-failed {
     border-bottom: 2px solid red;
 }
@@ -777,12 +786,17 @@ input.validation-failed {
 input.tickets {
     width: 30px;
     height: 25px;
+    text-align: center;
 }
 
 input.money {
-    width: 60px;
+    width: 40px;
     height: 25px;
     border-bottom: none;
+}
+
+#money {
+    margin-top: 10px;
 }
 
 label {
