@@ -1,25 +1,24 @@
 
+/*
 function fitVideoSize() {
+        var rate = $(".active video").videoHeight / $(".active video").videoWidth;
 
-    var newWidth = 0,
-        newHeight = 0,
-        vid = $('video');
-
-    for (var i = 0; i > vid.height; i++) {
-        var rate = vid[i].videoHeight/vid[i].videoWidth;
-        console.log(rate);  //testing
         if( rate > 1 ) {
-            newWidth = window.innerWidth;
-            console.log(newWidth);  //testing
-            $(vid[i]).css("height","auto","width","newWidth");
+            $(".active video").css("height","auto")
+            $(".active video").css("width",window.innerWidth)
         } else {
-            newHeight = window.innerHeight;
-            console.log(newHeight);  //testing
-            $(vid[i]).css("height","newHeight","width","auto");
+            $(".active video").css("height",window.innerHeight)
+            $(".active video").css("width","auto")
+
         }
-    }
 }
 
 $(window).on('resize', fitVideoSize());
+*/
 
-$(document).on('click', fitVideoSize()); //testing
+$(window).on('resize', function() {
+    $(".active video").css("height",window.innerHeight)
+    $(".active video").css("width","auto")
+});
+
+//testing
