@@ -35,10 +35,9 @@ $(document).on('slid.bs.carousel', function() {
 
 //video fadeIn/out
 
-function videoFade() {
+$(document).on("click", function() {
     var i = $('.carousel-indicators .active').attr('data-slide-to');
-    $('[data-video = i]').fadeIn().play();
-};
+    $('[data-video = i]').fadeIn("slow");
+});
 
-$(document).on("click", videoFade())
 

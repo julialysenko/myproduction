@@ -1077,7 +1077,7 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -999;
-    opacity: 0;
+    display: none;
 }
 
 .no-padding {
