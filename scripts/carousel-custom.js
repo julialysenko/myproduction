@@ -32,3 +32,13 @@ $(document).on('slid.bs.carousel', function() {
     }
 });
 */
+
+//video fadeIn/out
+
+function videoFade() {
+    var i = $('.carousel-indicators .active').attr('data-slide-to');
+    $('[data-video = i]').fadeIn().play();
+};
+
+$(document).on("click", videoFade())
+
