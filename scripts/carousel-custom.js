@@ -16,19 +16,24 @@ $(".icon-sound-on").on("click",function() {
     }
 });
 
-//video play
-/*
-$(document).on('slide.bs.carousel', function() {
-    if ($('.item').hasClass('active')) {
-        var videoPause = $('.active video');
-        videoPause[0].pause();
-    }
+
+//video fadeIn/out
+
+$(document).on("slid.bs.carousel", function() {
+    var $i = $('.carousel-indicators .active').attr('data-slide-to');
+
+    $("[data-video="+ $i +"]").parent().toggleClass("video-show");
+
+    var $activeVideo = $(".video-show video");
+    $activeVideo[0].play();
+
 });
 
-$(document).on('slid.bs.carousel', function() {
-    if ($('.item').hasClass('active')) {
-        var videoPlay = $('.active video');
-        videoPlay[0].play();
-    }
+$(document).on("slide.bs.carousel", function() {
+    var $i = $('.carousel-indicators .active').attr('data-slide-to');
+
+    $("[data-video="+ $i +"]").parent().toggleClass("video-show");
+    for(var j=0; j<$allVideo.length; j++)
+            $allVideo[j].pause();
 });
-*/
+
