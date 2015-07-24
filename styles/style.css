@@ -363,7 +363,6 @@ h4.actors {
 }
 
 .contacts h1 {
-    margin-top: 120px;
     margin-bottom: 60px;
 }
 
@@ -570,10 +569,6 @@ a.menu-nav:focus{
 a.menu-lang:hover,
 a.menu-lang:focus{
     border-bottom: none;
-}
-
-.by-tickets h1{
-    margin-top: 0px;
 }
 
 .by-tickets h4{
