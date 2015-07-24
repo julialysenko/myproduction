@@ -7,7 +7,6 @@
          font-weight: 900;
 }
 
-
 @font-face {
     font-family: 'Lato';
     src: url('../font/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -16,7 +15,6 @@
          url('../font/lato-bold-webfont.svg#latobold') format('svg');
          font-weight: 700;
 }
-
 
 @font-face {
     font-family: 'Lato';
@@ -27,7 +25,6 @@
          font-weight: 400;
 }
 
-
 @font-face {
     font-family: 'Lato';
     src: url('../font/lato-heavy-webfont.eot?#iefix') format('embedded-opentype'),
@@ -36,7 +33,6 @@
          url('../font/lato-heavy-webfont.svg#latoheavy') format('svg');
          font-weight: 800;
 }
-
 
 @font-face {
     font-family: 'Lato';
@@ -47,7 +43,6 @@
          font-weight: 500;
 }
 
-
 @font-face {
     font-family: 'Lato';
     src: url('../font/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -56,7 +51,6 @@
          url('../font/lato-light-webfont.svg#latolight') format('svg');
          font-weight: 300;
 }
-
 
 @font-face {
     font-family: 'Lato';
@@ -67,11 +61,9 @@
          font-weight: 200;
 }
 
-
 @-ms-viewport {
     width: device-width;
 }
-
 
 /*
 @media (min-aspect-ratio: 16/9) {
@@ -103,13 +95,11 @@ html {
     box-sizing: border-box;
 }
 
-
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
-
 
 h1 {
     color: #000;
@@ -124,8 +114,6 @@ h1 {
     margin-bottom: 70px;
 }
 
-
-
 h2 {
     color: #000;
     font-size: 52px;
@@ -138,7 +126,6 @@ h2 {
     margin-top: 0;
 }
 
-
 h3 {
     color: #000;
     font-size: 26px;
@@ -150,8 +137,6 @@ h3 {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-
-
 
 h4 {
     color: #000;
@@ -166,7 +151,6 @@ h4 {
     margin-bottom: 18px;
 }
 
-
 p {
     color: #000;
     font-size: 16px;
@@ -179,12 +163,10 @@ p {
     margin-bottom: 0;
 }
 
-
 .date {
     margin-bottom: 10px;
     font-weight: 800;
 }
-
 
 .day {
     text-transform: uppercase;
@@ -194,7 +176,6 @@ h4.actors {
     font-weight: 500;
     border-bottom: 2px solid transparent;
 }
-
 
 .person {
     display: block;
@@ -242,7 +223,7 @@ h4.actors {
     margin-bottom:0;
 }
 .panel-group .panel + .panel {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
@@ -250,12 +231,12 @@ h4.actors {
 }
 
 .panel {
-  margin-bottom: 0;
-  background-color: none;
-  border: none;
-  border-radius: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    margin-bottom: 0;
+    background-color: none;
+    border: none;
+    border-radius: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .panel-heading {
@@ -272,31 +253,31 @@ h4.actors {
 }
 
 #collapseTwo {
-  margin-left: -400px;
+    margin-left: -400px;
 }
 
 #collapseThree {
-  margin-left: -800px;
+    margin-left: -800px;
 }
 
 #collapseFive {
-  margin-left: -400px;
+    margin-left: -400px;
 }
 
 #collapseSix {
-  margin-left: -800px;
+    margin-left: -800px;
 }
 
 #collapseEight {
-  margin-left: -400px;
+    margin-left: -400px;
 }
 
 #collapseNine {
-  margin-left: -400px;
+    margin-left: -400px;
 }
 
 #collapseEleven {
-  margin-left: -400px;
+    margin-left: -400px;
 }
 
 .history h1 {
@@ -344,7 +325,7 @@ h4.actors {
 
 .other-play:hover,
 .other-play:focus {
-       border-bottom: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .event h1 {
@@ -402,27 +383,27 @@ h4.actors {
 }
 
 .contacts .modal-dialog {
-  margin: 110px auto;
+    margin: 110px auto;
 }
 
 input.input-long {
-  width: 460px;
-  border: none;
-  border-bottom: 2px solid #000;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-  font-family: 'Lato', Arial, sans-serif;
+    width: 460px;
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-family: 'Lato', Arial, sans-serif;
 }
 
 .close {
-   float: right;
-   font-size: 30px;
-   font-weight: 400;
-   margin: 25px 25px 0 0;
-   opacity: 1;
+    float: right;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 25px 25px 0 0;
+    opacity: 1;
 }
 
 button.close:focus,
@@ -472,9 +453,9 @@ img {
 }
 
 .main-play {
-   margin-left: 15%;
-   margin-top: 20%;
-   margin-bottom: 25%;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 25%;
 }
 
 .header + * {
@@ -639,7 +620,6 @@ a.dot {
     border-bottom: 1px dotted #000;
 }
 
-
 a.simple {
     border-bottom:none;
     text-decoration: none;
@@ -692,7 +672,6 @@ input {
     margin-left: -10px;
 }
 
-
 .icon-facebook {
     width: 12px;
     height: 12px;
@@ -714,7 +693,6 @@ input {
     margin-bottom: -3px;
 }
 
-
 a.button {
     display: inline-block;
     position: relative;
@@ -732,21 +710,21 @@ a.button:active {
 }
 
 a.button:hover:after, a.button:active:after {
-  height: 100%;
+    height: 100%;
 }
 
 a.button:after {
-      content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 100%;
-  height: 0;
-  top: 0;
-  left: 0;
-  background: #000;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #000;
 }
 
 a.button-sound {
@@ -763,7 +741,6 @@ a.button-sound:hover {
     border: none;
 }
 
-
 a.button-counter {
     display: inline-block;
     border-bottom: none;
@@ -779,7 +756,6 @@ a.button-counter {
 .inversion a.button:hover {
     border: 2px solid #000;
 }
-
 
 input.customize {
     width: 300px;
@@ -948,8 +924,8 @@ a.up:hover, a.up:focus {
 }
 
 li.hover .line-left,
-li.hover .line-right  {
-          opacity: 1;
+li.hover .line-right {
+    opacity: 1;
 }
 
 .line-left {
@@ -989,7 +965,6 @@ li.hover .line-right  {
     border-right: 2px solid #000;
 }
 
-
 .inversion span.corner-left,
 .inversion span.corner-right {
     background-color: transparent;
@@ -1005,7 +980,6 @@ li.hover .line-right  {
     border-top: 2px solid #000;
 }
 
-
 .footer h4 {
     padding-top: 40px;
 }
@@ -1014,13 +988,11 @@ h4.lowercase {
     text-transform: lowercase;
 }
 
-
 .footer_logo {
     float: left;
     margin-top: 25px;
     margin-bottom: 15px;
 }
-
 
 a.footer_logo:hover,
 a.footer_logo:focus,
@@ -1032,11 +1004,9 @@ a.footer_logo:active  {
     transition-duration: 2s;
 }
 
-
 img.s4w {
     margin-top: 25px;
 }
-
 
 .play {
     background-image: url(../images/salida_background.jpg);
@@ -1077,7 +1047,8 @@ a.month {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -999;
-    display: none;
+    opacity: 0;
+    transition: opacity 1.3s ease;
 }
 
 .no-padding {
@@ -1245,21 +1216,11 @@ textarea:focus {
     margin-bottom: 130px;
 }
 
-/*.frontpage .item {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  overflow: hidden;
-  -webkit-background-size: cover;
-  background-size: cover;
-}*/
-
 .up {
     display: none;
 }
 
 .video-show {
-    display: block;
+    opacity: 1;
+    transition: opacity 1.3s ease;
 }
