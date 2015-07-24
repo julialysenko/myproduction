@@ -549,6 +549,8 @@ img {
     display: none;
     opacity: 0;
     transition: opacity .15s linear;
+    position: absolute;
+    z-index: 10;
 }
 
 li.hover .nav {
