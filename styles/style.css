@@ -1047,7 +1047,11 @@ a.month {
 }
 
 .my-video {
-    margin: auto;
+    opacity: 0;
+    transition: opacity 1.3s ease;
+}
+
+video {
     width: 1368px;
     height: auto;
     position: absolute;
@@ -1055,8 +1059,6 @@ a.month {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -999;
-    opacity: 0;
-    transition: opacity 1.3s ease;
 }
 
 .no-padding {
@@ -1174,15 +1176,14 @@ a.menu-nav {
 .carousel,
 .carousel-inner,
 .frontpage .item,
-.video-wrap {
+.video-wrap,
+.my-video {
     width: 100%;
-    overflow: hidden;
     position: absolute;
     top: 0px;
     left: 0px;
     bottom: 0px;
     right: 0px;
-    background-size: cover;
 }
 
 textarea {
