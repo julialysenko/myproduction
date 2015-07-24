@@ -504,6 +504,7 @@ img {
 
 li.hover .nav {
     opacity: 1;
+    transition: opacity .15s linear;
 }
 
 .nav a {
