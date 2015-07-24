@@ -5,26 +5,30 @@ $('.my-select').selectize();
 //menu
 
 $(document).on('mouseenter mouseleave', 'li', function (e) {
-    var $child = $(this).find('> .nav');
+    var $child = $(this).find('> .nav'),
+        $cornerleft = $(this).find(".corner-left"),
+        $cornerright = $(this).find(".corner-right"),
+        $lineleft = $(this).find(".line-left"),
+        $lineright = $(this).find(".line-right");
+
     if ($child.length === 0) return true;
-    var $cornerleft = $(this).find(".line-left");
-    var $cornerright = $(this).find(".line-right");
+
     if (e.type == 'mouseenter') {
         $child.css('display', 'block');
-        $cornerleft.css('display', 'block');
-        $cornerright.css('display', 'block');
+        $cornerleft.css('display', 'none');
+        $cornerright.css('display', 'none');
+        $lineleft.css('display', 'block');
+        $lineright.css('display', 'block');
         $child[0].offsetWidth;
     } else {
-
         $child.one($.support.transition.end, function () {
             $(this).css('display', 'none');
         });
-
-        $cornerleft.css('display', 'none');
-
-        $cornerright.css('display', 'none');
+        $cornerleft.css('display', 'block');
+        $cornerright.css('display', 'block');
+        $lineleft.css('display', 'none');
+        $lineright.css('display', 'none');
     }
-
     $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('hover');
 });
 
@@ -68,7 +72,7 @@ var input = $('#inp');
           input.val(a);
       });
 
-      $('.minus').click(function(){ 
+      $('.minus').click(function(){
           a = input.val();
           a = (a<1)?0:a-1;
           input.val(a);
@@ -79,7 +83,7 @@ $('.minus').click(function(){
 });
 $('.plus').click(function(){
    $("#money").val(parseInt($("#money").val())+100);
-}); 
+});
 
 //Blocks tikets
 
