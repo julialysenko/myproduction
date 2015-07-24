@@ -1068,7 +1068,7 @@ a.month {
     margin-bottom: 10px;
 }
 
-video {
+.my-video {
     margin: auto;
     width: 1368px;
     height: auto;
@@ -1194,7 +1194,8 @@ a.menu-nav {
 .frontpage,
 .carousel,
 .carousel-inner,
-.frontpage .item {
+.frontpage .item,
+.video-wrap {
     width: 100%;
     overflow: hidden;
     position: absolute;
@@ -1257,4 +1258,8 @@ textarea:focus {
 
 .up {
     display: none;
+}
+
+.video-show {
+    display: block;
 }
