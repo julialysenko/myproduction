@@ -1204,11 +1204,13 @@ a.menu-nav {
 .my-video {
     opacity: 0;
     transition: opacity 1.3s ease;
+    z-index: -999;
 }
 
 .video-show {
     opacity: 1;
     transition: opacity 1.3s ease;
+    z-index: -999;
 }
 
 video {
