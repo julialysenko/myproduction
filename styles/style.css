@@ -1323,3 +1323,9 @@ textarea:focus {
     margin: 0;
     padding-top: 100px;
 }
+
+.events video {
+    width: 100%;
+    position: relative;
+    opacity: 0;
+}
