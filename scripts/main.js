@@ -21,7 +21,7 @@ $(document).on('mouseenter mouseleave', 'li', function (e) {
         $lineright.css('display', 'block');
         $child[0].offsetWidth;
     } else if (e.type == 'mouseleave') {
-        if ( $(this).css("opacity") !== 1 ) {
+        if ( $child.css('display') == 'block' && $child.css('opacity') == 1) {
           $child.one($.support.transition.end, function () {
             $(this).css('display', 'none');
           });
