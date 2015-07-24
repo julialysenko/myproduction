@@ -48,12 +48,12 @@
         <h3>актеры</h3>
 
       <div class="row-persons clearfix">
-         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+         <div class="panel-group" role="tablist" aria-multiselectable="true">
 
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingOne">
 
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                      <div class="person">
                         <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
                         <h4>анна сергеева</h4>
@@ -61,11 +61,11 @@
                   </a>
 
                </div>
-               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+               <div id="collapseOne" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
                      <div class="person-open no-padding col-14 clearfix">
                         
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         
                         <img src="images/anna_sergeeva.jpg" width="565" height="375" alt="anna_sergeeva"> 
                         <h3>анна сергеева</h3>
@@ -79,7 +79,7 @@
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingTwo">
 
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="person">
                            <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
                            <h4>ольга ларина</h4>
@@ -87,10 +87,10 @@
                      </a>
 
                </div>
-               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+               <div id="collapseTwo" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/olga_larina.jpg" width="565" height="375" alt="olga_larina"> 
                         <h3>ольга ларина</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -101,17 +101,17 @@
 
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingThree">
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <div class="person">
                            <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
                            <h4>денис мартынов</h4>
                         </div>
                      </a>
                </div>
-               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div id="collapseThree" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/denia_martynov.jpg" width="565" height="375" alt="denia_martynov"> 
                         <h3>денис мартынов</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -125,12 +125,12 @@
 
 
       <div class="row-persons clearfix">
-         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+         <div class="panel-group"role="tablist" aria-multiselectable="true">
 
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingFour">
 
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  <a role="button" data-toggle="collapse"href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                      <div class="person">
                         <img src="images/ruslan_sokolnik.jpg" width="400" height="265" alt="ruslan_sokolnik">
                         <h4>руслан сокольник</h4>
@@ -138,10 +138,10 @@
                   </a>
 
                </div>
-               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+               <div id="collapseFour" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingFour">
                   <div class="panel-body">
                      <div class="person-open no-padding col-14 clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/ruslan_sokolnik.jpg" width="565" height="375" alt="ruslan_sokolnik"> 
                         <h3>руслан сокольник</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -153,7 +153,7 @@
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingFive">
 
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <div class="person">
                            <img src="images/igor_lysov.jpg" width="400" height="265" alt="igor_lysov">
                            <h4>игорь лысов</h4>
@@ -161,10 +161,10 @@
                      </a>
 
                </div>
-               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+               <div id="collapseFive" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingFive">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/igor_lysov.jpg" width="565" height="375" alt="igor_lysov"> 
                         <h3>игорь лысов</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -175,7 +175,7 @@
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingSix">
 
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         <div class="person">
                            <img src="images/elena_lazovich.jpg" width="400" height="265" alt="elena_lazovich">
                            <h4>елена лазович</h4>
@@ -183,10 +183,10 @@
                      </a>
 
                </div>
-               <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+               <div id="collapseSix" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingSix">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/elena_lazovich.jpg" width="565" height="375" alt="elena_lazovich"> 
                         <h3>елена лазович</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -199,12 +199,12 @@
 
 
       <div class="row-persons clearfix">
-         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+         <div class="panel-group" role="tablist" aria-multiselectable="true">
 
             <div class="col-5 no-padding panel panel-default">
 
                <div class="panel-heading" role="tab" id="headingSeven">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
                      <div class="person">
                         <img src="images/ruslan_sokolnik.jpg" width="400" height="265" alt="ruslan_sokolnik">
                         <h4>руслан сокольник</h4>
@@ -212,11 +212,11 @@
                   </a>
 
                </div>
-               <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+               <div id="collapseSeven" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingSeven">
                   <div class="panel-body">
                      <div class="person-open no-padding col-14 clearfix">
                         
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         
                         <img src="images/ruslan_sokolnik.jpg" width="565" height="375" alt="ruslan_sokolnik"> 
                         <h3>руслан сокольник</h3>
@@ -230,7 +230,7 @@
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingEight">
 
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                         <div class="person">
                            <img src="images/maria_homutova.jpg" width="400" height="265" alt="maria_homutova">
                            <h4>мария хомутова</h4>
@@ -238,10 +238,10 @@
                      </a>
 
                </div>
-               <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+               <div id="collapseEight" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingEight">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/maria_homutova.jpg" width="565" height="375" alt="maria_homutova"> 
                         <h3>мария хомутова</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -253,7 +253,7 @@
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingNine">
 
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                         <div class="person">
                            <img src="images/elena_lazovich.jpg" width="400" height="265" alt="elena_lazovich">
                            <h4>елена лазович</h4>
@@ -261,10 +261,10 @@
                      </a>
 
                </div>
-               <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+               <div id="collapseNine" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingNine">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/elena_lazovich.jpg" width="565" height="375" alt="elena_lazovich"> 
                         <h3>елена лазович</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
@@ -279,12 +279,12 @@
       <h3>художники-постановщики</h3>
 
       <div class="row-persons clearfix">
-         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+         <div class="panel-group" role="tablist" aria-multiselectable="true">
 
             <div class="col-5 no-padding panel panel-default">
 
                <div class="panel-heading" role="tab" id="headingSeven">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                  <a role="button" data-toggle="collapse" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
                      <div class="person">
                         <img src="images/dmitriy_kostuminsky.jpg" width="400" height="265" alt="dmitriy_kostuminsky">
                         <h4>дмитрий костюминский</h4>
@@ -292,11 +292,11 @@
                   </a>
 
                </div>
-               <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+               <div id="collapseTen" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingTen">
                   <div class="panel-body">
                      <div class="person-open no-padding col-14 clearfix">
                         
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         
                         <img src="images/dmitriy_kostuminsky.jpg" width="565" height="375" alt="dmitriy_kostuminsky"> 
                         <h3>дмитрий костюминский</h3>
@@ -310,7 +310,7 @@
             <div class="col-5 no-padding panel panel-default">
                <div class="panel-heading" role="tab" id="headingEleven">
 
-                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                         <div class="person">
                            <img src="images/masha_gurina.jpg" width="400" height="265" alt="masha_gurina">
                            <h4>маша гурина</h4>
@@ -318,10 +318,10 @@
                      </a>
 
                </div>
-               <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+               <div id="collapseEleven" class="panel-collapse collapse" data-group="collapses" role="tabpanel" aria-labelledby="headingEleven">
                   <div class="panel-body">
                      <div class="person-open col-14 no-padding clearfix">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         <img src="images/masha_gurina.jpg" width="565" height="375" alt="masha_gurina"> 
                         <h3>маша гурина</h3>
                         <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>

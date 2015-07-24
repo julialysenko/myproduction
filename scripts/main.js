@@ -81,10 +81,32 @@ $('.plus').click(function(){
    $("#money").val(parseInt($("#money").val())+100);
 }); 
 
+//Blocks tikets
 
-//$('.button').click(function(){
-  //var $buy = $(this).find('#buy-ticketsTwo');
+$('.continue').click(function(){
+    var $buy = $('#buy-ticketsTwo');
 
-        //$buy.css('display', 'block');
-    //});
+        $buy.css('display', 'block');
+     });
 
+$('.buy').click(function(){
+    var $buy = $('#buy-ticketsThree');
+
+        $buy.css('display', 'block');
+     });
+
+//Acordeon
+
+$(document).on('click', '.close', function(){
+   $(this).closest('.collapse').collapse('hide');
+});
+
+
+$(document).on('show.bs.collapse', '.collapse', function(){
+   var group = $(this).data('group');
+   var $els = $('[data-group="'+ group + '"]');
+   $els = $els.not(this);
+   $els.collapse('hide');
+});
+
+//$.fn.collapse.Constructor.TRANSITION_DURATION = 2500;

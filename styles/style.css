@@ -292,11 +292,17 @@ h4.actors {
 }
 
 #collapseNine {
-  margin-left: -400px;
+  margin-left: -800px;
 }
 
 #collapseEleven {
   margin-left: -400px;
+}
+
+.collapsing {
+  -webkit-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  transition-duration: 5s;
 }
 
 .history h1 {
@@ -319,7 +325,7 @@ h4.actors {
 }
 
 .team h1 {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 140px;
 }
 
@@ -724,6 +730,7 @@ a.button {
     outline: none;
     border: 2px solid #000;
     transition: background .4s ease;
+    cursor: pointer;
 }
 
 a.button:hover,
@@ -1028,8 +1035,8 @@ a.footer_logo:active  {
     border-bottom: none;
     transition-property: color;
     opacity: 0.7;
-    transition-timing-function: ease;
-    transition-duration: 2s;
+    -webkit-transition: all 200ms cubic-bezier(0.45, 0, 0.8, 0.8);
+    transition: all 200ms cubic-bezier(0.45, 0, 0.8, 0.8);
 }
 
 
