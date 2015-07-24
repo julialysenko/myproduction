@@ -543,6 +543,8 @@ img {
     float: none;
     margin-left: 0;
     margin-top: 0;
+        position: relative;
+    z-index: 1000;
 }
 
 .nav {
@@ -630,6 +632,7 @@ a {
     opacity: 1;
     text-transform: uppercase;
     transition: opacity .4s ease;
+    z-index: 1;
 }
 
 a:hover,
@@ -785,7 +788,7 @@ a.button-sound {
     margin-left: 20px;
     cursor: pointer;
 }
-in
+
 a.button-sound:hover {
     border: none;
 }
@@ -1186,7 +1189,7 @@ a.menu-nav {
 }
 
 .frontpage h1 {
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .frontpage,
