@@ -123,7 +123,7 @@ $(document).on('show.bs.collapse', '.collapse', function(){
    $els.collapse('hide');
 });
 
-//$.fn.collapse.Constructor.TRANSITION_DURATION = 2500;
+$.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
 
 
 
@@ -159,3 +159,27 @@ $(document).on('click', '.continue', function (e) {
     }
     $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
 });
+
+
+/*
+$(document).on('mouseenter mouseleave', '.person', function (e) {
+
+    var  $corneractor = $(this).find(".corner-actor"),
+
+    if (e.type == 'mouseenter') {
+
+        $corneractor.css('display', 'block');
+
+    } else if (e.type == 'mouseleave') {
+
+            $(this).css('display', 'none');
+          }
+});
+
+
+
+$('.person').click(function(){
+    var $c = $('.corner-actor');
+
+        $c.css('display', 'block');
+     });
