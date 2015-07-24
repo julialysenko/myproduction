@@ -7,6 +7,7 @@ var $targetClass = '.header',
 
 $(document).on('show.bs.modal', function(){
     $($targetClass).css("padding-right",scrollWidth);
+});
 
 $(document).on('hidden.bs.modal', function (){
     $($targetClass).css("padding-right","0");

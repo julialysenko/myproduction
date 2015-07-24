@@ -21,9 +21,11 @@ $(document).on('mouseenter mouseleave', 'li', function (e) {
         $lineright.css('display', 'block');
         $child[0].offsetWidth;
     } else if (e.type == 'mouseleave') {
-        $child.one($.support.transition.end, function () {
+        if ( $(this).css("opacity") !== 1 ) {
+          $child.one($.support.transition.end, function () {
             $(this).css('display', 'none');
-        });
+          });
+          }
         $cornerleft.css('display', 'block');
         $cornerright.css('display', 'block');
         $lineleft.css('display', 'none');
