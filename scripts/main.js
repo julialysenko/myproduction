@@ -76,20 +76,26 @@ var input = $('#inp');
 
       $('.minus').click(function(){
           a = input.val();
-          a = (a<1)?0:a-1;
+          a = (a<2)?1:a-1;
           input.val(a);
       });
 
-$('.minus').click(function(){
-   $("#money").val(parseInt($("#money").val())-100);
+
+ $('.minus').click(function(){
+    if (a>1) {
+        $("#money").val(parseInt($("#money").val())-100);
+    } else {
+        false;
+    }
 });
+
 $('.plus').click(function(){
    $("#money").val(parseInt($("#money").val())+100);
 });
 
 //Blocks tikets
 
-$('.continue').click(function(){
+/*$('.continue').click(function(){
     var $buy = $('#buy-ticketsTwo');
 
         $buy.css('display', 'block');
@@ -100,6 +106,8 @@ $('.buy').click(function(){
 
         $buy.css('display', 'block');
      });
+
+*/
 
 //Acordeon
 
@@ -132,4 +140,22 @@ $(document).on("click",".scroll-up", function() {
   $pixelDown = $pixelDown - 600;
   $("html, body").animate({ scrollTop: $pixelDown }, 600);
 
+});
+
+
+
+$(document).on('click', '.continue', function (e) {
+    var $block = $(this).find('#buy-ticketsTwo');
+
+    if (e.type == 'click') {
+        $block.css('display', 'block');
+
+    } else if (e.type == 'click') {
+        if ( $block.css('display') == 'block' && $block.css('opacity') == 1) {
+          $block.one($.support.transition.end, function () {
+            $(this).css('display', 'none');
+          });
+          }
+    }
+    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
 });

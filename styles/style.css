@@ -543,16 +543,12 @@ img {
     float: none;
     margin-left: 0;
     margin-top: 0;
-        position: relative;
-    z-index: 1000;
 }
 
 .nav {
     display: none;
     opacity: 0;
     transition: opacity .15s linear;
-    position: absolute;
-    z-index: 10;
 }
 
 li.hover .nav {
@@ -586,10 +582,16 @@ a.menu-lang:focus{
 
 #buy-ticketsTwo {
     display: none;
+    opacity: 0;
 }
 
 #buy-ticketsThree {
     display: none;
+    opacity: 0;
+}
+
+#buy-ticketsTwo:active {
+    opacity: 1;
 }
 
 a.logo {
@@ -1273,56 +1275,4 @@ textarea:focus {
 
 .months {
     margin-top: 75px;
-}
-
-.presentation .next {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-}
-
-.presentation .top {
-    transform: rotate(225deg);
-}
-
-.scroll-down,
-.scroll-up {
-    position: fixed;
-    right: 20%;
-}
-
-.scroll-up {
-    top: 20%;
-}
-
-.scroll-down {
-    bottom: 15%;
-}
-
-.scroll-down a,
-.scroll-up {
-    font-weight: 900;
-}
-
-.scroll-down a:hover,
-.scroll-down a:focus,
-.scroll-up a:hover,
-.scroll-up a:focus {
-    border-bottom: none;
-}
-
-.presentation .big-block {
-    min-height: 600px;
-    border-bottom: 3px dotted black;
-}
-
-.presentation .header {
-    height: 120px;
-}
-.presentation h1 {
-    margin: 0;
-    padding-top: 100px;
 }
