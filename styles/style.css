@@ -110,7 +110,7 @@ h1 {
     font-family: "Lato", Arial, sans-serif;
     text-align: left;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 70px;
 }
 
@@ -306,7 +306,6 @@ h4.actors {
 }
 
 .team h1 {
-    margin-top: 20px;
     margin-bottom: 140px;
 }
 
@@ -334,6 +333,10 @@ h4.actors {
     border-bottom: 2px solid #000;
 }
 
+ .events {
+    height: 550px;
+}
+
 .event h1 {
     margin-top: 10px;
 }
@@ -343,12 +346,16 @@ h4.actors {
     margin-bottom: 50px;
 }
 
-.events h3 {
-    margin-top: 90px;
+.events h1 {
+    margin-top: 30px;
 }
 
 .events h1 {
     margin-top: 30px;
+}
+
+.events h3 {
+    margin-top: 90px;
 }
 
 .events a.button {
@@ -356,7 +363,6 @@ h4.actors {
 }
 
 .contacts h1 {
-    margin-top: 120px;
     margin-bottom: 60px;
 }
 
@@ -439,6 +445,43 @@ button.close:active {
 .inversion a:hover,
 a:focus {
     border-bottom: 2px solid #fff;
+}
+
+
+.inversion a.button {
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    line-height: 16px;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #fff;
+    transition: background .4s ease;
+    cursor: pointer;
+}
+
+.inversion a.button:hover,
+.inversion a.button:active {
+    color: #000;
+}
+
+.inversion a.button:hover:after, 
+.inversion a.button:active:after {
+    height: 100%;
+}
+
+.inversion a.button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #fff;
 }
 
 span.month {
@@ -526,10 +569,6 @@ a.menu-nav:focus{
 a.menu-lang:hover,
 a.menu-lang:focus{
     border-bottom: none;
-}
-
-.by-tickets h1{
-    margin-top: 0px;
 }
 
 .by-tickets h4{
@@ -744,7 +783,7 @@ a.button-sound {
     margin-left: 20px;
     cursor: pointer;
 }
-
+in
 a.button-sound:hover {
     border: none;
 }
@@ -754,15 +793,6 @@ a.button-counter {
     border-bottom: none;
     font-weight: 800;
     font-size: 20px;
-}
-
-.inversion a.button {
-    color: #fff;
-    border: 2px solid #fff;
-}
-
-.inversion a.button:hover {
-    border: 2px solid #000;
 }
 
 input.customize {
@@ -1232,4 +1262,8 @@ textarea:focus {
 .video-show {
     opacity: 1;
     transition: opacity 1.3s ease;
+}
+
+.months {
+    margin-top: 75px;
 }
