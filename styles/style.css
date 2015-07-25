@@ -1357,15 +1357,17 @@ textarea:focus {
     transition: opacity 1.3s ease;
 }
 
-.events-video:hover,
-.events-video:focus {
-    opacity: 1;
-    transition: opacity 1.3s ease;
-}
-
 .description.row {
     position: absolute;
     top: 50px;
     left: 70px;
     z-index: 5;
 }
+
+/*
+.events-video:hover,
+.events-video:focus {
+    opacity: 1;
+    transition: opacity 1.3s ease;
+}
+*/
