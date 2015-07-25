@@ -335,6 +335,7 @@ h4.actors {
 
  .events {
     height: 550px;
+    position: relative;
 }
 
 .event h1 {
@@ -1327,8 +1328,30 @@ textarea:focus {
     padding-top: 100px;
 }
 
-.events video {
+.events-video video {
     width: 100%;
-    position: relative;
+    position: absolute;
+
+}
+
+.events-video {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
     opacity: 0;
+    transition: opacity 1.3s ease;
+}
+
+.events-video:hover,
+.events-video:focus {
+    opacity: 1;
+    transition: opacity 1.3s ease;
+}
+
+.description.row {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    z-index: 5;
 }
