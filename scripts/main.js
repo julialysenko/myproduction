@@ -161,6 +161,8 @@ $(document).on('click', '.continue', function (e) {
 });
 
 
+
+
 /*
 $(document).on('mouseenter mouseleave', '.person', function (e) {
 
@@ -183,3 +185,4 @@ $('.person').click(function(){
 
         $c.css('display', 'block');
      });
+*/
