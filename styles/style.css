@@ -1184,6 +1184,7 @@ a.menu-nav {
 
 .frontpage .header {
     background: transparent;
+    width: 1100px;
 }
 
 .frontpage {
@@ -1195,21 +1196,8 @@ a.menu-nav {
     margin-top: 200px;
 }
 
-.frontpage,
-.carousel,
-.carousel-inner,
-.frontpage .item,
-.video-wrap,
 .my-video {
-    width: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-}
-
-.my-video {
     opacity: 0;
     transition: opacity 1.3s ease;
     z-index: -999;
@@ -1220,7 +1208,7 @@ a.menu-nav {
     transition: opacity 1.3s ease;
     z-index: -999;
 }
-
+/*
 video {
     width: 1368px;
     height: auto;
@@ -1230,7 +1218,7 @@ video {
     transform: translate(-50%, -50%);
     z-index: -999;
 }
-
+*/
 textarea {
   width: 460px;
   height: 30px;
