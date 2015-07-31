@@ -1151,6 +1151,10 @@ a.menu-nav {
     padding: 0;
 }
 
+.frontpage .carousel-inner {
+    overflow: inherit;
+}
+
 .frontpage .carousel-indicators li {
     display: inline-block;
     width: 190px;
@@ -1173,9 +1177,10 @@ a.menu-nav {
 
 .frontpage .carousel-caption {
     position: fixed;
-    min-width: 800px;
+    min-width: 1100px;
     top: 0;
-    left: 15%;
+    left: 0;
+    padding-left: 10%;
     z-index: 10;
     text-shadow: none;
     padding-top: 0;
@@ -1187,13 +1192,9 @@ a.menu-nav {
     width: 1100px;
 }
 
-.frontpage {
-    background-color: black;
-    min-width: 1100px;
-}
-
 .frontpage h1 {
     margin-top: 200px;
+    margin-bottom: 0;
 }
 
 .my-video {
@@ -1208,17 +1209,7 @@ a.menu-nav {
     transition: opacity 1.3s ease;
     z-index: -999;
 }
-/*
-video {
-    width: 1368px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -999;
-}
-*/
+
 textarea {
   width: 460px;
   height: 30px;
