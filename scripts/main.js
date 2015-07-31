@@ -123,8 +123,9 @@ $(document).on('show.bs.collapse', '.collapse', function(){
    $els.collapse('hide');
 });
 
+/*
 $.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
-
+*/
 
 
 //scrollDown in presentation
@@ -186,3 +187,13 @@ $('.person').click(function(){
         $c.css('display', 'block');
      });
 */
+
+// events video
+
+$(document).on('mouseenter','.events', function(){
+   $(".events .row").addClass("inversion");
+});
+
+$(document).on('mouseleave','.events', function(){
+   $(".events .row").removeClass("inversion");
+});

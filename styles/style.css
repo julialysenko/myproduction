@@ -1266,10 +1266,11 @@ textarea:focus {
 
 .events-video {
     width: 100%;
-    height: 550px;
+    padding-top: 350px;
     position: absolute;
     top: 0;
-    opacity: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .corner-actor {
@@ -1285,15 +1286,8 @@ textarea:focus {
     transition: opacity 1.3s ease;
 }
 
-.events-video:hover,
-.events-video:focus {
-    opacity: 1;
-    transition: opacity 1.3s ease;
-}
-
-.description.row {
-    position: absolute;
-    top: 50px;
-    left: 70px;
-    z-index: 5;
+.events-video .my-video {
+    width: 100%;
+    height: 550px;
+    position: relative;
 }
