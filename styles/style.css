@@ -582,17 +582,19 @@ a.menu-lang:focus{
     margin-bottom: 160px;
 }
 
-#buy-ticketsTwo {
+.buy-ticketsTwo {
     display: none;
-    opacity: 0;
+    opacity: 1;
+    transition: opacity .15s linear;
 }
 
-#buy-ticketsThree {
+.buy-ticketsThree {
     display: none;
-    opacity: 0;
+    opacity: 1;
+    transition: opacity .15s linear;
 }
 
-#buy-ticketsTwo:active {
+.active .continue .buy-ticketsTwo, .buy-ticketsThree {
     opacity: 1;
 }
 
@@ -835,6 +837,7 @@ input.money {
 }
 
 #money {
+    display: inline-block;
     margin-top: 10px;
 }
 

@@ -63,52 +63,6 @@ if ($('div').hasClass('in-contacts')) {
 window.autosize && autosize(document.querySelectorAll('textarea'));
 
 
-// counter
-var input = $('#inp');
-
- var a;
-
-      $('.plus').click(function(){
-          a = input.val();
-          a++;
-          input.val(a);
-      });
-
-      $('.minus').click(function(){
-          a = input.val();
-          a = (a<2)?1:a-1;
-          input.val(a);
-      });
-
-
- $('.minus').click(function(){
-    if (a>1) {
-        $("#money").val(parseInt($("#money").val())-100);
-    } else {
-        false;
-    }
-});
-
-$('.plus').click(function(){
-   $("#money").val(parseInt($("#money").val())+100);
-});
-
-//Blocks tikets
-
-/*$('.continue').click(function(){
-    var $buy = $('#buy-ticketsTwo');
-
-        $buy.css('display', 'block');
-     });
-
-$('.buy').click(function(){
-    var $buy = $('#buy-ticketsThree');
-
-        $buy.css('display', 'block');
-     });
-
-*/
-
 //Acordeon
 
 $(document).on('click', '.close', function(){
@@ -144,23 +98,73 @@ $(document).on("click",".scroll-up", function() {
 });
 
 
+// events video
 
-$(document).on('click', '.continue', function (e) {
-    var $block = $(this).find('#buy-ticketsTwo');
-
-    if (e.type == 'click') {
-        $block.css('display', 'block');
-
-    } else if (e.type == 'click') {
-        if ( $block.css('display') == 'block' && $block.css('opacity') == 1) {
-          $block.one($.support.transition.end, function () {
-            $(this).css('display', 'none');
-          });
-          }
-    }
-    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
+$(document).on('mouseenter','.events', function(){
+   $(".events .row").addClass("inversion");
 });
 
+$(document).on('mouseleave','.events', function(){
+   $(".events .row").removeClass("inversion");
+});
+
+
+// counter
+
+$('.button-counter').on("click", function () {
+  var $sum = $('#inp'),
+      Value = $sum.val();
+    if ($(this).hasClass("plus")) {
+        Value = parseFloat(Value) + 1
+    } else {
+      if (Value > 1) {
+        Value = parseFloat(Value) - 1
+      }
+    }
+
+    $sum.val(Value);
+    $sum.change();
+});
+
+  $('#inp').on("change input", function () {
+  var main_price = Number($('#money').data('price'));
+  var input_quantity = Number($('#inp').val());
+  main_price *= input_quantity;
+  $('#money').text(main_price) })
+
+
+//Blocks tikets
+
+$('.continue').click(function(){
+    var $buy = $('.buy-ticketsTwo');
+
+        $buy.css('display', 'block');
+     });
+
+$('.buy').click(function(){
+    var $buy = $('.buy-ticketsThree');
+
+        $buy.css('display', 'block');
+     });
+
+ 
+/*
+$(document).on('click', '.continue', function (e) {
+    var $block = $(this).find('.buy-ticketsTwo');
+
+    if (e.type == 'click') {
+
+        $block.css('display') == 'block' && $block.css('opacity') == 1;
+
+          $block.one($.support.transition.end, function () {
+            $(this).css('display', 'block');
+    });
+
+  };
+
+    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
+});
+*/
 
 
 
@@ -187,13 +191,3 @@ $('.person').click(function(){
         $c.css('display', 'block');
      });
 */
-
-// events video
-
-$(document).on('mouseenter','.events', function(){
-   $(".events .row").addClass("inversion");
-});
-
-$(document).on('mouseleave','.events', function(){
-   $(".events .row").removeClass("inversion");
-});
