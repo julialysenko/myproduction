@@ -427,20 +427,23 @@ button.close:active {
 .inversion h4 {
     color: #fff;
     margin-bottom: 0;
-
+    transition: color .4s ease;
 }
 
 .inversion h3 {
     color: #fff;
     font-weight: 400;
+    transition: color .4s ease;
 }
 
 .inversion h1 {
     color: #fff;
+    transition: color .4s ease;
 }
 
 .inversion a {
     color: #fff;
+    transition: color .4s ease;
 }
 
 .inversion a:hover,
@@ -1292,4 +1295,5 @@ textarea:focus {
     width: 100%;
     height: 550px;
     position: relative;
+    overflow: hidden;
 }

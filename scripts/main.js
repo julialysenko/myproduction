@@ -106,12 +106,24 @@ $(document).on("click",".scroll-up", function() {
 
 // events video
 
-$(document).on('mouseenter','.events', function(){
-   $(".events .row").addClass("inversion");
+$(document).on('mouseenter','.events .row', function(){
+  $(this).addClass("inversion");
+
+  var $i = $('.inversion').parent().attr('data-event-index');
+  $("[data-video="+ $i +"]").parent().addClass("video-show");
+
+  var $activeVideo = $(".video-show video");
+  $activeVideo[0].play();
 });
 
-$(document).on('mouseleave','.events', function(){
-   $(".events .row").removeClass("inversion");
+$(document).on('mouseleave','.events .row', function(){
+  var $i = $('.inversion').parent().attr('data-event-index');
+  $("[data-video="+ $i +"]").parent().removeClass("video-show");
+
+  var $activeVideo = $(".video-show video");
+  // $activeVideo[0].pause();
+
+  $(this).removeClass("inversion");
 });
 
 
@@ -154,20 +166,5 @@ $('.buy').click(function(){
      });
 */
 
-$(document).on('click', '.continue', function (e) {
-    var $block = $(this).find('.buy-ticketsTwo');
-
-    if (e.type == 'click') {
-
-        $block.css('display') == 'block' && $block.css('opacity') == 1;
-
-          $block.one($.support.transition.end, function () {
-            $(this).css('display', 'block');
-    });
-
-  };
-
-    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
-});
 
 
