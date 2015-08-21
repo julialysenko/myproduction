@@ -583,18 +583,17 @@ a.menu-lang:focus{
 }
 
 .buy-ticketsTwo {
-    display: none;
-    opacity: 1;
+    opacity: 0;
     transition: opacity .15s linear;
 }
 
 .buy-ticketsThree {
-    display: none;
-    opacity: 1;
+    opacity: 0;
     transition: opacity .15s linear;
 }
 
-.active .continue .buy-ticketsTwo, .buy-ticketsThree {
+.active .buy-ticketsTwo, 
+.active .buy-ticketsThree {
     opacity: 1;
 }
 
@@ -1197,7 +1196,7 @@ a.menu-nav {
 }
 
 .frontpage h1 {
-    margin-top: 200px;
+    margin-top: 25%;
     margin-bottom: 0;
 }
 
@@ -1281,8 +1280,8 @@ textarea:focus {
     display: none;
     top: 313px;
     right: 90px;
-    width: 10px;
-    height: 10px;
+    width: 2px;
+    height: 16px;
     background-color: #fff;
     border-right: 2px solid #000;
     border-bottom: 2px solid #000;

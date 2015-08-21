@@ -77,10 +77,16 @@ $(document).on('show.bs.collapse', '.collapse', function(){
    $els.collapse('hide');
 });
 
-/*
-$.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
-*/
 
+$.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
+
+/*
+$('.person').click(function(){
+    var $c = $('.corner-actor');
+
+        $c.css('display', 'block');
+     });
+*/
 
 //scrollDown in presentation
 var $pixelDown = 120;
@@ -134,7 +140,7 @@ $('.button-counter').on("click", function () {
 
 
 //Blocks tikets
-
+/*
 $('.continue').click(function(){
     var $buy = $('.buy-ticketsTwo');
 
@@ -146,9 +152,8 @@ $('.buy').click(function(){
 
         $buy.css('display', 'block');
      });
+*/
 
- 
-/*
 $(document).on('click', '.continue', function (e) {
     var $block = $(this).find('.buy-ticketsTwo');
 
@@ -164,30 +169,5 @@ $(document).on('click', '.continue', function (e) {
 
     $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
 });
-*/
 
 
-
-/*
-$(document).on('mouseenter mouseleave', '.person', function (e) {
-
-    var  $corneractor = $(this).find(".corner-actor"),
-
-    if (e.type == 'mouseenter') {
-
-        $corneractor.css('display', 'block');
-
-    } else if (e.type == 'mouseleave') {
-
-            $(this).css('display', 'none');
-          }
-});
-
-
-
-$('.person').click(function(){
-    var $c = $('.corner-actor');
-
-        $c.css('display', 'block');
-     });
-*/
