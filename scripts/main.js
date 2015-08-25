@@ -78,7 +78,7 @@ $(document).on('show.bs.collapse', '.collapse', function(){
 });
 
 
-$.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
+// $.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
 
 /*
 $('.person').click(function(){
