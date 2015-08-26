@@ -62,14 +62,6 @@ if ($('div').hasClass('in-contacts')) {
 // textarea
 window.autosize && autosize(document.querySelectorAll('textarea'));
 
-
-//Acordeon
-
-$(document).on('click', '.close', function(){
-   $(this).closest('.collapse').collapse('hide');
-});
-
-
 /*
 $('.person').click(function(){
     var $c = $('.corner-actor');
@@ -156,13 +148,18 @@ $('.buy').click(function(){
      });
 */
 
+//Acordeon
+
+$(document).on('click', '.close', function(){
+   $(this).closest('.collapse').collapse('hide');
+});
+
 $(document).on('show.bs.collapse', '.collapse', function(){
    var group = $(this).data('group');
    var $els = $('[data-group="'+ group + '"]');
    $els = $els.not(this);
    $els.collapse('hide');
 });
-
 
 $.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
 
