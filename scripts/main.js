@@ -71,6 +71,7 @@ $('.person').click(function(){
 */
 
 //scrollDown in presentation
+
 var $pixelDown = 120;
 $(document).on("click",".scroll-down", function() {
   $pixelDown = $pixelDown + 600;
@@ -134,7 +135,7 @@ $('.button-counter').on("click", function () {
 
 
 //Blocks tikets
-/*
+
 $('.continue').click(function(){
     var $buy = $('.buy-ticketsTwo');
 
@@ -146,7 +147,7 @@ $('.buy').click(function(){
 
         $buy.css('display', 'block');
      });
-*/
+
 
 //Acordeon
 
