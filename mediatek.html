@@ -9,6 +9,7 @@
       <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="styles/selectize.css">
       <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/carousel-custom.css">
    </head>
    <body>
       <div class="header">
@@ -53,7 +54,7 @@
 
                   <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                      <div class="person">
-                        <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
+                        <img src="images/strasti_po_idiotu.jpg" width="400" height="265" alt="anna_sergeeva">
                         <h4>страсти по идиоту<span class="corner-actor"></span></h4>
                      </div>
                   </a>
@@ -65,9 +66,42 @@
                         
                         <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
                         
-                        <img src="images/anna_sergeeva.jpg" width="565" height="375" alt="anna_sergeeva"> 
-                        <h3>анна сергеева</h3>
-                        <p>Игорь Лысов — режиссер, драматург и педагог, автор собственной лаборатории в Школе Драматического Искусства. С 2014 года художественный руководитель русского драматического театра в Таллинне. Исследованием текстов Достоевского занимается на протяжении пятнадцати лет</p>
+                        <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+    <div class='carousel-outer'>
+        <!-- Wrapper for slides -->
+        <div class='carousel-inner'>
+            <div class='item active'>
+                <img src="images/strasti_po_idiotu1.jpg" alt='' />
+            </div>
+            <div class='item'>
+                <img src="images/strasti_po_idiotu5.jpg" alt='' />
+            </div>
+            <div class='item'>
+                <img src="images/strasti_po_idiotu4.jpg" alt='' />
+            </div>
+                
+            <div class='item'>
+                <img src="images/strasti_po_idiotu3.jpg" alt='' />
+            </div>
+        </div>
+            
+        <!-- Controls -->
+        <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+            <span></span>
+        </a>
+        <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+            <span></span>
+        </a>
+    </div>
+    
+    <!-- Indicators -->
+    <ol class='carousel-indicators'>
+        <li data-target='#carousel-custom' data-slide-to='0' class='active'><img src="images/strasti_po_idiotu1_i.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='1'><img src="images/strasti_po_idiotu5_i.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='2'><img src="images/strasti_po_idiotu4_i.jpg" alt='' /></li>
+        <li data-target='#carousel-custom' data-slide-to='3'><img src="images/strasti_po_idiotu3_i.jpg" alt='' /></li>
+    </ol>
+</div>
                      
                      </div>
                   </div>
@@ -79,7 +113,7 @@
 
                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="person">
-                           <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
+                           <img src="images/5_pelevin.jpg" width="400" height="265" alt="olga_larina">
                            <h4>5 рассказов пелевина<span class="corner-actor"></span></h4>
                         </div>
                      </a>
@@ -101,7 +135,7 @@
                <div class="panel-heading" role="tab" id="headingThree">
                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <div class="person">
-                           <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
+                           <img src="images/8_tango.jpg" width="400" height="265" alt="denia_martynov">
                            <h4>8 шагов танго<span class="corner-actor"></span></h4>
                         </div>
                      </a>
@@ -130,7 +164,7 @@
 
                   <a role="button" data-toggle="collapse"href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                      <div class="person">
-                        <img src="images/ruslan_sokolnik.jpg" width="400" height="265" alt="ruslan_sokolnik">
+                        <img src="images/pod_davleniem.jpg" width="400" height="265" alt="ruslan_sokolnik">
                         <h4>под давлением<span class="corner-actor"></span></h4>
                      </div>
                   </a>
@@ -153,7 +187,7 @@
 
                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         <div class="person">
-                           <img src="images/igor_lysov.jpg" width="400" height="265" alt="igor_lysov">
+                           <img src="images/ostrov.jpg" width="400" height="265" alt="igor_lysov">
                            <h4>остров нашей любви и надежды<span class="corner-actor"></span></h4>
                         </div>
                      </a>
@@ -175,7 +209,7 @@
 
                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         <div class="person">
-                           <img src="images/elena_lazovich.jpg" width="400" height="265" alt="elena_lazovich">
+                           <img src="images/rasputnik.jpg" width="400" height="265" alt="elena_lazovich">
                            <h4>распутник<span class="corner-actor"></span></h4>
                         </div>
                      </a>
@@ -206,7 +240,7 @@
 
                   <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                      <div class="person">
-                        <img src="images/anna_sergeeva.jpg" width="400" height="265" alt="anna_sergeeva">
+                        <img src="images/strasti_po_idiotu_v.jpg" width="400" height="265" alt="anna_sergeeva">
                         <h4>страсти по идиоту<span class="corner-actor"></span></h4>
                      </div>
                   </a>
@@ -232,7 +266,7 @@
 
                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <div class="person">
-                           <img src="images/olga_larina.jpg" width="400" height="265" alt="olga_larina">
+                           <img src="images/denia_martynov.jpg" width="400" height="265" alt="olga_larina">
                            <h4>прекрасное<span class="corner-actor"></span></h4>
                         </div>
                      </a>
@@ -254,7 +288,7 @@
                <div class="panel-heading" role="tab" id="headingThree">
                      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         <div class="person">
-                           <img src="images/denia_martynov.jpg" width="400" height="265" alt="denia_martynov">
+                           <img src="images/5_pelevin2.jpg" width="400" height="265" alt="denia_martynov">
                            <h4>5 рассказов пелевина<span class="corner-actor"></span></h4>
                         </div>
                      </a>
@@ -295,10 +329,11 @@
          </div>
       </div>
 
-      <script src="scripts/jquery-1.8.0.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="scripts/bootstrap/transition.js"></script>
       <script src="scripts/bootstrap/modal.js"></script>
       <script src="scripts/bootstrap/collapse.js"></script>
+      <script src="scripts/bootstrap/carousel.js"></script>
       <script src="scripts/selectize.js"></script>
       <script src="scripts/autosize.js"></script>
       <script src="scripts/main.js"></script>
