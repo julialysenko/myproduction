@@ -1308,3 +1308,18 @@ textarea:focus {
     position: relative;
     overflow: hidden;
 }
+
+
+.first-video-acordeon {
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.second-video-acordeon {
+    margin-bottom: 60px;
+}
+
+.third-video-acordeon {
+    margin-left: -810px;
+    margin-bottom: 60px;
+}

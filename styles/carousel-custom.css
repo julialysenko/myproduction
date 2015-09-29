@@ -40,10 +40,12 @@
     position: relative;
 }
 
+/*
 .carousel-control {
     width: 0;
 }
-
+*/
+s
 .carousel-indicators img {
     margin-bottom: 5px;
 }
@@ -51,4 +53,31 @@
 .carousel-inner img {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.left-control {
+    background: url("../images/arrow-left-carousel.png") no-repeat;
+    margin-top: 310px;
+    margin-left: 20px;
+}
+
+.right-control {
+    background: url("../images/arrow-right-carousel.png") no-repeat;
+    margin-top: 310px;
+    margin-left: 150px;
+}
+
+.carousel-control span {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 32px;
+}
+
+a.carousel-control:hover, a.carousel-control:focus {
+    border-bottom: none;
+}
+
+.close {
+    margin: 25px 25px 0 1175px;
 }
