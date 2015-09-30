@@ -1,7 +1,7 @@
 
 #carousel-custom {
-    margin-left: 10px;
     width: 1220px;
+    margin-bottom: 60px;
 }
 
 #carousel-custom .carousel-indicators {
@@ -25,27 +25,21 @@
 
 #carousel-custom .carousel-indicators li img {
     display: block;
-    opacity: 0.5;
-}
-
-#carousel-custom .carousel-indicators li.active img {
     opacity: 1;
 }
 
+#carousel-custom .carousel-indicators li.active img {
+    opacity: 0.5;
+}
+
 #carousel-custom .carousel-indicators li:hover img {
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 #carousel-custom .carousel-outer {
     position: relative;
 }
 
-/*
-.carousel-control {
-    width: 0;
-}
-*/
-s
 .carousel-indicators img {
     margin-bottom: 5px;
 }
@@ -63,7 +57,7 @@ s
 
 .right-control {
     background: url("../images/arrow-right-carousel.png") no-repeat;
-    margin-top: 310px;
+    margin-top: 270px;
     margin-left: 150px;
 }
 
@@ -78,6 +72,23 @@ a.carousel-control:hover, a.carousel-control:focus {
     border-bottom: none;
 }
 
-.close {
-    margin: 25px 25px 0 1175px;
+.person-open button {
+    margin: -600px 0 0 1185px;
+}
+
+.carousel-control.right {
+    margin-top: 40px;
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.first-gallery {
+    margin-left: 10px;
+}
+
+.third-gallery {
+    margin-left: -10px;
 }
