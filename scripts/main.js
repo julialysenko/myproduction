@@ -136,6 +136,7 @@ $('.button-counter').on("click", function () {
 
 //Blocks tikets
 
+/*
 $('.continue').click(function(){
     var $buy = $('.buy-ticketsTwo');
 
@@ -147,6 +148,25 @@ $('.buy').click(function(){
 
         $buy.css('display', 'block');
      });
+*/
+
+$(document).on('mouseenter mouseleave', 'li', function (e) {
+    var $child = $(this).find('> .nav'),
+
+    if ($child.length === 0) return true;
+
+    if (e.type == 'mouseenter') {
+        $child.css('display', 'block');
+        $child[0].offsetWidth;
+    } else if (e.type == 'mouseleave') {
+        if ( $child.css('display') == 'block' && $child.css('opacity') == 1) {
+          $child.one($.support.transition.end, function () {
+            $(this).css('display', 'none');
+          });
+          }
+    }
+    $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('active');
+});
 
 
 //Acordeon

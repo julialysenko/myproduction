@@ -84,11 +84,3 @@ a.carousel-control:hover, a.carousel-control:focus {
 .carousel-control.left {
     background-image: none;
 }
-
-.first-gallery {
-    margin-left: 10px;
-}
-
-.third-gallery {
-    margin-left: -10px;
-}

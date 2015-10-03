@@ -218,7 +218,7 @@ h4.actors {
 }
 
 .person-open button {
-    margin: -40px -112px 0 0;
+    margin: -40px -102px 0 0;
 }
 
 .panel-default > .panel-heading {
@@ -593,6 +593,17 @@ a.menu-lang:focus{
     margin-top: 30px;
     margin-bottom: 160px;
 }
+
+/* variation1
+
+.buy-ticketsTwo {
+    display: none;
+}
+
+.buy-ticketsThree {
+    display: none;
+}
+*/
 
 .buy-ticketsTwo {
     opacity: 0;
@@ -1309,6 +1320,15 @@ textarea:focus {
     overflow: hidden;
 }
 
+/*acordeon*/
+
+.first-gallery {
+    margin-left: 10px;
+}
+
+.third-gallery {
+    margin-left: -10px;
+}
 
 .first-video-acordeon {
     margin-left: 10px;
