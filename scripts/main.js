@@ -131,10 +131,20 @@ $('.button-counter').on("click", function () {
   var main_price = Number($('#money').data('price'));
   var input_quantity = Number($('#inp').val());
   main_price *= input_quantity;
-  $('#money').text(main_price) })
+  $('#money').text(main_price) });
 
 
 //Blocks tikets
+
+$(document).on('click', '.continue', function fadeIn() {
+  document.getElementById('buy-ticketsTwo').style.display = 'block';
+setTimeout(function() {document.getElementById('buy-ticketsTwo').style.opacity='1'},50)});
+
+
+$(document).on('click', '.buy', function fadeIn() {
+  document.getElementById('buy-ticketsThree').style.display = 'block';
+setTimeout(function() {document.getElementById('buy-ticketsThree').style.opacity='1'},50)});
+
 
 /*
 $('.continue').click(function(){
@@ -148,26 +158,21 @@ $('.buy').click(function(){
 
         $buy.css('display', 'block');
      });
-*/
 
-$(document).on('mouseenter mouseleave', 'li', function (e) {
-    var $child = $(this).find('> .nav'),
 
-    if ($child.length === 0) return true;
 
-    if (e.type == 'mouseenter') {
-        $child.css('display', 'block');
-        $child[0].offsetWidth;
-    } else if (e.type == 'mouseleave') {
+$(document).on('click', '.continue', function (e) {
+    var $child = $(this).find('.buy-ticketsTwo');
+
         if ( $child.css('display') == 'block' && $child.css('opacity') == 1) {
           $child.one($.support.transition.end, function () {
             $(this).css('display', 'none');
           });
-          }
     }
-    $(this)[(e.type == 'mouseenter' ? 'add' : 'remove') + 'Class']('active');
-});
 
+    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
+});
+*/
 
 //Acordeon
 

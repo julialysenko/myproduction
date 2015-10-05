@@ -594,30 +594,14 @@ a.menu-lang:focus{
     margin-bottom: 160px;
 }
 
-/* variation1
-
-.buy-ticketsTwo {
-    display: none;
-}
-
-.buy-ticketsThree {
-    display: none;
-}
-*/
-
-.buy-ticketsTwo {
+#buy-ticketsTwo {
     opacity: 0;
     transition: opacity .15s linear;
 }
 
-.buy-ticketsThree {
+#buy-ticketsThree {
     opacity: 0;
     transition: opacity .15s linear;
-}
-
-.active .buy-ticketsTwo, 
-.active .buy-ticketsThree {
-    opacity: 1;
 }
 
 a.logo {
