@@ -6,7 +6,7 @@
 
 #carousel-custom .carousel-indicators {
     margin: 5px 0 0;
-    overflow: auto;
+    overflow: hidden;
     position: static;
     text-align: left;
     white-space: nowrap;
@@ -51,14 +51,14 @@
 
 .left-control {
     background: url("../images/arrow-left-carousel.png") no-repeat;
-    margin-top: 310px;
-    margin-left: 20px;
+    margin-top: 710px;
+    margin-left: 50px;
 }
 
 .right-control {
     background: url("../images/arrow-right-carousel.png") no-repeat;
-    margin-top: 270px;
-    margin-left: 150px;
+    margin-top: 670px;
+    margin-left: 550px;
 }
 
 .carousel-control span {
@@ -83,4 +83,8 @@ a.carousel-control:hover, a.carousel-control:focus {
 
 .carousel-control.left {
     background-image: none;
+}
+
+.carousel-control {
+    width: 50%;
 }
