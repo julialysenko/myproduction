@@ -1327,3 +1327,7 @@ textarea:focus {
     margin-left: -810px;
     margin-bottom: 60px;
 }
+
+.frontpage-body {
+    background-color: black;
+}

@@ -70,23 +70,6 @@ $('.person').click(function(){
      });
 */
 
-//scrollDown in presentation
-
-var $pixelDown = 120;
-$(document).on("click",".scroll-down", function() {
-  $pixelDown = $pixelDown + 600;
-  $("html, body").animate({ scrollTop: $pixelDown }, 600);
-
-});
-
-$(document).on("click",".scroll-up", function() {
-  if ($pixelDown <= 120) {return true}
-  $pixelDown = $pixelDown - 600;
-  $("html, body").animate({ scrollTop: $pixelDown }, 600);
-
-});
-
-
 // events video
 
 $(document).on('mouseenter','.events .row', function(){

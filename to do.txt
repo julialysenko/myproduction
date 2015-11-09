@@ -1,6 +1,6 @@
 ﻿Страницы:
 
-main.html: черный фон на fade-in/out
+DONE!---------main.html: черный фон на fade-in/out
 
 event.html: добавить карусель
 
