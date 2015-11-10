@@ -1,0 +1,90 @@
+
+#carousel-custom {
+    width: 1220px;
+    margin-bottom: 60px;
+}
+
+#carousel-custom .carousel-indicators {
+    margin: 5px 0 0;
+    overflow: hidden;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#carousel-custom .carousel-indicators li {
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 0 !important;
+    width: auto;
+}
+
+#carousel-custom .carousel-indicators li img {
+    display: block;
+    opacity: 1;
+}
+
+#carousel-custom .carousel-indicators li.active img {
+    opacity: 0.5;
+}
+
+#carousel-custom .carousel-indicators li:hover img {
+    opacity: 0.85;
+}
+
+#carousel-custom .carousel-outer {
+    position: relative;
+}
+
+.carousel-indicators img {
+    margin-bottom: 5px;
+}
+
+.carousel-inner img {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.left-control {
+    background: url("../images/arrow-right-carousel.png") no-repeat;
+    margin-top: 695px;
+    margin-left: 20px;
+}
+
+.right-control {
+    background: url("../images/arrow-left-carousel.png") no-repeat;
+    margin-top: 655px;
+    margin-left: 530px;
+}
+
+.carousel-control span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+a.carousel-control:hover, a.carousel-control:focus {
+    border-bottom: none;
+}
+
+.person-open button {
+    margin: -600px 0 0 1160px;
+}
+
+.carousel-control.right {
+    margin-top: 40px;
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-control {
+    width: 50%;
+}

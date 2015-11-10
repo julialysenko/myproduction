@@ -62,51 +62,99 @@ if ($('div').hasClass('in-contacts')) {
 // textarea
 window.autosize && autosize(document.querySelectorAll('textarea'));
 
+/*
+$('.person').click(function(){
+    var $c = $('.corner-actor');
+
+        $c.css('display', 'block');
+     });
+*/
+
+// events video
+
+$(document).on('mouseenter','.events .row', function(){
+  $(this).addClass("inversion");
+
+  var $i = $('.inversion').parent().attr('data-event-index');
+  $("[data-video="+ $i +"]").parent().addClass("video-show");
+
+  var $activeVideo = $(".video-show video");
+  $activeVideo[0].play();
+});
+
+$(document).on('mouseleave','.events .row', function(){
+  var $i = $('.inversion').parent().attr('data-event-index');
+  $("[data-video="+ $i +"]").parent().removeClass("video-show");
+
+  var $activeVideo = $(".video-show video");
+  // $activeVideo[0].pause();
+
+  $(this).removeClass("inversion");
+});
+
 
 // counter
-var input = $('#inp');
 
- var a;
-
-      $('.plus').click(function(){
-          a = input.val();
-          a++;
-          input.val(a);
-      });
-
-      $('.minus').click(function(){
-          a = input.val();
-          a = (a<2)?1:a-1;
-          input.val(a);
-      });
-
-
- $('.minus').click(function(){
-    if (a>1) {
-        $("#money").val(parseInt($("#money").val())-100);
+$('.button-counter').on("click", function () {
+  var $sum = $('#inp'),
+      Value = $sum.val();
+    if ($(this).hasClass("plus")) {
+        Value = parseFloat(Value) + 1
     } else {
-        false;
+      if (Value > 1) {
+        Value = parseFloat(Value) - 1
+      }
     }
+
+    $sum.val(Value);
+    $sum.change();
 });
 
-$('.plus').click(function(){
-   $("#money").val(parseInt($("#money").val())+100);
-});
+  $('#inp').on("change input", function () {
+  var main_price = Number($('#money').data('price'));
+  var input_quantity = Number($('#inp').val());
+  main_price *= input_quantity;
+  $('#money').text(main_price) });
+
 
 //Blocks tikets
 
-/*$('.continue').click(function(){
-    var $buy = $('#buy-ticketsTwo');
+$(document).on('click', '.continue', function fadeIn() {
+  document.getElementById('buy-ticketsTwo').style.display = 'block';
+setTimeout(function() {document.getElementById('buy-ticketsTwo').style.opacity='1'},50)});
+
+
+$(document).on('click', '.buy', function fadeIn() {
+  document.getElementById('buy-ticketsThree').style.display = 'block';
+setTimeout(function() {document.getElementById('buy-ticketsThree').style.opacity='1'},50)});
+
+
+/*
+$('.continue').click(function(){
+    var $buy = $('.buy-ticketsTwo');
 
         $buy.css('display', 'block');
      });
 
 $('.buy').click(function(){
-    var $buy = $('#buy-ticketsThree');
+    var $buy = $('.buy-ticketsThree');
 
         $buy.css('display', 'block');
      });
 
+
+
+$(document).on('click', '.continue', function (e) {
+    var $child = $(this).find('.buy-ticketsTwo');
+
+        if ( $child.css('display') == 'block' && $child.css('opacity') == 1) {
+          $child.one($.support.transition.end, function () {
+            $(this).css('display', 'none');
+          });
+    }
+
+    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
+});
 */
 
 //Acordeon
@@ -114,7 +162,6 @@ $('.buy').click(function(){
 $(document).on('click', '.close', function(){
    $(this).closest('.collapse').collapse('hide');
 });
-
 
 $(document).on('show.bs.collapse', '.collapse', function(){
    var group = $(this).data('group');
@@ -125,64 +172,3 @@ $(document).on('show.bs.collapse', '.collapse', function(){
 
 $.fn.collapse.Constructor.TRANSITION_DURATION = 3000;
 
-
-
-//scrollDown in presentation
-var $pixelDown = 120;
-$(document).on("click",".scroll-down", function() {
-  $pixelDown = $pixelDown + 600;
-  $("html, body").animate({ scrollTop: $pixelDown }, 600);
-
-});
-
-$(document).on("click",".scroll-up", function() {
-  if ($pixelDown <= 120) {return true}
-  $pixelDown = $pixelDown - 600;
-  $("html, body").animate({ scrollTop: $pixelDown }, 600);
-
-});
-
-
-
-$(document).on('click', '.continue', function (e) {
-    var $block = $(this).find('#buy-ticketsTwo');
-
-    if (e.type == 'click') {
-        $block.css('display', 'block');
-
-    } else if (e.type == 'click') {
-        if ( $block.css('display') == 'block' && $block.css('opacity') == 1) {
-          $block.one($.support.transition.end, function () {
-            $(this).css('display', 'none');
-          });
-          }
-    }
-    $(this)[(e.type == 'click' ? 'add' : 'remove') + 'Class']('active');
-});
-
-
-
-
-/*
-$(document).on('mouseenter mouseleave', '.person', function (e) {
-
-    var  $corneractor = $(this).find(".corner-actor"),
-
-    if (e.type == 'mouseenter') {
-
-        $corneractor.css('display', 'block');
-
-    } else if (e.type == 'mouseleave') {
-
-            $(this).css('display', 'none');
-          }
-});
-
-
-
-$('.person').click(function(){
-    var $c = $('.corner-actor');
-
-        $c.css('display', 'block');
-     });
-*/

@@ -177,11 +177,19 @@ h4.actors {
     border-bottom: 2px solid transparent;
 }
 
+.col-team {
+    width: 410px;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
 .person {
     display: block;
     float: left;
     width: 400px;
     margin-bottom: 40px;
+    margin-left: 10px;
 }
 
 .person:hover {
@@ -189,8 +197,8 @@ h4.actors {
 }
 
 .row-persons {
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -70px;
+    margin-right: -60px;
 }
 
 .panel-body .person-open h3 {
@@ -210,7 +218,7 @@ h4.actors {
 }
 
 .person-open button {
-    margin: -40px -75px 0 0;
+    margin: -40px -102px 0 0;
 }
 
 .panel-default > .panel-heading {
@@ -300,6 +308,7 @@ h4.actors {
     margin-right: auto;
     margin-left: auto;
 }
+
 
 .team {
     min-width: 1100px;
@@ -427,20 +436,23 @@ button.close:active {
 .inversion h4 {
     color: #fff;
     margin-bottom: 0;
-
+    transition: color .4s ease;
 }
 
 .inversion h3 {
     color: #fff;
     font-weight: 400;
+    transition: color .4s ease;
 }
 
 .inversion h1 {
     color: #fff;
+    transition: color .4s ease;
 }
 
 .inversion a {
     color: #fff;
+    transition: color .4s ease;
 }
 
 .inversion a:hover,
@@ -548,6 +560,7 @@ img {
 
 .nav {
     display: none;
+    position: absolute;
     opacity: 0;
     transition: opacity .15s linear;
 }
@@ -582,17 +595,13 @@ a.menu-lang:focus{
 }
 
 #buy-ticketsTwo {
-    display: none;
     opacity: 0;
+    transition: opacity .15s linear;
 }
 
 #buy-ticketsThree {
-    display: none;
     opacity: 0;
-}
-
-#buy-ticketsTwo:active {
-    opacity: 1;
+    transition: opacity .15s linear;
 }
 
 a.logo {
@@ -834,6 +843,7 @@ input.money {
 }
 
 #money {
+    display: inline-block;
     margin-top: 10px;
 }
 
@@ -1130,6 +1140,8 @@ a.month {
 
 a.menu-nav {
     position: relative;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 #my-carousel {
@@ -1149,6 +1161,10 @@ a.menu-nav {
     text-align: center;
     list-style: none;
     padding: 0;
+}
+
+.frontpage .carousel-inner {
+    overflow: inherit;
 }
 
 .frontpage .carousel-indicators li {
@@ -1173,9 +1189,10 @@ a.menu-nav {
 
 .frontpage .carousel-caption {
     position: fixed;
-    min-width: 800px;
+    min-width: 1100px;
     top: 0;
-    left: 15%;
+    left: 0;
+    padding-left: 10%;
     z-index: 10;
     text-shadow: none;
     padding-top: 0;
@@ -1184,32 +1201,16 @@ a.menu-nav {
 
 .frontpage .header {
     background: transparent;
-}
-
-.frontpage {
-    background-color: black;
-    min-width: 1100px;
+    width: 1100px;
 }
 
 .frontpage h1 {
-    margin-top: 200px;
+    margin-top: 25%;
+    margin-bottom: 0;
 }
 
-.frontpage,
-.carousel,
-.carousel-inner,
-.frontpage .item,
-.video-wrap,
 .my-video {
-    width: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-}
-
-.my-video {
     opacity: 0;
     transition: opacity 1.3s ease;
     z-index: -999;
@@ -1218,16 +1219,6 @@ a.menu-nav {
 .video-show {
     opacity: 1;
     transition: opacity 1.3s ease;
-    z-index: -999;
-}
-
-video {
-    width: 1368px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: -999;
 }
 
@@ -1278,58 +1269,6 @@ textarea:focus {
     margin-top: 75px;
 }
 
-.presentation .next {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    border-right: 3px solid black;
-    border-bottom: 3px solid black;
-}
-
-.presentation .top {
-    transform: rotate(225deg);
-}
-
-.scroll-down,
-.scroll-up {
-    position: fixed;
-    right: 20%;
-}
-
-.scroll-up {
-    top: 20%;
-}
-
-.scroll-down {
-    bottom: 15%;
-}
-
-.scroll-down a,
-.scroll-up {
-    font-weight: 900;
-}
-
-.scroll-down a:hover,
-.scroll-down a:focus,
-.scroll-up a:hover,
-.scroll-up a:focus {
-    border-bottom: none;
-}
-
-.presentation .big-block {
-    min-height: 600px;
-    border-bottom: 3px dotted black;
-}
-
-.presentation .header {
-    height: 120px;
-}
-.presentation h1 {
-    margin: 0;
-    padding-top: 100px;
-}
-
 .events-video video {
     width: 100%;
     position: absolute;
@@ -1338,10 +1277,11 @@ textarea:focus {
 
 .events-video {
     width: 100%;
-    height: 550px;
+    padding-top: 350px;
     position: absolute;
     top: 0;
-    opacity: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .corner-actor {
@@ -1349,25 +1289,45 @@ textarea:focus {
     display: none;
     top: 313px;
     right: 90px;
-    width: 10px;
-    height: 10px;
+    width: 2px;
+    height: 16px;
     background-color: #fff;
     border-right: 2px solid #000;
     border-bottom: 2px solid #000;
     transition: opacity 1.3s ease;
 }
 
-.description.row {
-    position: absolute;
-    top: 50px;
-    left: 70px;
-    z-index: 5;
+.events-video .my-video {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
 }
 
-/*
-.events-video:hover,
-.events-video:focus {
-    opacity: 1;
-    transition: opacity 1.3s ease;
+/*acordeon*/
+
+.first-gallery {
+    margin-left: 10px;
 }
-*/
+
+.third-gallery {
+    margin-left: -10px;
+}
+
+.first-video-acordeon {
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.second-video-acordeon {
+    margin-bottom: 60px;
+}
+
+.third-video-acordeon {
+    margin-left: -810px;
+    margin-bottom: 60px;
+}
+
+.frontpage-body {
+    background-color: black;
+}

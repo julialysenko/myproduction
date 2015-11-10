@@ -19,9 +19,7 @@
               <li><a href="./events.html">афиша</a></li>
               <li><a href="#" class="menu-nav"><span class="corner-left"></span><span class="line-left"></span>о нас&emsp;&emsp;&emsp;&emsp;</a>
                 <ul class="nav">
-                  <li><a href="./history.html">история</a></li>
-                  <li><a href="./team.html">команда</a></li>
-                  <li><a href="./media.html">медиатека</a></li>
+                  <li><a href="./history.html">история</a><a href="./team.html" style="margin-left: 30px;">команда</a><a href="./media.html" style="margin-left: 68px;">медиатека</a></li>
                 </ul>
               </li>
               <li style="margin-left:0;"><a href="./contacts.html">контакты</a></li>
@@ -37,36 +35,27 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-13">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-13">
                <h1>афиша</h1>
                <h3>май.</h3>
-            </div>
-            <div class="col-1 months">
+        </div>
+        <div class="col-1 months">
                 <ul class="clearfix">
                     <li><a href="#" class="menu-nav">май<span class="corner-right"></span><span class="line-right"></span></a>
                       <ul class="nav">
                         <li><a href="#">июнь</a></li>
                         <li><a href="#">июль</a></li>
                         <li><a href="#">август</a></li>
-                        <li><a href="#">сентябрь</a></li>
-                        <li><a href="#">октябрь</a></li>
-                        <li><a href="#">ноябрь</a></li>
-                        <li><a href="#">декабрь</a></li>
-                        <li><a href="#">январь</a></li>
-                        <li><a href="#">февраль</a></li>
-                        <li><a href="#">март</a></li>
-                        <li><a href="#">апрель</a></li>
                       </ul>
                    </li>
                 </ul>
-            </div>
-         </div>
+        </div>
       </div>
-      <div class="events">
-        <div class="description row">
+      <div class="events" data-event-index="0">
+        <div class="row">
           <div class="col-2">
             <h3>08/ПТ</h3>
           </div>
@@ -75,16 +64,11 @@
             <div><a href="./buy_tickets.html" class="button">купить билет</a></div>
           </div>
         </div>
-        <div class="events-video">
-          <video data-video="1" preload="auto" loop="loop">
-            <source src="http://media2.zenrus.ru/video/night.mp4" type="video/mp4">
-            <source src="http://media2.zenrus.ru/video/night.webm" type="video/webm">
-            <source src="http://media2.zenrus.ru/video/night.ogv" type="video/ogg">
-          </video>
-        </div>
       </div>
-      <div class="events">
-        <div class="description row">
+
+      <div class="events" data-event-index="1">
+        <div class="row">
+
           <div class="col-2">
             <h3>09,15/сб <br>16,22/пт</h3>
           </div>
@@ -93,16 +77,9 @@
             <div><a href="./buy_tickets.html" class="button">купить билет</a></div>
           </div>
         </div>
-        <div class="events-video">
-          <video data-video="0" preload="auto" loop="loop">
-            <source src="videos/Passion-for-Idiot.mp4" type='video/mp4'>
-            <source src="videos/Passion-for-Idiot.webm" type='video/webm'>
-            <source src="videos/Passion-for-Idiot.ogg" type='video/ogg'>
-          </video>
-        </div>
       </div>
-      <div class="events">
-        <div class="description row">
+      <div class="events" data-event-index="2">
+        <div class="row">
           <div class="col-2">
             <h3>28/вс</h3>
           </div>
@@ -111,59 +88,79 @@
             <div><a href="./buy_tickets.html" class="button">купить билет</a></div>
           </div>
         </div>
-        <div class="events-video">
-          <video data-video="1" preload="auto" loop="loop">
-            <source src="http://media2.zenrus.ru/video/meduza.mp4" type="video/mp4">
-            <source src="http://media2.zenrus.ru/video/meduza.webm" type="video/webm">
-            <source src="http://media2.zenrus.ru/video/meduza.ogv" type="video/ogg">
-          </video>
+      </div>
+      <div class="events" data-event-index="3">
+        <div class="row">
+          <div class="col-2">
+            <h3>28/чт</h3>
+          </div>
+          <div class="col-12">
+            <a href="./event.html"><h1>остров нашей любви и&nbsp;надежды</h1></a>
+            <div><a href="./buy_tickets.html" class="button">купить билет</a></div>
+          </div>
         </div>
       </div>
-      <div class="events">
-         <div class="description row">
-            <div class="col-2">
-               <h3>28/чт</h3>
-            </div>
-            <div class="col-12">
-               <a href="./event.html"><h1>остров нашей любви и&nbsp;надежды</h1></a>
-               <div><a href="./buy_tickets.html" class="button">купить билет</a></div>
-            </div>
-         </div>
-         <div class="events-video">
-          <video data-video="1" preload="auto" loop="loop">
-            <source src="http://media2.zenrus.ru/video/space.mp4" type="video/mp4">
-            <source src="http://media2.zenrus.ru/video/space.webm" type="video/webm">
-            <source src="http://media2.zenrus.ru/video/space.ogv" type="video/ogg">
-          </video>
+    </div>
+
+    <div class="scrollup">
+      <a class="up" href="#">наверх<span class="arrow"></span></a>
+    </div>
+
+    <!-- videos -->
+    <div class="events-video">
+      <div class="my-video">
+            <video data-video="0" preload="auto" loop="loop" controls muted>
+              <source src="videos/Passion-for-Idiot.mp4" type='video/mp4'>
+              <source src="videos/Passion-for-Idiot.webm" type='video/webm'>
+              <source src="videos/Passion-for-Idiot.ogg" type='video/ogg'>
+            </video>
+      </div>
+      <div class="my-video">
+            <video data-video="1" preload="auto" loop="loop" controls muted>
+              <source src="http://media2.zenrus.ru/video/meduza.mp4" type="video/mp4">
+              <source src="http://media2.zenrus.ru/video/meduza.webm" type="video/webm">
+              <source src="http://media2.zenrus.ru/video/meduza.ogv" type="video/ogg">
+            </video>
+      </div>
+      <div class="my-video">
+            <video data-video="2" preload="auto" loop="loop" controls muted>
+              <source src="http://media2.zenrus.ru/video/night.mp4" type="video/mp4">
+              <source src="http://media2.zenrus.ru/video/night.webm" type="video/webm">
+              <source src="http://media2.zenrus.ru/video/night.ogv" type="video/ogg">
+            </video>
+      </div>
+      <div class="my-video">
+            <video data-video="3" preload="auto" loop="loop" controls muted>
+              <source src="http://media2.zenrus.ru/video/singapore.mp4" type="video/mp4">
+              <source src="http://media2.zenrus.ru/video/singapore.webm" type="video/webm">
+              <source src="http://media2.zenrus.ru/video/singapore.ogv" type="video/ogg">
+            </video>
+      </div>
+    </div>
+
+    <div class="container footer">
+      <div class="row">
+        <div class="col-8">
+          <h4>2015 ©  my production</h4>
+        </div>
+        <div class="col-3">
+          <h4 class="lowercase">дизайн и разработка</h4>
+        </div>
+        <div class="col-2">
+          <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
+        </div>
+        <div class="col-1">
+          <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
         </div>
       </div>
+    </div>
 
-      <div class="scrollup">
-            <a class="up" href="#">наверх<span class="arrow"></span></a>
-      </div>
-
-         <div class="container footer">
-            <div class="row">
-               <div class="col-8">
-                  <h4>2015 ©  my production</h4>
-               </div>
-               <div class="col-3">
-                  <h4 class="lowercase">дизайн и разработка</h4>
-               </div>
-               <div class="col-2">
-                  <a href="#" class="footer_logo"><img src="images/svc-logo.png" width="110" height="45" alt="svc-logo"></a>
-               </div>
-               <div class="col-1">
-                  <img class="s4w" src="images/s4w_logo.png" width="30" height="30" alt="s4w_logo">
-               </div>
-            </div>
-      </div>
-
-      <script src="scripts/jquery-1.8.0.min.js"></script>
-      <script src="scripts/bootstrap/transition.js"></script>
-      <script src="scripts/bootstrap/modal.js"></script>
-      <script src="scripts/selectize.js"></script>
-      <script src="scripts/main.js"></script>
-      <script src="scripts/fixModalpadding.js"></script>
+    <script src="scripts/jquery-1.8.0.min.js"></script>
+    <script src="scripts/bootstrap/transition.js"></script>
+    <script src="scripts/bootstrap/modal.js"></script>
+    <script src="scripts/selectize.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mute.js"></script>
+    <script src="scripts/fixModalpadding.js"></script>
    </body>
 </html>
