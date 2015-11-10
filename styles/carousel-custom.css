@@ -50,22 +50,22 @@
 }
 
 .left-control {
-    background: url("../images/arrow-left-carousel.png") no-repeat;
-    margin-top: 710px;
-    margin-left: 50px;
+    background: url("../images/arrow-right-carousel.png") no-repeat;
+    margin-top: 695px;
+    margin-left: 20px;
 }
 
 .right-control {
-    background: url("../images/arrow-right-carousel.png") no-repeat;
-    margin-top: 670px;
-    margin-left: 550px;
+    background: url("../images/arrow-left-carousel.png") no-repeat;
+    margin-top: 655px;
+    margin-left: 530px;
 }
 
 .carousel-control span {
     position: absolute;
     display: block;
-    width: 15px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
 }
 
 a.carousel-control:hover, a.carousel-control:focus {
@@ -73,7 +73,7 @@ a.carousel-control:hover, a.carousel-control:focus {
 }
 
 .person-open button {
-    margin: -600px 0 0 1185px;
+    margin: -600px 0 0 1160px;
 }
 
 .carousel-control.right {
